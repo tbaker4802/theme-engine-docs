@@ -1,5 +1,10 @@
-.navbar-brand {
-  padding: 8px; }
+﻿.navbar-brand {
+  height: auto;
+}
+
+.navbar-collapse {
+  margin-top: 25px;
+}
 
 .th-docs-header--masthead {
   position: relative;
