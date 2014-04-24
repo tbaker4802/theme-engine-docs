@@ -1,0 +1,72 @@
+﻿.navbar-brand {
+	padding: 8px;
+}
+
+.th-docs-header--masthead {
+	position: relative;
+    padding: 80px 15px;
+    color: #5196B9;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    background: #8fc9f1; /* Old browsers */
+	background: url(../images/flavor-bg.jpg) repeat top center;
+
+
+	h1, p {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1 {
+		margin-top: 20px;
+		font-weight: 300;
+		line-height: 1;
+		color: #fff;
+	}
+
+	.lead {
+		width: 80%;
+		font-size: 30px;
+		margin: 0 auto 30px;
+		color: #fff;
+	}
+
+}
+
+.th-flavor {
+	color: #fff;
+	
+	&__icon {
+		color: #fff;
+
+		&:hover {
+			color: #f1f1f1;
+			text-decoration: none;
+		}
+	}
+
+	&__name {}
+
+	&__description {
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+
+	&__build {
+		padding: 15px 0;
+		font-size: 12px;
+		font-size: 1.2rem;
+
+		a {
+			color: #fff;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+
+}
+
