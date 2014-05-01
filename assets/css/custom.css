@@ -1,10 +1,38 @@
-﻿.navbar-brand {
-  height: auto;
-}
+﻿@font-face {
+  font-family: 'quicksanddash';
+  src: url("../fonts/quicksand_dash-webfont.eot");
+  src: url("../fonts/quicksand_dash-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand_dash-webfont.woff") format("woff"), url("../fonts/quicksand_dash-webfont.ttf") format("truetype"), url("../fonts/quicksand_dash-webfont.svg#quicksanddash") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.th-example {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none; }
 
-.navbar-collapse {
-  margin-top: 25px;
-}
+.th-example {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none; }
+
+.th-callout {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee; }
+
+.th-callout.th-callout-danger {
+  background-color: #fdf7f7;
+  border-color: #d9534f; }
+
+.navbar-brand {
+  padding: 8px; }
 
 .th-docs-header--masthead {
   position: relative;
@@ -12,33 +40,87 @@
   color: #5196B9;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #8fc9f1;
-  /* Old browsers */
-  background: url(../images/flavor-bg.jpg) repeat top center; }
+  background: #8ad1fa url(../images/flavor-bg.png) repeat top center; }
   .th-docs-header--masthead h1, .th-docs-header--masthead p {
     margin-left: auto;
     margin-right: auto; }
   .th-docs-header--masthead h1 {
+    font-family: Podkova;
+    text-transform: uppercase;
     margin-top: 20px;
     font-weight: 300;
     line-height: 1;
-    color: #fff; }
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 2px 2px 0 #5492b8, 2px 2px 0 #5492b8, 2px 2px 0 #5492b8; }
   .th-docs-header--masthead .lead {
-    width: 80%;
-    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     margin: 0 auto 30px;
-    color: #fff; }
+    color: #347290; }
+
+.th-callout {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee; }
+
+.th-callout-info {
+  background-color: #f4f8fa;
+  border-color: #5bc0de; }
 
 .th-flavor {
-  color: #fff; }
+  color: #fff;
+  text-align: left;
+  -webkit-font-smoothing: antialiased; }
   .th-flavor__icon {
-    color: #fff; }
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px; }
     .th-flavor__icon:hover {
       color: #f1f1f1;
       text-decoration: none; }
+  .th-flavor__button {
+    background-color: #ff9147;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: Montserrat;
+    letter-spacing: 1px; }
+    .th-flavor__button:hover {
+      color: #fff;
+      opacity: 0.8;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; }
+  .th-flavor__name {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #38acd0; }
+    .th-flavor__name--dashed {
+      font-family: quicksanddash;
+      font-weight: normal;
+      text-transform: lowercase;
+      font-size: 28px; }
+    .th-flavor__name--script {
+      font-family: Sacramento;
+      font-weight: normal;
+      text-transform: none;
+      font-size: 35px; }
   .th-flavor__description {
-    font-size: 12px;
-    font-size: 1.2rem; }
+    font-size: 14px;
+    font-size: 1.4rem; }
+    .th-flavor__description--moreroom {
+      margin-top: 18px; }
+    .th-flavor__description--lessroom {
+      margin-top: -10px; }
   .th-flavor__build {
     padding: 15px 0;
     font-size: 12px;
