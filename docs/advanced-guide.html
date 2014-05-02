@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volusion - Theme Engine</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Podkova:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/docs.css">
+  <link rel="stylesheet" href="/assets/css/custom.css" />
+
+</head>
+<body class="th-docs-home" data-spy="scroll" data-target=".th-docs-sidebar">
+  <a class="sr-only" href="#content">Skip to main content</a>
+  <!-- Docs master nav -->
+  <header class="navbar navbar-static-top th-docs-nav" id="top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/index.html" class="navbar-brand"><img src="/assets/images/logo.png" alt="Volusion" class="img-responsive" /></a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li><a href="/docs/quick-start.html">Quick Start</a></li>
+          <li><a href="/docs/advanced-guide.html">Advanced Guide</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/showcase/index.html">Showcase</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page content of course! -->
+  <main class="th-docs-header th-docs-header--masthead" id="content" role="main">
+    <div class="container">
+      <h1 class="th-flavor-heading">Advanced Guide</h1>
+      <!--<p class="lead">Choose a base</p>-->
+      <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="container th-docs-container">
+
+    <div class="row">
+      <div class="col-md-9" role="main">
+
+        <div class="th-docs-section">
+          <h1 id="welcome" class="page-header">Welcome</h1>
+          <!--<p class="lead"></p>-->
+          <p>This Getting Started Guide is intended for developers who wish to:</p>
+          <ul>
+            <li>Contribute code to the Theme Engine</li>
+            <li>Create their own themes or components</li>
+          </ul>
+          <p>If that sounds like you, then continue reading and let’s get started!</p>
+          <ul>
+            <li>You know Javascript.</li>
+            <li>You're comfortable with the command line.</li>
+            <li>You understand unit tests and why they're important.</li>
+            <li>You enjoy creating really cool things with the latest technologies.</li>
+          </ul>
+          <p>If that sounds like you, then continue reading and let’s get started!</p>
+          <p>Depending upon your comfort level you can either start from a blank slate using our Javascript SDK or choose from one of our pre-built themes and go from there.</p>
+          <h2 id="environment-setup">Environment Setup</h2>
+          <p>If you choose to use one of our pre-built themes as a starting point, you will need to get your local development environment setup and ready to rock and roll.</p>
+          <h3 id="github">GitHub</h3>
+          <p>First, if you don’t already have one, setup a free GitHub profile <a href="https://github.com/join" target="_blank">here</a>.</p>
+          <p>Next, unless you're a git wizard (a gizard?), you'll want to also install a git client. There are a number to choose from, but the official GitHub ones are actually pretty nice.</p>
+          <p>For Windows users, navigate <a href="https://windows.github.com/" target="_blank">here</a> and run the installer.</p>
+          <p>For Mac users, navigate <a href="https://mac.github.com/" target="_blank">here</a> and run the installer.</p>
+          <p><strong>Windows Pro Tip:</strong> In the GitHub for Windows client, select Tools >> Options and change your default shell to Git Bash. Select your project, hit the Tools and Options button and then "open a shell here" or just hit the back tick key \` as a shortcut. You now have an excellent Git shell with your Git credentials already stored.</p>
+          <p><strong>Windows Pro Tip:</strong> Add "C:\Users\xxx\AppData\Local\GitHub\PortableGit_xxx\bin" to your PATH user environment variable to gain access to common *nix commands in your Windows Command Prompt without installing msysgit or cygwin.</p>
+          <h3 id="nodejs">Node.js</h3>
+          <p>Next, you will need to get Node.js running on your local environment in order to run build tasks, install javascript and css dependencies, and run the development server.</p>
+          <p>For Windows users, the process is straightforward.   Navigate to <a href="http://nodejs.org/download/" target="_blank">here</a> and run the Windows Installer.</p>
+          <p>For Mac users, you’ll need to install Node.js followed by npm.   For instructions on this, navigate to <a href="http://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/" target="_blank">here</a> and follow the steps indicated.</p>
+          <h3 id="ruby">Ruby</h3>
+          <p>In order to compile SASS, you will also need to install Ruby.   Check out the guides found <a href="https://www.ruby-lang.org/en/installation/" target="_blank">here</a> for your respective platform.</p>
+          <h3 id="build-scripts">Build Scripts</h3>
+          <p>This project has several build scripts that help with various parts of development.</p>
+          <h4 id="grunt-test">grunt test</h4>
+          <p>The primary script to use is <code>grunt test</code>, which does several things:</p>
+          <ul>
+            <li>Lints all JavaScript and JSON</li>
+            <li>Runs all tests on Node.js</li>
+            <li>Starts up a development server</li>
+            <li>Runs a subset of tests with Karma</li>
+          </ul>
+          <p>Be sure to run this after making changes and before sending a pull request with your changes.</p>
+          <h4 id="grunt-lint">grunt lint</h4>
+          <p>Runs just the JavaScript and JSON linting on the repository</p>
+          <h4 id="npm-run-browserify">npm run browserify</h4>
+          <p>Generates build/eslint.js, a version of ESLint for use in the browser</p>
+          <h4 id="npm-run-docs">npm run docs</h4>
+          <p>Generates JSDoc documentation and places it into /jsdoc.</p>
+          <h4 id="npm-run-profile">npm run profile</h4>
+          <p>This command is used for intensive profiling of ESLint using Chrome Developer Tools. It starts a development server that runs through three profiles:</p>
+          <ul>
+            <li>Large - Runs ESLint on JSHint</li>
+            <li>Medium - Runs ESLint on jQuery</li>
+            <li>Small - Runs ESLint on KnockoutJS</li>
+          </ul>
+          <p>Your browser should automatically open to the page in question. When that happens:</p>
+          <ol>
+            <li>Open up developer tools</li>
+            <li>Click on Profiles</li>
+          </ol>
+          <p>You should start to see profiles for each run show up on the left side. If not, reload the page in the browser. Once all three profiles have completed, they will be available for inspection.</p>
+          <h3 id="workflow">Workflow</h3>
+          <p>Whenever you make changes to the ESLint source files, you'll need to run <code>npm test</code> to rerun the tests. The workflow is:</p>
+          <ol>
+            <li>Make changes</li>
+            <li>Run npm test to run tests on the command line</li>
+          </ol>
+          <p>You'll have to do this each time you make a change. The tests are run automatically whenever a pull request is received, so make sure to verify your changes work before submitting them.</p>
+        </div>
+        <div class="th-docs-section">
+          <h1 id="source-code">Source Code</h1>
+          <p>Before you can get started, you'll need to get a copy of the source code. This section explains how to do that and a little about the source code structure.</p>
+          <p>If you simply want to create a local copy of the source to play with, you can clone the main repository using this command:</p>
+          <pre>
+git clone git://github.com/volusion-angular/seed.git
+          </pre>
+          <p>If you're planning on contributing, then it's a good idea to fork the repository. You can find instructions for forking a repository at <a href="http://help.github.com/fork-a-repo/" target="_blank">http://help.github.com/fork-a-repo/</a>. After forking the repository, you'll want to create a local copy of your fork.</p>
+          <h2 id="start-developing">Start Developing</h2>
+          <p>Following the above requirements, you need to install some build tools by running the following commands in your shell:</p>
+          <pre>
+gem install compass
+npm install -g grunt-cli bower
+          </pre>
+          <p>Now you can install the project dependencies:</p>
+          <pre>
+cd seed
+npm install
+bower install
+          </pre>
+          <p>Now when you run <code>grunt serve</code>, it will be running your local copy and showing your changes.</p>
+          <p><strong>Note:</strong> It's a good idea to re-rerun <code>npm install</code> and <code>bower install</code> whenever you pull from the main repository to ensure you have the latest development dependencies.</p>
+          <h2 id="directory-structure">Directory structure</h2>
+          <p>The directory and file structure is as follows:</p>
+          <ul>
+            <li><code>docs</code> - documentation for the project</li>
+            <li>
+              <code>app</code> - contains the source code
+              <ul>
+                <li><code>bower_components</code> - source code and test package dependencies</li>
+                <li><code>images</code> - images and sprites</li>
+                <li><code>scripts</code> - JavaScript files</li>
+                <li><code>styles</code> - Sass files (SCSS syntax with Compass)</li>
+                <li><code>templates</code> - HTML templates (partial views)</li>
+                <li><code>translations</code> - language translations</li>
+                <li><code>views</code> - HTML views</li>
+              </ul>
+            </li>
+            <li>
+              <code>test</code> - the main unit test folder
+              <ul>
+                <li><code>spec</code> - tests for the source code</li>
+                <li><code>controllers</code> - tests for the controllers</li>
+                <li><code>views</code> - tests for the views</li>
+                <li><code>directives</code> - tests for the directives</li>
+                <li>etc.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="th-docs-section">
+          <h1 id="run-unit-tests">Run the Unit Tests</h1>
+          <p>By design, the framework itself doesn't have any unit tests, but it's definitely setup to support them. Going forward, these will ensure that we're keeping on top of code quality. This section explains how to run the unit tests.</p>
+          <p><em>Finish content...</em></p>
+        </div>
+        <div class="th-docs-section">
+          <h1 id="creating-themes">Creating Themes</h1>
+          <p>Themes are composed of the design that wrap around pages as well as the style guide that flows into the components. This section tells you what you need to get started with building your own theme.</p>
+          <p>New themes can be created off of the following theme branches:</p>
+          <ul>
+            <li><a href="http://www.github.com/volusion-angular/theme/" target="_blank">ecomm</a></li>
+          </ul>
+          <p>The <a href="https://github.com/volusion-angular/theme/tree/ecomm/app/styles/components" target="_blank">app&#47;styles&#47;components</a> folder houses an organized folder structure of the <a href="http://sass-lang.com/" target="_blank">sass</a> <a href="https://github.com/twbs/bootstrap-sass" target="_blank">port</a> of the <a href="http://www.getbootstrap.com" target="_blank">Bootstrap</a> framework.</p>
+          <p><em>Finish content...</em></p>
+        </div>
+        <div class="th-docs-section">
+          <h1 id="creating-components">Creating Components</h1>
+          <p>Components are supplimental to a theme and the driving force behind functionality within pages. This section tells you how to get started with component development.</p>
+          <p>Components represent a unit of a page. Each component is independent. This means they know nothing about each other.</p>
+          <h2 id="communication">Communication</h2>
+          <p>Components can send messages between each other with $rootScope.$emit:</p>
+          <pre>
+$rootScope.$emit('add_to_cart', { id: 42 });
+          </pre>
+          <p>Another component can listen to this event with <code>$rootScope.$on</code>:</p>
+          <pre>
+            <code class="js">
+$rootScope.$on('add_to_cart', function(event, item) {
+  $cartService.add(item, function(err) {
+    if (err) {
+      throw err;
+    }
+    $rootScope.$emit('cart_item_added');
+  });
+});
+            </code>
+          </pre>
+          <p>See <a href="http://docs.angularjs.org/api/ng/type/%24rootScope.Scope" target="_blank">Angularjs API Reference - $rootscope.scope</a> for more information.</p>
+          <p><em>Finish content...</em></p>
+          <h2 id="layout">Layout</h2>
+          <p>A component represents a unit of a page. Each component is independent. This means that they know nothing about each other. To make them communicate, a Publish/Subscribe (Mediator) pattern is used.</p>
+          <p><em>Finish content...</em></p>
+        </div>
+        <div class="th-docs-section">
+          <h1 id="contributing">Contributing</h1>
+          <p>Once you've made changes that you want to share with the community, the next step is to submit those changes back via a pull request.</p>
+          <p><em>Finish content...</em></p>
+        </div>
+      </div>
+
+
+      <div class="col-md-3">
+        <div class="th-docs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="300" data-offset-bottom="200">
+          <ul class="nav th-docs-sidenav">
+            <li>
+              <a href="#welcome">Welcome</a>
+              <ul class="nav">
+                <li>
+                  <a href="#environment-setup">Environment Setup</a>
+                  <ul class="nav">
+                    <li><a href="#github">GitHub</a></li>
+                    <li><a href="#nodejs">Node.js</a></li>
+                    <li><a href="#ruby">Ruby</a></li>
+                    <li><a href="#build-scripts">Build Scripts</a>
+                      <ul class="nav">
+                        <li><a href="#grunt-test">grunt test</a></li>
+                        <li><a href="#grunt-lint">grunt lint</a></li>
+                        <li><a href="#npm-run-browserify">npm run browserify</a></li>
+                        <li><a href="#npm-run-docs">npm run docs</a></li>
+                        <li><a href="#npm-run-profile">npm run profile</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#workflow">Workflow</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#source-code">Source Code</a>
+                  <ul class="nav">
+                    <li><a href="#start-developing">Start Developing</a></li>
+                    <li><a href="#directory-structure">Directory Structure</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#run-unit-tests">Run the Unit Tests</a>
+                </li>
+                <li>
+                  <a href="#creating-themes">Creating Themes</a>
+                </li>
+                <li>
+                  <a href="#creating-components">Creating Components</a>
+                  <ul class="nav">
+                    <li><a href="#communication">Communication</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#contributing">Contributing</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a class="back-to-top" href="#top">
+            Back to top
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer
+    ================================================== -->
+  <footer class="th-docs-footer" role="contentinfo">
+    <div class="container">
+      <!--<div class="th-docs-social">
+        <ul class="th-docs-social-buttons">
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=volusion-angular&amp;repo=theme&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+          </li>
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=volusion-angular&amp;repo=theme&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+          </li>
+        </ul>
+      </div>-->
+      <!--<p>Created by <a href="http://www.volusion.com" target="_blank">Volusion</a></p>-->
+      <p>Maintained by the <a href="https://github.com/volusion-angular?tab=members">core team</a> with the help of <a href="https://github.com/volusion-angular/theme/graphs/contributors">our contributors</a>.</p>
+      <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+      <ul class="th-docs-footer-links muted">
+        <li>Currently v0.0.1</li>
+        <li>&middot;</li>
+        <li><a href="https://github.com/volusion-angular/theme" target="_blank">GitHub</a></li>
+        <li>&middot;</li>
+        <li><a href="#">Quick Start</a></li>
+        <li>&middot;</li>
+        <li><a href="http://www.volusion.com/history" target="_blank">About Volusion</a></li>
+        <li>&middot;</li>
+        <li><a href="#">Blog</a></li>
+        <li>&middot;</li>
+        <li><a href="#">Showcase</a></li>
+        <li>&middot;</li>
+        <li><a href="https://github.com/volusion-angular/theme/issues?state=open" target="_blank">Issues</a></li>
+        <li>&middot;</li>
+        <li><a href="https://github.com/volusion-angular/theme/releases" target="_blank">Releases</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

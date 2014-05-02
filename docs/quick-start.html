@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <!-- Meta, title, CSS, favicons, etc. -->
@@ -17,42 +17,28 @@
   <link rel="stylesheet" href="/assets/css/custom.css" />
 
 </head>
-<body class="th-docs-home">
+<body class="th-docs-home" data-spy="scroll" data-target=".th-docs-sidebar">
   <a class="sr-only" href="#content">Skip to main content</a>
   <!-- Docs master nav -->
   <header class="navbar navbar-static-top th-docs-nav" id="top" role="banner">
     <div class="container">
       <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".th-navbar-collapse">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="index-2.html" class="navbar-brand"><img src="/assets/images/logo.png" alt="Volusion" /></a>
+        <a href="/index.html" class="navbar-brand"><img src="/assets/images/logo.png" alt="Volusion" class="img-responsive" /></a>
       </div>
-      <nav class="collapse navbar-collapse th-navbar-collapse" role="navigation">
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav">
-          <li><a href="theme-engine.html">Theme Engine</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Documentation Guides <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="getting-started-guide.html">Getting Started</a>
-              </li>
-              <li>
-                <a href="docs/creating-your-own-theme-guide.html">Creating Your Own Theme</a>
-              </li>
-              <li>
-                <a href="docs/deploying-your-own-theme-guide.html">Deploying Your Own Theme</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="about.html">About the Lab</a></li>
+          <li><a href="/docs/quick-start.html">Quick Start</a></li>
+          <li><a href="/docs/advanced-guide.html">Advanced Guide</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="javascript:void(0);">Expo</a></li>
-          <li><a href="javascript:void(0);">Blog</a></li>
+          <li><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/showcase/index.html">Showcase</a></li>
         </ul>
       </nav>
     </div>
@@ -61,8 +47,8 @@
   <!-- Page content of course! -->
   <main class="th-docs-header th-docs-header--masthead" id="content" role="main">
     <div class="container">
-       <h1 class="th-flavor-heading">Get Started</h1>
-       <p class="lead">Choose a base</p>
+      <h1 class="th-flavor-heading">Get Started</h1>
+      <p class="lead">Choose a base</p>
       <div class="row">
         <div class="col-md-4">
           <div class="th-flavor">
@@ -109,7 +95,7 @@
             </a>
             <h3 class="th-flavor__name"><span class="th-flavor__name--script">Swirl</span> + The Works</h3>
             <p class="th-flavor__description th-flavor__description--lessroom">
-              This theme comes bursting with features. Download this theme fully designed and rich in functionality. 
+              This theme comes bursting with features. Download this theme fully designed and rich in functionality.
             </p>
             <div class="th-flavor__build">
               Latest build v1.0 &middot;
@@ -122,6 +108,7 @@
           </div>
         </div>
       </div>
+    </div>
   </main>
 
   <div class="container th-docs-container">
@@ -183,13 +170,13 @@
           <p>A few options are available when it comes to downloading your boilerplate. The easiest way to get going quickly the Github app for either <a href="https://mac.github.com/">Mac</a> or <a href="https://windows.github.com/">Windows</a>. If you'd like to download the source directly from Github you can do so via command line with the line below.</p>
 
           <div class="th-callout th-callout-info">
-If you're planning on contributing, then it's a good idea to fork the repository. You can find instructions for forking a repository at <a href="http://help.github.com/fork-a-repo/
+            If you're planning on contributing, then it's a good idea to fork the repository. You can find instructions for forking a repository at <a href="http://help.github.com/fork-a-repo/
 ">http://help.github.com/fork-a-repo/</a>. After forking the repository, you'll want to create a local copy of your fork.
           </div>
 
           <div class="highlight">
             <pre>
-              <code class="html">
+            <code class="html">
 git clone git://github.com/username/repo.git
               </code>     
             </pre>
@@ -209,7 +196,7 @@ git clone git://github.com/username/repo.git
 
           <div class="highlight">
             <pre>
-              <code class="html">
+            <code class="html">
 gem install compass
 npm install -g grunt-cli bower
               </code>     
@@ -220,7 +207,7 @@ npm install -g grunt-cli bower
 
           <div class="highlight">
             <pre>
-              <code class="html">
+            <code class="html">
 cd seed
 npm install
 bower install
@@ -266,7 +253,7 @@ bower install
             </li>
           </ul>
         </div>
-        
+
         <div class="th-docs-section">
           <h1 id="styling" class="page-header">Styling your theme</h1>
 
@@ -278,7 +265,7 @@ bower install
           <div class="th-example">
             <div class="highlight">
               <pre>
-                <code class="css">
+              <code class="css">
 .block {
   &__element {
     width: 50px;
@@ -297,17 +284,17 @@ bower install
           <p>A themes variables can be found located within the <code>styes > style-guide _theme-vars.scss</code> file. Here you can adjust many of the themes default Sass variables.</p>
 
           <div class="th-callout th-callout-danger">
-              <b>Warning:</b> Do not touch colors within this file. Each color here uses a <code>map-get()</code> to fetch color from the <code>_colors.scss</code> partial.
+            <b>Warning:</b> Do not touch colors within this file. Each color here uses a <code>map-get()</code> to fetch color from the <code>_colors.scss</code> partial.
           </div>
 
         </div>
 
-        
+
       </div>
 
 
       <div class="col-md-3">
-        <div class="th-docs-sidebar hidden-print" role="complementary">
+        <div class="th-docs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="900" data-offset-bottom="200">
           <ul class="nav th-docs-sidenav">
             <li><a href="#base">Choose your base</a></li>
             <li><a href="#ingedients">What are the Ingedients?</a></li>
@@ -324,48 +311,39 @@ bower install
 
   </div>
 
-<!-- Footer
-  ================================================== -->
+  <!-- Footer
+    ================================================== -->
   <footer class="th-docs-footer" role="contentinfo">
     <div class="container">
-      <div class="th-docs-social">
+      <!--<div class="th-docs-social">
         <ul class="th-docs-social-buttons">
           <li>
-            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=volusion-angular&amp;repo=theme&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
           </li>
           <li>
-            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-          </li>
-          <li class="follow-btn">
-            <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-          </li>
-          <li class="tweet-btn">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Bootstrap">Tweet</a>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=volusion-angular&amp;repo=theme&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
           </li>
         </ul>
-      </div>
-
-      <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-      <p>Maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+      </div>-->
+      <!--<p>Created by <a href="http://www.volusion.com" target="_blank">Volusion</a></p>-->
+      <p>Maintained by the <a href="https://github.com/volusion-angular?tab=members">core team</a> with the help of <a href="https://github.com/volusion-angular/theme/graphs/contributors">our contributors</a>.</p>
       <p>Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
       <ul class="th-docs-footer-links muted">
-        <li>Currently v3.1.1</li>
+        <li>Currently v0.0.1</li>
         <li>&middot;</li>
-        <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
+        <li><a href="https://github.com/volusion-angular/theme" target="_blank">GitHub</a></li>
         <li>&middot;</li>
-        <li><a href="getting-started/index.html#examples">Examples</a></li>
+        <li><a href="#">Quick Start</a></li>
         <li>&middot;</li>
-        <li><a href="2.3.2/index.html">v2.3.2 docs</a></li>
+        <li><a href="http://www.volusion.com/history" target="_blank">About Volusion</a></li>
         <li>&middot;</li>
-        <li><a href="about/index.html">About</a></li>
+        <li><a href="#">Blog</a></li>
         <li>&middot;</li>
-        <li><a href="http://expo.getbootstrap.com/">Expo</a></li>
+        <li><a href="#">Showcase</a></li>
         <li>&middot;</li>
-        <li><a href="http://blog.getbootstrap.com/">Blog</a></li>
+        <li><a href="https://github.com/volusion-angular/theme/issues?state=open" target="_blank">Issues</a></li>
         <li>&middot;</li>
-        <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
-        <li>&middot;</li>
-        <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+        <li><a href="https://github.com/volusion-angular/theme/releases" target="_blank">Releases</a></li>
       </ul>
     </div>
   </footer>
