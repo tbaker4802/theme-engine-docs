@@ -149,14 +149,13 @@ git clone git://github.com/volusion-angular/seed.git
           <h2 id="start-developing">Start Developing</h2>
           <p>Following the above requirements, you need to install some build tools by running the following commands in your shell:</p>
           <pre>
-gem install compass
+gem install bundler
 npm install -g grunt-cli bower
           </pre>
           <p>Now you can install the project dependencies:</p>
           <pre>
 cd seed
 npm install
-bower install
           </pre>
           <p>Now when you run <code>grunt serve</code>, it will be running your local copy and showing your changes.</p>
           <p><strong>Note:</strong> It's a good idea to re-rerun <code>npm install</code> and <code>bower install</code> whenever you pull from the main repository to ensure you have the latest development dependencies.</p>
@@ -168,10 +167,10 @@ bower install
               <code>app</code> - contains the source code
               <ul>
                 <li><code>bower_components</code> - source code and test package dependencies</li>
+                <li><code>fonts</code> - fonts used for the theme</li>
                 <li><code>images</code> - images and sprites</li>
                 <li><code>scripts</code> - JavaScript files</li>
                 <li><code>styles</code> - Sass files (SCSS syntax with Compass)</li>
-                <li><code>templates</code> - HTML templates (partial views)</li>
                 <li><code>translations</code> - language translations</li>
                 <li><code>views</code> - HTML views</li>
               </ul>
@@ -179,11 +178,14 @@ bower install
             <li>
               <code>test</code> - the main unit test folder
               <ul>
-                <li><code>spec</code> - tests for the source code</li>
-                <li><code>controllers</code> - tests for the controllers</li>
-                <li><code>views</code> - tests for the views</li>
-                <li><code>directives</code> - tests for the directives</li>
-                <li>etc.</li>
+                <li><code>spec</code> - tests for the source code
+                  <ul>
+                    <li><code>controllers</code> - tests for the controllers</li>
+                    <li><code>views</code> - tests for the views</li>
+                    <li><code>directives</code> - tests for the directives</li>
+                    <li>etc.</li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
