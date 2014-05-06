@@ -114,16 +114,16 @@
 
           <p class="lead">Not every developer is the same. So why should we serve you the same boilerplate? We all like choices. Enjoy!</p>
 
-          <p>Find a starter above that fits both your needs and goals. Seasoned developers and designers might want to start with plain Vanilla, giving them a blank canvas with lots of options. Others may want to begin with established full flavor. We won't judge!</p>
+          <p>Find a starter kit above that fits both your needs and goals as a developer. Seasoned developers and designers might want to start with plain Vanilla, giving them a blank canvas with lots of options. Others may want to begin with established full flavor. We won't judge!</p>
 
         </div>
 
         <div class="th-docs-section">
-          <h1 id="ingedients" class="page-header">What are the ingredients?</h1>
+          <h1 id="ingredients" class="page-header">What are the ingredients?</h1>
 
           <p class="lead">While developing the front-end framework of Theme Engine we had three main goals; to make it flexible, well-documented and easy to maintain.</p>
 
-          <p>To achieve these goals we used tools and methods with a proven track record and comprehensive documentation.</p>
+          <p>To achieve these goals we used a set tools and methods with proven track records and comprehensive documentation.</p>
 
           <div style="margin-bottom: 20px;">
             <div class="row">
@@ -156,11 +156,11 @@
         <div class="th-docs-section">
           <h1 id="editing" class="page-header">Editing your theme</h1>
 
-          <p class="lead">Once you've chosen your base you'll need to download the assets and install a few dependencies. Below is a quickstart quide to help you get going in the right direction.</p>
+          <p class="lead">Once you've chosen your base you'll need to download the assets and install a few dependencies. Below are the absolute essentials need to get you started. Refer to our <b><a href="advanced-guide.html">Advanced Guide</a></b> for more options.</p>
 
-          <h3>Download your theme boilerplate</h3>
+          <h3 id="download">Download your boilerplate</h3>
 
-          <p>A few options are available when it comes to downloading your boilerplate. The easiest way to get going quickly the Github app for either <a href="https://mac.github.com/">Mac</a> or <a href="https://windows.github.com/">Windows</a>. If you'd like to download the source directly from Github you can do so via command line with the line below.</p>
+          <p>A few options are available when it comes to downloading your boilerplate. The quickest way is to use the official Github app for either <a href="https://mac.github.com/">Mac</a> or <a href="https://windows.github.com/">Windows</a>. If you'd like to download the source code directly from Github you can do so via command line with the following command.</p>
 
           <div class="th-callout th-callout-info">
             If you're planning on contributing, then it's a good idea to fork the repository. You can find instructions for forking a repository at <a href="http://help.github.com/fork-a-repo/
@@ -175,7 +175,7 @@ git clone git://github.com/username/repo.git
             </pre>
           </div>
 
-          <h3>Installing dependencies</h3>
+          <h3 id="dependencies">Installing dependencies</h3>
 
           <p>Here we'll install the dependencies needed to enjoy many of the development features within the Theme Engine.</p>
 
@@ -211,7 +211,7 @@ npm install
 
           <p><b>Note:</b> It's a good idea to re-rerun <code>npm install</code> and <code>bower install</code> whenever you pull from the main repository to ensure you have the latest development dependencies.</p>
 
-          <h3>Directory Structure</h3>
+          <h3 id="directory">Directory Structure</h3>
 
           <p>Below is a simplified directory of the typical theme file structure:</p>
 
@@ -220,32 +220,54 @@ npm install
             <li><code>app</code> - contains the source code
               <ul>
                 <li><code>bower_components</code> - source code and test package dependencies</li>
+                <li><code>fonts</code> - font files</li>
                 <li><code>images</code> - images and sprites</li>
                 <li><code>scripts</code> - JavaScript files</li>
                 <li><code>styles</code> - Sass files (SCSS syntax with Compass)</li>
-                <li><code>templates</code> - HTML templates (partial views)</li>
                 <li><code>translations</code> - language translations</li>
                 <li><code>views</code> - HTML views</li>
               </ul>
             </li>
             <li><code>test</code> - the main unit test folder
-              <ul>
-                <li><code>controllers</code> - tests for the controllers</li>
-                <li><code>views</code> - tests for the views</li>
-                <li><code>directives</code> - tests for the directives</li>
-                <li>etc.</li>
+                  <ul>
+                    <li><code>controllers</code> - tests for the controllers</li>
+                    <li><code>views</code> - tests for the views</li>
+                    <li><code>directives</code> - tests for the directives</li>
+                    <li>etc.</li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
         </div>
 
         <div class="th-docs-section">
-          <h1 id="styling" class="page-header">Styling your theme</h1>
+          <h1 id="customize" class="page-header">Customizing your theme</h1>
 
-          <p class="lead">Knowing where to place your styles and how to orginize them will help you keep you code clean, DRY and maintainable.</p>
+          <p class="lead">Here we will discuss common best practices for where to place new code and design assets when customizing your theme. Following these best practices will help keep your themes assets organized and readable.</p>
 
-          <h3>BEM and where to place block partials</h3>
-          <p>Using <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> is the best way to achieve this. Below is an example on how to orginize your blocks using BEM and Sass. This block would end up as it's own partial (<code>_block.scss</code>) located within the <code>styles > components > th</code> folder</p>
+          <h3 id="variables">Adjusting Bootstrap variables</h3>
+
+          <p>All theme variables can be found located within the folder <code>styes > style-guide</code>. Here you can adjust many of the themes default component styles provided by <a href="http://getbootstrap.com/components/">Bootstrap</a>.</p>
+
+          <div class="th-callout th-callout-danger">
+            <b>Warning:</b> Do not edit colors within this file. Each color here uses a <code>map-get()</code> to fetch color from the <code>_colors.scss</code> partial.
+          </div>
+
+          <h3 id="extending">Extending Bootstrap styles</h3>
+          <p>In some circumstances you will find a need to adjust or extend certain Bootstrap components beyond what is provided in the <code>_theme-vars.scss</code>. To do so, locate the Bootstrap partial within the themes <code>styles</code> directory and add you styles.</p>
+
+          <div class="th-callout th-callout-info">
+            <b>Note:</b> Colors within the <code>_theme-vars.scss</code> now reference their color from the <code>_colors.scss</code> file located in the same directory. 
+          </div>
+
+          <h3 id="components">Adding new component styles</h3>
+          <p> When adding a new component to your Volusion theme we suggest creating a new Sass partial (<code>_component.scss</code>) and placing it in the themes component folder located at <code>styles > components > th</code> (Be sure to also include it in your <code>main.scss</code> file).</p>
+
+          <h3 id="component-styles">Basic component styling</h3>
+          <p>Below is an example of how styling for a new component should be orginized. Using the nesting features of <a href="http://sass-lang.com/">Sass</a> along with the class naming convention of <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> you can keep code tidy and readable.</p>
+
+          <div class="th-callout th-callout-info">
+            Be sure to include the prefix "<code>th-</code>" when adding any new component. This helps future developers distinguish between Bootstrap (no prefix), Theme ("<code>th-</code>") and Volusion ("<code>vn-</code>") specific components.
+          </div>
 
           <div class="th-example">
             <div class="highlight">
@@ -264,12 +286,47 @@ npm install
             </div>
           </div>
 
-          <h3>Adjusting Bootstrap variables</h3>
+          <h3 id="colors">Colors</h3>
 
-          <p>A themes variables can be found located within the <code>styes > style-guide _theme-vars.scss</code> file. Here you can adjust many of the themes default Sass variables.</p>
+          <p>We highly recommend not placing new colors directly into your style sheets. Instead locate or define the color within <code>_colors.scss</code>. Within the <code>$userDefined</code> map you will see colors defined specifically for the theme to be exposed to the user. Below that you can see where modified versions have been defined. To adjust color variables provided by Bootstrap you can do so within the <code>$bootstrap</code> map. Below is an example of how to call these colors within your css</p>
 
-          <div class="th-callout th-callout-danger">
-            <b>Warning:</b> Do not touch colors within this file. Each color here uses a <code>map-get()</code> to fetch color from the <code>_colors.scss</code> partial.
+          <div class="th-example">
+            <div class="highlight">
+              <pre>
+              <code class="css">
+.th-component {
+  &__element {
+    background-color: map-get($colors, colorName);
+  }
+  &--modifier {
+    background-color: map-get($colors, colorName--modified);
+  }
+}
+                </code>   
+              </pre>
+            </div>
+          </div>
+
+          <h3 id="fonts">Fonts</h3>
+          
+          <p>Fonts can be located within the <code>fonts</code> directory. when adding a new font you will need to follow a few steps in order to get them rendering correctly.</p>
+
+          <p>First, place any new font files (<code>.ttf, .eot, .woff, .svg</code>) within the <code>fonts</code> folder. Each file will need to be renamed to reflect the name you will call it within your css. For example, if you plan on calling <code>font-family: Roboto-Italic;</code> you will need to also name the file <code>Roboto-Italic.woff</code></p>
+
+          <div class="th-callout th-callout-info">
+            <b>Note: </b> Each new <code>.svg</code> file added will need to have its id changed to "<code>font</code>".
+          </div>
+
+          <p>Second, within the <code>_type.scss</code> partial located within the <code>styles > core</code> folder, you will need to call a the mixin designed to pull in your new font. Below is an example of how this mixin can look within <code>_type.scss</code> file.</p>
+
+          <div class="th-example">
+            <div class="highlight">
+              <pre>
+              <code class="css">
+@include app-font('Roboto-Italic');
+                </code>   
+              </pre>
+            </div>
           </div>
 
         </div>
@@ -282,9 +339,25 @@ npm install
         <div class="th-docs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="900" data-offset-bottom="200">
           <ul class="nav th-docs-sidenav">
             <li><a href="#base">Choose your base</a></li>
-            <li><a href="#ingedients">What are the Ingedients?</a></li>
+            <li><a href="#ingredients">What are the ingredients?</a></li>
             <li>
               <a href="#editing">Editing your theme</a>
+              <ul class="nav">
+                <li><a href="#download">Download your boilerplate</a></li>
+                <li><a href="#dependencies">Installing Dependencies</a></li>
+                <li><a href="#directory">Directory Structure</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#customize">Customizing your theme</a>
+              <ul class="nav">
+                <li><a href="#variables">Adjusting Bootstrap variables</a></li>
+                <li><a href="#extending">Extending Bootstrap styles</a></li>
+                <li><a href="#components">Adding new component styles</a></li>
+                <li><a href="#component-styles">Basic component styling</a></li>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#fonts">Fonts</a></li>
+              </ul>
             </li>
           </ul>
           <a class="back-to-top" href="#top">
