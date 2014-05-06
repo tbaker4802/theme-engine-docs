@@ -52,53 +52,71 @@
       <h1 class="th-flavor-heading">Get Started</h1>
       <p class="lead">Choose a base</p>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
+          <div class="th-flavor">
+            <a href="https://github.com/volusion-angular/theme/tree/ecomm-method" class="th-flavor__icon" target="_blank" title="Method Theme">
+              <img src="../assets/images/themes/method.jpg" alt="Method Theme" class="img-responsive">
+            </a>
+            <h3 class="th-flavor__name">Method Theme</h3>
+            <p class="th-flavor__description th-flavor__description--lessroom">
+              Fully featured theme running on AngularJS and Bootstrap.
+            </p>
+            <div class="th-flavor__build">
+              v0.0.1 &nbsp;&nbsp;<a href="https://github.com/volusion-angular/theme/tree/ecomm-method" title="View Source on GitHub" target="_blank">GitHub</a> &nbsp;&nbsp;<a href="http://www.samplestore.io" title="View Live Demo" target="_blank">Live Demo</a>
+            </div>
+            <div class="th-flavor__start">
+              <a href="https://github.com/volusion-angular/theme/tree/ecomm-method" class="btn btn-lg th-flavor__button" role="button" target="_blank">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
           <div class="th-flavor">
             <a href="#" class="th-flavor__icon">
-              <img src="../assets/images/vanilla.png" alt="Vanilla">
+              <img src="../assets/images/vanilla-coming-soon.png" alt="Vanilla" class="img-responsive">
             </a>
             <h3 class="th-flavor__name">Vanilla</h3>
             <p class="th-flavor__description th-flavor__description--moreroom">
               Super simple and easy to understand. Start with this theme if you'd like a blank slate to apply your creativity and skills.
             </p>
             <div class="th-flavor__build">
-              v0.0.1 &middot;
-              <a href="#">View Source on Github</a> &middot;
-              <a href="#">View Live Demo</a>
+              &nbsp;
+              <!--v0.0.1 &middot;
+                <a href="#">View Source on Github</a> &middot;
+                <a href="#">View Live Demo</a>-->
             </div>
-            <div class="th-flavor__start">
-              <button href="#" class="btn btn-lg th-flavor__button" role="button">Start Here</button>
-            </div>
+            <!--<div class="th-flavor__start">
+                  <button href="#" class="btn btn-lg th-flavor__button" role="button">Coming Soon</button>
+                </div>-->
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="th-flavor">
             <a href="#" class="th-flavor__icon">
-              <img src="../assets/images/sprinkles.png" alt="Vanilla + Sprinkles">
+              <img src="../assets/images/sprinkles-coming-soon.png" alt="Vanilla + Sprinkles" class="img-responsive">
             </a>
             <h3 class="th-flavor__name">Vanilla + <span class="th-flavor__name--dashed">Sprinkles</span></h3>
             <p class="th-flavor__description">
               Similar to our Vanilla theme, but with a few more components and creative design applied.
             </p>
             <div class="th-flavor__build">&nbsp;</div>
-            <div class="th-flavor__start">
-              <button href="#" class="btn btn-lg th-flavor__button" role="button">Coming Soon</button>
-            </div>
+            <!--<div class="th-flavor__start">
+                  <button href="#" class="btn btn-lg th-flavor__button" role="button">Coming Soon</button>
+                </div>-->
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="th-flavor">
             <a href="#" class="th-flavor__icon">
-              <img src="../assets/images/the-works.png" alt="The Works">
+              <img src="../assets/images/the-works-coming-soon.png" alt="The Works" class="img-responsive">
             </a>
             <h3 class="th-flavor__name"><span class="th-flavor__name--script">Swirl</span> + The Works</h3>
             <p class="th-flavor__description th-flavor__description--lessroom">
               This theme comes bursting with features. Download this theme fully designed and rich in functionality.
             </p>
             <div class="th-flavor__build">&nbsp;</div>
-            <div class="th-flavor__start">
-              <button href="#" class="btn btn-lg th-flavor__button" role="button">Coming Soon</button>
-            </div>
+            <!--<div class="th-flavor__start">
+                  <button href="#" class="btn btn-lg th-flavor__button" role="button">Coming Soon</button>
+                </div>-->
           </div>
         </div>
       </div>
@@ -218,7 +236,8 @@ npm install
 
           <ul>
             <li><code>docs</code> - documentation for the project</li>
-            <li><code>app</code> - contains the source code
+            <li>
+              <code>app</code> - contains the source code
               <ul>
                 <li><code>bower_components</code> - source code and test package dependencies</li>
                 <li><code>fonts</code> - font files</li>
@@ -229,15 +248,16 @@ npm install
                 <li><code>views</code> - HTML views</li>
               </ul>
             </li>
-            <li><code>test</code> - the main unit test folder
-                  <ul>
-                    <li><code>controllers</code> - tests for the controllers</li>
-                    <li><code>views</code> - tests for the views</li>
-                    <li><code>directives</code> - tests for the directives</li>
-                    <li>etc.</li>
-                  </ul>
-                </li>
+            <li>
+              <code>test</code> - the main unit test folder
+              <ul>
+                <li><code>controllers</code> - tests for the controllers</li>
+                <li><code>views</code> - tests for the views</li>
+                <li><code>directives</code> - tests for the directives</li>
+                <li>etc.</li>
               </ul>
+            </li>
+          </ul>
         </div>
 
         <div class="th-docs-section">
@@ -257,7 +277,7 @@ npm install
           <p>In some circumstances you will find a need to adjust or extend certain Bootstrap components beyond what is provided in the <code>_theme-vars.scss</code>. To do so, locate the Bootstrap partial within the themes <code>styles</code> directory and add you styles.</p>
 
           <div class="th-callout th-callout-info">
-            <b>Note:</b> Colors within the <code>_theme-vars.scss</code> now reference their color from the <code>_colors.scss</code> file located in the same directory. 
+            <b>Note:</b> Colors within the <code>_theme-vars.scss</code> now reference their color from the <code>_colors.scss</code> file located in the same directory.
           </div>
 
           <h3 id="components">Adding new component styles</h3>
@@ -309,7 +329,7 @@ npm install
           </div>
 
           <h3 id="fonts">Fonts</h3>
-          
+
           <p>Fonts can be located within the <code>fonts</code> directory. when adding a new font you will need to follow a few steps in order to get them rendering correctly.</p>
 
           <p>First, place any new font files (<code>.ttf, .eot, .woff, .svg</code>) within the <code>fonts</code> folder. Each file will need to be renamed to reflect the name you will call it within your css. For example, if you plan on calling <code>font-family: Roboto-Italic;</code> you will need to also name the file <code>Roboto-Italic.woff</code></p>
