@@ -87,74 +87,18 @@
           </ul>
           <p>If that sounds like you, then continue reading and let’s get started!</p>
           <p>Depending upon your comfort level you can either start from a blank slate using our Javascript SDK or choose from one of our pre-built themes and go from there.</p>
-          <h2 id="environment-setup">Environment Setup</h2>
-          <p>If you choose to use one of our pre-built themes as a starting point, you will need to get your local development environment setup and ready to rock and roll.</p>
-          <h3 id="github">GitHub</h3>
-          <p>First, if you don’t already have one, setup a free GitHub profile <a href="https://github.com/join" target="_blank">here</a>.</p>
-          <p>Next, unless you're a git wizard (a gizard?), you'll want to also install a git client. There are a number to choose from, but the official GitHub ones are actually pretty nice.</p>
-          <p>For Windows users, navigate <a href="https://windows.github.com/" target="_blank">here</a> and run the installer.</p>
-          <p>For Mac users, navigate <a href="https://mac.github.com/" target="_blank">here</a> and run the installer.</p>
-          <div class="th-callout th-callout-info"><strong>Windows Pro Tip:</strong> In the GitHub for Windows client, select Tools >> Options and change your default shell to Git Bash. Select your project, hit the Tools and Options button and then "open a shell here" or just hit the back tick key \` as a shortcut. You now have an excellent Git shell with your Git credentials already stored.</div>
-          <div class="th-callout th-callout-info"><strong>Windows Pro Tip:</strong> Add "C:\Users\xxx\AppData\Local\GitHub\PortableGit_xxx\bin" to your PATH user environment variable to gain access to common *nix commands in your Windows Command Prompt without installing msysgit or cygwin.</div>
-          <h3 id="nodejs">Node.js</h3>
-          <p>Next, you will need to get Node.js running on your local environment in order to run build tasks, install javascript and css dependencies, and run the development server.</p>
-          <p>For Windows users, the process is straightforward.   Navigate to <a href="http://nodejs.org/download/" target="_blank">here</a> and run the Windows Installer.</p>
-          <p>For Mac users, you’ll need to install Node.js followed by npm.   For instructions on this, navigate to <a href="http://shapeshed.com/setting-up-nodejs-and-npm-on-mac-osx/" target="_blank">here</a> and follow the steps indicated.</p>
-          <h3 id="ruby">Ruby</h3>
-          <p>In order to compile SASS, you will also need to install Ruby.   Check out the guides found <a href="https://www.ruby-lang.org/en/installation/" target="_blank">here</a> for your respective platform.</p>
-          <h3 id="build-scripts">Build Scripts</h3>
-          <p>This project has several build scripts that help with various parts of development.</p>
-          <h4 id="grunt-test">grunt test</h4>
-          <p>The primary script to use is <code>grunt test</code>, which does several things:</p>
-          <ul>
-            <li>Lints all JavaScript and JSON</li>
-            <li>Runs all tests on Node.js</li>
-            <li>Starts up a development server</li>
-            <li>Runs a subset of tests with Karma</li>
-          </ul>
-          <p>Be sure to run this after making changes and before sending a pull request with your changes.</p>
-          <h4 id="grunt-lint">grunt lint</h4>
-          <p>Runs just the JavaScript and JSON linting on the repository</p>
-          <h4 id="npm-run-browserify">npm run browserify</h4>
-          <p>Generates build/eslint.js, a version of ESLint for use in the browser</p>
-          <h4 id="npm-run-docs">npm run docs</h4>
-          <p>Generates JSDoc documentation and places it into /jsdoc.</p>
-          <h4 id="npm-run-profile">npm run profile</h4>
-          <p>This command is used for intensive profiling of ESLint using Chrome Developer Tools. It starts a development server that runs through three profiles:</p>
-          <ul>
-            <li>Large - Runs ESLint on JSHint</li>
-            <li>Medium - Runs ESLint on jQuery</li>
-            <li>Small - Runs ESLint on KnockoutJS</li>
-          </ul>
-          <p>Your browser should automatically open to the page in question. When that happens:</p>
-          <ol>
-            <li>Open up developer tools</li>
-            <li>Click on Profiles</li>
-          </ol>
-          <p>You should start to see profiles for each run show up on the left side. If not, reload the page in the browser. Once all three profiles have completed, they will be available for inspection.</p>
-          <h3 id="workflow">Workflow</h3>
-          <p>Whenever you make changes to the ESLint source files, you'll need to run <code>npm test</code> to rerun the tests. The workflow is:</p>
-          <ol>
-            <li>Make changes</li>
-            <li>Run npm test to run tests on the command line</li>
-          </ol>
-          <p>You'll have to do this each time you make a change. The tests are run automatically whenever a pull request is received, so make sure to verify your changes work before submitting them.</p>
         </div>
         <div class="th-docs-section">
-          <h1 id="source-code">Source Code</h1>
+          <h1 id="source-code">Get the Code</h1>
+          <div class="th-callout th-callout-info">Advanced users, if you haven't setup your environment yet, refer to the "Setup Your Environment" section in the <b><a href="quick-start.html">Quick Start Guide</a></b> to in order to use one of our starter themes.</div>          
           <p>Before you can get started, you'll need to get a copy of the source code. This section explains how to do that and a little about the source code structure.</p>
           <p>If you simply want to create a local copy of the source to play with, you can clone the main repository using this command:</p>
           <pre>
 git clone git://github.com/volusion-angular/seed.git
           </pre>
           <p>If you're planning on contributing, then it's a good idea to fork the repository. You can find instructions for forking a repository at <a href="http://help.github.com/fork-a-repo/" target="_blank">http://help.github.com/fork-a-repo/</a>. After forking the repository, you'll want to create a local copy of your fork.</p>
-          <h2 id="start-developing">Start Developing</h2>
-          <p>Following the above requirements, you need to install some build tools by running the following commands in your shell:</p>
-          <pre>
-gem install bundler
-npm install -g grunt-cli bower
-          </pre>
-          <p>Now you can install the project dependencies:</p>
+          <h2 id="installDependencies">Install Project Dependencies</h2>
+          <p>Open your Git command shell and run the following commands:</p>
           <pre>
 cd theme
 npm install
@@ -191,9 +135,7 @@ npm install
               </ul>
             </li>
           </ul>
-        </div>
-        <div class="th-docs-section">
-          <h1 id="run-unit-tests">Run the Unit Tests</h1>
+          <h2 id="run-unit-tests">Run the Unit Tests</h2>
           <p>By design, the framework itself doesn't have any unit tests, but it's definitely setup to support them. Going forward, these will ensure that we're keeping on top of code quality. This section explains how to run the unit tests.</p>
         </div>
         <div class="th-docs-section">
@@ -245,32 +187,12 @@ $rootScope.$on('add_to_cart', function(event, item) {
               <a href="#welcome">Welcome</a>
               <ul class="nav">
                 <li>
-                  <a href="#environment-setup">Environment Setup</a>
+                  <a href="#source-code">Get the Code</a>
                   <ul class="nav">
-                    <li><a href="#github">GitHub</a></li>
-                    <li><a href="#nodejs">Node.js</a></li>
-                    <li><a href="#ruby">Ruby</a></li>
-                    <li><a href="#build-scripts">Build Scripts</a>
-                      <ul class="nav">
-                        <li><a href="#grunt-test">grunt test</a></li>
-                        <li><a href="#grunt-lint">grunt lint</a></li>
-                        <li><a href="#npm-run-browserify">npm run browserify</a></li>
-                        <li><a href="#npm-run-docs">npm run docs</a></li>
-                        <li><a href="#npm-run-profile">npm run profile</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#workflow">Workflow</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#source-code">Source Code</a>
-                  <ul class="nav">
-                    <li><a href="#start-developing">Start Developing</a></li>
+                    <li><a href="#installDependencies">Install Project Dependencies</a></li>
                     <li><a href="#directory-structure">Directory Structure</a></li>
+                    <li><a href="#run-unit-tests">Run the Unit Tests</a></li>
                   </ul>
-                </li>
-                <li>
-                  <a href="#run-unit-tests">Run the Unit Tests</a>
                 </li>
                 <li>
                   <a href="#creating-themes">Creating Themes</a>
