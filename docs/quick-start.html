@@ -129,18 +129,9 @@
       <div class="col-md-9" role="main">
 
         <div class="th-docs-section">
-          <h1 id="base" class="page-header">Choose your base</h1>
-
-          <p class="lead">Not every developer is the same. So why should we serve you the same boilerplate? We all like choices. Enjoy!</p>
-
-          <p>Find a starter kit above that fits both your needs and goals as a developer. Seasoned developers and designers might want to start with plain Vanilla, giving them a blank canvas with lots of options. Others may want to begin with established full flavor. We won't judge!</p>
-
-        </div>
-
-        <div class="th-docs-section">
           <h1 id="ingredients" class="page-header">What are the ingredients?</h1>
 
-          <p class="lead">While developing the front-end framework of Theme Engine we had three main goals; to make it flexible, well-documented and easy to maintain.</p>
+          <p class="lead">We designed the Theme Engine with three main goals: to give you unlimited creatity, with incredible features built-in, and access to a powerful API to build that site you've been dreaming of.</p>
 
           <p>To achieve these goals we used a set tools and methods with proven track records and comprehensive documentation.</p>
 
@@ -148,7 +139,7 @@
             <div class="row">
               <div class="col-sm-6">
                 <h3>Twitter Bootstrap (Sass)</h3>
-                <p>Designed to make development easier and efficient. <a href="http://getbootstrap.com/">Bootstrap</a> is fully responsive to everything from the mobile device to the desktop.</p>
+                <p>Designed to make development easier and efficient. <a href="http://getbootstrap.com/">Bootstrap</a> is fully responsive from the mobile device to the desktop.</p>
               </div>
               <div class="col-sm-6">
                 <h3>Sass &amp; Compass</h3>
@@ -157,7 +148,7 @@
             </div>
             <div class="row">
               <div class="col-sm-6">
-                <h3>BEM syntax</h3>
+                <h3>BEM CSS syntax</h3>
                 <p><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> (<i>block, element, modifier</i>) is a methodology for creating code that’s easy to read, maintain and reuse across themes.</p>
               </div>
               <div class="col-sm-6">
@@ -166,26 +157,69 @@
               </div>
               <div class="col-sm-12">
                 <h3>AngularJS</h3>
-                <p><a href="https://angularjs.org/">AngularJS</a> is an open-sourced framework used in the creation of single-page web applications. While it is not required to know AngularJS when developing a new Volusion theme. It is recommened if you plan on extending it's functionaility or developing new components.</p>
+                <p><a href="https://angularjs.org/">AngularJS</a> is an open-sourced framework used to create single-page web applications (SPAs). While it is not required to know AngularJS when developing a new Volusion theme, it is recommened if you plan on extending an existing theme's functionality or choose to develop new components.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="th-docs-section">
-          <h1 id="editing" class="page-header">Editing your theme</h1>
-
-          <p class="lead">Once you've chosen your base you'll need to download the assets and install a few dependencies. Below are the absolute essentials need to get you started. Refer to our <b><a href="advanced-guide.html">Advanced Guide</a></b> for more options.</p>
-
-          <h3 id="download">Download your boilerplate</h3>
-
-          <p>A few options are available when it comes to downloading your boilerplate. The quickest way is to use the official Github app for either <a href="https://mac.github.com/">Mac</a> or <a href="https://windows.github.com/">Windows</a>. If you'd like to download the source code directly from Github you can do so via command line with the following command.</p>
-
-          <div class="th-callout th-callout-info">
-            If you're planning on contributing, then it's a good idea to fork the repository. You can find instructions for forking a repository at <a href="http://help.github.com/fork-a-repo/
-">http://help.github.com/fork-a-repo/</a>. After forking the repository, you'll want to create a local copy of your fork.
+          <h1 id="createATheme" class="page-header">Create a Theme</h1>
+          <p class="lead">Creating a theme with the Theme Engine is as simple as following a few steps to ensure that your development environment is setup properly. Then, you can choose from one of our starter themes to get started.</p>
+          <div class="th-callout th-callout-info">Advanced users, refer to our <b><a href="advanced-guide.html">Advanced Guide</a></b> for more options.</div>
+          
+          <h2 id="setupYourEnvironment">Setup Your Environment</h2>
+          <p>We have created instructional videos to get your environment setup for both Windows and Mac users.   If you would prefer to follow a set of written instructions, see below.</p>
+          <div class="col-md-6">
+            <iframe width="400" height="300" src="//www.youtube.com/embed/4XsfzWhsw14" frameborder="0" allowfullscreen></iframe>
           </div>
-
+          <div class="col-md-6">
+            <iframe width="400" height="300" src="//www.youtube.com/embed/sNzpIShIJws" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p>&nbsp;</p>
+          
+          
+          <h3 id="dependencies">Installing dependencies</h3>
+          <p>The following steps will help you get your development environment up and running quickly.  Here we'll install the dependencies needed to enjoy many of the development features within the Theme Engine.</p>
+          <h4>Setup a GitHub Account</h4>
+          <p>First, create a GitHub account if you don't already have one by clicking <a href="http://www.github.com" target="_blank">here</a>.</p>
+          <h4>Install a GitHub Client</h4>
+          <p>Next, you will need to have a GitHub client for your type of operating system.</p>
+          <ul>
+            <li>For Window users, click <a href="http://windows.github.com" target="_blank">here</a>.</li>
+            <li>For Mac users, click <a href="http://mac.github.com" target="_blank">here</a>.</li>
+          </ul>
+          <h4>Install Nodejs</h4>
+          <p>Next, you will need Nodejs to run your local web server, install packages, etc.   Navigate <a href="http://nodejs.org" target="_blank">here</a> to install the appropriate version for your operating system.</p>
+          <h4>Install Ruby and the Ruby Dev Kit</h4>
+          <p>We use SASS in our starter themes, so you'll need to install Ruby in order to compile it to CSS.   Navigate <a href="http://rubyinstaller.org/downloads/" target="_blank">here</a> to install the appropriate version for your operating system.   We also use the Ruby Dev Kit so scroll down on the same page to find the appropriate installer for your environment</p>
+          <h4>Run Ruby install scripts</h4>
+          <p>First, open a command prompt and navigate to the path where you extracted the Ruby Dev Kit.  Then, run the following commands:</p>
+          <div class="highlight">
+            <pre>
+              <code>
+ruby dk.rb init
+ruby dk.rb install
+              </code>
+            </pre>
+          </div>
+          <h4>Install Bower, Bundler, and Grunt</h4>
+          <p>From a command prompt type:</p>
+          <div class="highlight">
+            <pre>
+            <code>
+gem install bundler
+npm install -g grunt-cli bower
+              </code>
+            </pre>
+          </div>
+          <div class="th-callout th-callout-info">Visit <a href="http://www.bundler.io" target="_target">bundler.io</a> for more information.</div>
+          
+          <h3 id="chooseYourFlavor">Choose your flavor</h3>
+          <p class="lead">Not every developer is the same. We all like choices...so we made sure you have a variety of options to get started!</p>
+          <p>Find a starter theme by visiting one of the GitHub links at the top of the page that fits both your needs and goals as a developer. Seasoned developers and designers might want to start with the plain "Vanilla" theme, giving them a blank canvas with lots of options. Others may want to begin with "The Works", which is a much more feature complete theme with added design elements.   Pick the flavor that best suits you...we won't judge!</p>
+          <p>A few options are available when it comes to downloading your starter theme. The quickest way is to use the official Github app for either <a href="https://mac.github.com/">Mac</a> or <a href="https://windows.github.com/">Windows</a>. If you'd like to download the source code directly from Github you can do so via command line with the following command. (be sure to use the correct GitHub url)</p>
+          <div class="th-callout th-callout-info">If you're planning on contributing, then it's a good idea to fork the repository. You can find instructions for forking a repository at <a href="http://help.github.com/fork-a-repo/">http://help.github.com/fork-a-repo/</a>. After forking the repository, you'll want to create a local copy of your fork.</div>
           <div class="highlight">
             <pre>
             <code class="html">
@@ -194,26 +228,6 @@ git clone git://github.com/username/repo.git
             </pre>
           </div>
 
-          <h3 id="dependencies">Installing dependencies</h3>
-
-          <p>Here we'll install the dependencies needed to enjoy many of the development features within the Theme Engine.</p>
-
-          <ul>
-            <li><a href="http://nodejs.org/">Node.JS</a></li>
-            <li><a href="http://npmjs.org/">npm</a></li>
-            <li><a href="https://www.ruby-lang.org/">Ruby</a></li>
-          </ul>
-
-          <p>Following the above requirements, you need to install some build tools by running the following commands in your shell:</p>
-
-          <div class="highlight">
-            <pre>
-            <code class="html">
-gem install bundler
-npm install -g grunt-cli bower
-              </code>     
-            </pre>
-          </div>
 
           <p>Now you can install the project dependencies:</p>
 
@@ -228,7 +242,7 @@ npm install
 
           <p>Now when you run <code>grunt serve</code>, it will be running your local copy and showing your changes.</p>
 
-          <p><b>Note:</b> It's a good idea to re-rerun <code>npm install</code> and <code>bower install</code> whenever you pull from the main repository to ensure you have the latest development dependencies.</p>
+          <div class="th-callout th-callout-info"><b>Note:</b> It's a good idea to re-rerun <code>npm install</code> and <code>bower install</code> whenever you pull from the main repository to ensure you have the latest development dependencies.</div>
 
           <h3 id="directory">Directory Structure</h3>
 
@@ -352,21 +366,24 @@ npm install
 
         </div>
 
-
       </div>
 
 
       <div class="col-md-3">
-        <div class="th-docs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="900" data-offset-bottom="200">
+        <div class="th-docs-sidebar hidden-print" role="complementary" data-spy="affix" data-offset-top="1100" data-offset-bottom="200">
           <ul class="nav th-docs-sidenav">
-            <li><a href="#base">Choose your base</a></li>
             <li><a href="#ingredients">What are the ingredients?</a></li>
             <li>
-              <a href="#editing">Editing your theme</a>
+              <a href="#createATheme">Create a Theme</a>
               <ul class="nav">
-                <li><a href="#download">Download your boilerplate</a></li>
-                <li><a href="#dependencies">Installing Dependencies</a></li>
-                <li><a href="#directory">Directory Structure</a></li>
+                <li>
+                  <a href="#setupYourEnvironment">Setup Your Environment</a>
+                  <ul class="nav">
+                    <li><a href="#dependencies">Install dependencies</a></li>
+                    <li><a href="#chooseYourFlavor">Choose Your Flavor</a></li>
+                    <li><a href="#directory">Directory Structure</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
