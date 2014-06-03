@@ -75,7 +75,7 @@
               <img src="../assets/images/vanilla-coming-soon.png" alt="Vanilla" class="img-responsive">
             </a>
             <h3 class="th-flavor__name">Vanilla</h3>
-            <p class="th-flavor__description th-flavor__description--moreroom">
+            <p class="th-flavor__description">
               Super simple and easy to understand. Start with this theme if you'd like a blank slate to apply your creativity and skills.
             </p>
             <div class="th-flavor__build">
@@ -94,7 +94,7 @@
             <a href="#" class="th-flavor__icon">
               <img src="../assets/images/sprinkles-coming-soon.png" alt="Vanilla + Sprinkles" class="img-responsive">
             </a>
-            <h3 class="th-flavor__name">Vanilla + <span class="th-flavor__name--dashed">Sprinkles</span></h3>
+            <h3 class="th-flavor__name">Sprinkles</h3>
             <p class="th-flavor__description">
               Similar to our Vanilla theme, but with a few more components and creative design applied.
             </p>
@@ -109,8 +109,8 @@
             <a href="#" class="th-flavor__icon">
               <img src="../assets/images/the-works-coming-soon.png" alt="The Works" class="img-responsive">
             </a>
-            <h3 class="th-flavor__name"><span class="th-flavor__name--script">Swirl</span> + The Works</h3>
-            <p class="th-flavor__description th-flavor__description--lessroom">
+            <h3 class="th-flavor__name">Sherbet</h3>
+            <p class="th-flavor__description">
               This theme comes bursting with features. Download this theme fully designed and rich in functionality.
             </p>
             <div class="th-flavor__build">&nbsp;</div>
@@ -279,20 +279,12 @@ npm install
 
           <p class="lead">Here we will discuss common best practices for where to place new code and design assets when customizing your theme. Following these best practices will help keep your themes assets organized and readable.</p>
 
-          <h3 id="variables">Adjusting Bootstrap variables</h3>
+          <h3 id="variables">Adjusting Style Guide</h3>
 
-          <p>All theme variables can be found located within the folder <code>styes > style-guide</code>. Here you can adjust many of the themes default component styles provided by <a href="http://getbootstrap.com/components/">Bootstrap</a>.</p>
+          <p>All theme variables can be found located within the file <code>styes > style-guide > _variables.scss</code>. Here you can adjust many of the themes default component styles and settings provided by <a href="http://getbootstrap.com/components/">Bootstrap</a>.</p>
 
-          <div class="th-callout th-callout-danger">
-            <b>Warning:</b> Do not edit colors within this file. Each color here uses a <code>map-get()</code> to fetch color from the <code>_colors.scss</code> partial.
-          </div>
-
-          <h3 id="extending">Extending Bootstrap styles</h3>
-          <p>In some circumstances you will find a need to adjust or extend certain Bootstrap components beyond what is provided in the <code>_theme-vars.scss</code>. To do so, locate the Bootstrap partial within the themes <code>styles</code> directory and add you styles.</p>
-
-          <div class="th-callout th-callout-info">
-            <b>Note:</b> Colors within the <code>_theme-vars.scss</code> now reference their color from the <code>_colors.scss</code> file located in the same directory.
-          </div>
+          <h3 id="extending">Extending Style Guide</h3>
+          <p>In some circumstances you will find a need to extend certain components for the Style Guide beyond what is provided in the <code>_variables.scss</code>. To do this, adjust Bootstrap styling within the <code>_theme.scss</code></p>
 
           <h3 id="components">Adding new component styles</h3>
           <p> When adding a new component to your Volusion theme we suggest creating a new Sass partial (<code>_component.scss</code>) and placing it in the themes component folder located at <code>styles > components > th</code> (Be sure to also include it in your <code>main.scss</code> file).</p>
@@ -323,18 +315,18 @@ npm install
 
           <h3 id="colors">Colors</h3>
 
-          <p>We highly recommend not placing new colors directly into your style sheets. Instead locate or define the color within <code>_colors.scss</code>. Within the <code>$userDefined</code> map you will see colors defined specifically for the theme to be exposed to the user. Below that you can see where modified versions have been defined. To adjust color variables provided by Bootstrap you can do so within the <code>$bootstrap</code> map. Below is an example of how to call these colors within your css</p>
+          <p>We highly recommend not placing new colors directly into your style sheets. Instead locate or define the color within <code>_variables.scss</code>. If there is no color available that fits your need, we recommend using <a href="http://jackiebalzer.com/color" target="_blank">Sass &amp; Compass Color Functions</a> to adjust bootstrap variables within your CSS.</p>
 
           <div class="th-example">
             <div class="highlight">
               <pre>
               <code class="css">
-.th-component {
-  &__element {
-    background-color: map-get($colors, colorName);
+.th-link-list {
+  &__link {
+    color: $link-color;
   }
-  &--modifier {
-    background-color: map-get($colors, colorName--modified);
+  &--hover {
+    color: darken($link-color, 10%);
   }
 }
                 </code>   
