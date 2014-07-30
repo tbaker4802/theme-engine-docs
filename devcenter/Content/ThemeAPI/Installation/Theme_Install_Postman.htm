@@ -115,97 +115,97 @@
                 <h3>Postman</h3>
                 <p>Postman is an optional tool development for making API calls to view returned JSON. You can download and install Postman to Chrome through the <a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en">Chrome Extension</a>. This Chrome app allows you to create requests quickly, keep a record of all sent requests and collections, provide open responses for JSON and XML, support global variables, modify headers, preview via a quick look feature, and numerous other features and options.</p>
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-md-6">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading">
                                 <img src="../../Resources/Images/chrome.png" /> Postman Installation</div>
                             <div class="panel-body">
                                 <p>Download and install the addon through your Chrome browser for either Windows PC or Mac OS.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>You can download and add the Chrome Extension at <a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en">this link</a>.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>You can download and add the Chrome Extension at <a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en">this link</a>.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Click <b>Free</b> to download and install.</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>You will be prompted to log into your Google account.</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Once logged in, a confirmation message displays. Click <b>Add</b>.<br /><img src="../../Resources/Images/postman-install1.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>The Postman - REST Client will display in your list of <a href="chrome://apps/">Chrome apps</a>. Click on <b>Postman</b> to configure a few settings for using the Storefront API.</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Click on the environment manager to add the samplestore.io site. </td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>On the <b>Manage environments</b> screen click <b>Add</b>.<br /><img src="../../Resources/Images/postman-install2.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>Enter a name for the environment as <i>www.samplestore.io</i>. For the <b>Key</b>, enter <i>url</i>. For the <b>Value</b>, enter <i>http://www.samplestore.io</i>. Click <b>Sumbit</b>.<br /><img src="../../Resources/Images/postman-install3.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>From the list of environments, select www.samplestore.io.<br /><img src="../../Resources/Images/postman-install4.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Click <b>Free</b> to download and install.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>You will be prompted to log into your Google account.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Once logged in, a confirmation message displays. Click <b>Add</b>.<br /><img src="../../Resources/Images/postman-install1.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>The Postman - REST Client will display in your list of <a href="chrome://apps/">Chrome apps</a>. Click on <b>Postman</b> to configure a few settings for using the Storefront API.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Click on the environment manager to add the samplestore.io site. </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>On the <b>Manage environments</b> screen click <b>Add</b>.<br /><img src="../../Resources/Images/postman-install2.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Enter a name for the environment as <i>www.samplestore.io</i>. For the <b>Key</b>, enter <i>url</i>. For the <b>Value</b>, enter <i>http://www.samplestore.io</i>. Click <b>Sumbit</b>.<br /><img src="../../Resources/Images/postman-install3.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>From the list of environments, select www.samplestore.io.<br /><img src="../../Resources/Images/postman-install4.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-footer">Complete!</div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-md-6">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading">Using Postman</div>
                             <div class="panel-body">
                                 <p>With the app added to Chrome, you can add a sample collection and make API calls against the Storefront API. The returned JSON displays, providing a sample API interaction for verifying and testing content for custom code. Every entered API call is saved to a history to reuse as needed. A sample collection is provided through the Storefront API at Apiary. A version from 6-25-2014 is available at <a href="https://www.getpostman.com/collections/ebe58ff7a46502b35cf1">this link</a>. Save this file and add it to your collections in Postman. </p>
                                 <p>You can make calls to the Storefront API to review the returned JSON and test calls you want to make in your extended storefront interactions and apps.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>Click the Apps button in Chrome and select <b>Postman</b>.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Click the Apps button in Chrome and select <b>Postman</b>.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Select www.samplestore.io from the domain drop-down menu.</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Select the type of operation to perform. The Storefront API supports <code>GET</code>, <code>PUT</code>, <code>POST</code>, and/or <code>DELETE </code>per endpoint. See the Apiary reference for details.</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>
-                                        <p>Enter your API call using the following format as an example for getting products: <code>{{url}}/api/v1/endpoint?parameter=value</code></p>
-                                        <p>You could use this call for products: <code>{{url}}/api/v1/product?page2=&amp;pageSize=2</code> <![CDATA[ ]]></p>
-                                        <p>
-                                            <img src="../../Resources/Images/postman1.png" class="screenshot" />
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Select www.samplestore.io from the domain drop-down menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Select the type of operation to perform. The Storefront API supports <code>GET</code>, <code>PUT</code>, <code>POST</code>, and/or <code>DELETE </code>per endpoint. See the Apiary reference for details.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <p>Enter your API call using the following format as an example for getting products: <code>{{url}}/api/v1/endpoint?parameter=value</code></p>
+                                            <p>You could use this call for products: <code>{{url}}/api/v1/product?page2=&amp;pageSize=2</code> <![CDATA[ ]]></p>
+                                            <p>
+                                                <img src="../../Resources/Images/postman1.png" class="screenshot" />
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-footer">Reuse as needed for API calls!</div>
                         </div>
                     </div>
@@ -213,36 +213,36 @@
                 <h3>Web Developer</h3>
                 <p>An extension called <a href="http://chrispederick.com/work/web-developer/">Web Developer</a> for Chrome, Firefox, and Opera is available to go beyond simple previewing of your work. The extension adds a suite of web development tools accessible through a toolbar added to your browser. When installed, the extension adds a toolbar to your browser for previewing your theme within your browser, mimicking a tablet, smart phone, and various resolutions as needed.</p>
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-md-6">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading"> <img src="../../Resources/Images/chrome.png" /> <img src="../../Resources/Images/firefox.png" /> Web Developer Installation</div>
                             <div class="panel-body">
                                 <p>Download and install the addon through your Chrome, Firefox, or Opera browser for either Windows PC or Mac OS.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>You can download and add extension per your browser from <a href="http://chrispederick.com/work/web-developer/">this link</a>.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>You can download and add extension per your browser from <a href="http://chrispederick.com/work/web-developer/">this link</a>.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>For Firefox, click <b>Add to Firefox</b>. For Chrome, click <b>Free</b>. A message may display requiring access to data. The only data accessed by the tools is for advanced development such as enabling or disabling JavaScript. This is a required message per the browser of your choice.</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>A toolbar is added to your browser, providing numerous tools for developing and testing your themes and apps.</td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>For Firefox, click <b>Add to Firefox</b>. For Chrome, click <b>Free</b>. A message may display requiring access to data. The only data accessed by the tools is for advanced development such as enabling or disabling JavaScript. This is a required message per the browser of your choice.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>A toolbar is added to your browser, providing numerous tools for developing and testing your themes and apps.</td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-footer">Complete!</div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-md-6">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading">Using Web Developer</div>
                             <div class="panel-body">

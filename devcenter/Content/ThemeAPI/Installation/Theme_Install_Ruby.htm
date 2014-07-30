@@ -133,201 +133,201 @@
                 <p>Specific information is provided for both Windows and Max OS&#160;systems. </p>
                 <p>Ruby provides a RubyInstaller for Windows as a wizard that walks through the installation process. For Mac OS X systems, you should have Ruby already installed and need to only install a few other applications. If you need Ruby for your Mac, you can use third party tools such as <a href="http://rbenv.org/">rbenv</a> and <a href="http://rvm.io/">RVM</a>. For a full list of installation options, see this page and locate your choice! </p>
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-md-6">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading">
                                 <img src="../../Resources/Images/windows.png" /> Windows Installation</div>
                             <div class="panel-body">
                                 <h4>Install Ruby</h4>
                                 <p>For Windows systems, we recommend downloading the Ruby installer and the development kit <a href="http://rubyinstaller.org/downloads/">from this location</a>. Run the file once it is downloaded. A wizard displays to walk through the installation instructions for your operating system. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>Run the Ruby Installer.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Run the Ruby Installer.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Select your language. <br /><img src="../../Resources/Images/install-ruby1.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Read through the license agreement and click acceptance.<br /><img src="../../Resources/Images/install-ruby2.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Click <b>Next</b>.</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Select the location you want to install Ruby, or use the default location provided. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.<br /><img src="../../Resources/Images/install-ruby3.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Click <b>Install</b>.</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>A progress bar displays with a completion screen. Click <b>Finish</b>! <img src="../../Resources/Images/install-ruby4.jpg" class="screenshot" /></td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Select your language. <br /><img src="../../Resources/Images/install-ruby1.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Read through the license agreement and click acceptance.<br /><img src="../../Resources/Images/install-ruby2.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Click <b>Next</b>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Select the location you want to install Ruby, or use the default location provided. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.<br /><img src="../../Resources/Images/install-ruby3.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Click <b>Install</b>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>A progress bar displays with a completion screen. Click <b>Finish</b>! <img src="../../Resources/Images/install-ruby4.jpg" class="screenshot" /></td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-body">
                                 <h4>Install Ruby Development Kit</h4>
                                 <p>For the Ruby Development Kit, the executable extracts all content to a specified location. Part of the installation will include running commands. You may want to change the location for extraction from the default. After extracting, open a command prompt and navigate to the path for the extracted Ruby Development Kit.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>Open a command prompt.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Open a command prompt.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>CD to the location of the director you extracted the development kit.</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Type and enter the following commands and keep your terminal open: 
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CD to the location of the director you extracted the development kit.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Type and enter the following commands and keep your terminal open: 
 <pre>ruby dk.rb init
 ruby dk.rb install</pre></td>
-                                </tr>
-                            </table>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-body">
                                 <h4>Install Bower, Bundler, and Grunt</h4>
                                 <p>Next, install a set of applications to work with Ruby. You do not need to download further files for these. These commands will install <a href="http://www.bundler.io/">Bower, Bundler, and Grunt</a>.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>You should still have your command prompt open.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>You should still have your command prompt open.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Type and enter the following commands:
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Type and enter the following commands:
 <pre>gem install bundler
 npm install -g grunt-cli bower</pre></td>
-                                </tr>
-                            </table>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-footer">Complete!</div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-md-6">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading">
                                 <img src="../../Resources/Images/mac.png" /> Mac Installation</div>
                             <div class="panel-body">
                                 <h4>Install Ruby</h4>
                                 <p>Typically, Ruby comes as default on your Mac OS X. These instructions walk through checking if the application is installed, installing it, and testing it worked! These instructions are completed through command line, and take only minutes.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>To test if Ruby is installed, type the following and enter: <code>ruby -v</code> For Mac OS X, Ruby is already installed. <br />If you do not see a version, you can install it through <a href="http://rvm.io/">Ruby Version Manager</a> (RVM). For details, see their <a href="http://rvm.io/rvm/install">documentation</a>.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>To test if Ruby is installed, type the following and enter: <code>ruby -v</code> For Mac OS X, Ruby is already installed. <br />If you do not see a version, you can install it through <a href="http://rvm.io/">Ruby Version Manager</a> (RVM). For details, see their <a href="http://rvm.io/rvm/install">documentation</a>.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>If it is installed, you will see the Ruby version. Keep your terminal open!</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Read through the license agreement and click acceptance.<br /><img src="../../Resources/Images/install-ruby2.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Click <b>Next</b>.</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Select the location you want to install Ruby, or use the default location provided. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.<br /><img src="../../Resources/Images/install-ruby3.jpg" class="screenshot" /><br /></td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Click <b>Install</b>.</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>A progress bar displays with a completion screen. Click <b>Finish</b>! <img src="../../Resources/Images/install-ruby4.jpg" class="screenshot" /></td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>If it is installed, you will see the Ruby version. Keep your terminal open!</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Read through the license agreement and click acceptance.<br /><img src="../../Resources/Images/install-ruby2.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Click <b>Next</b>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Select the location you want to install Ruby, or use the default location provided. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.<br /><img src="../../Resources/Images/install-ruby3.jpg" class="screenshot" /><br /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Click <b>Install</b>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>A progress bar displays with a completion screen. Click <b>Finish</b>! <img src="../../Resources/Images/install-ruby4.jpg" class="screenshot" /></td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-body">
                                 <h4>Install Yeoman</h4>
                                 <p>For the Ruby Development Kit, the executable extracts all content to a specified location. Part of the installation will include running commands. You may want to change the location for extraction from the default. After extracting, open a command prompt and navigate to the path for the extracted Ruby Development Kit.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>You should still have a terminal open.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>You should still have a terminal open.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>To test if Yeoman is installed, type the following and enter: <code>yo -v</code></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>If installed, it will return a version. If not, type the following and enter: <code>sudo npm install -g yo</code></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>You will be prompted for your system password. After entering, Yeoman, Grunt, and Bower will install. <br />To test if it is installed, type <code>yo -v</code> again. If a version displays, you are done with these apps. Keep the terminal open!</td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>To test if Yeoman is installed, type the following and enter: <code>yo -v</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>If installed, it will return a version. If not, type the following and enter: <code>sudo npm install -g yo</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>You will be prompted for your system password. After entering, Yeoman, Grunt, and Bower will install. <br />To test if it is installed, type <code>yo -v</code> again. If a version displays, you are done with these apps. Keep the terminal open!</td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-body">
                                 <h4>Install Bundler</h4>
                                 <p>Next, install a set of applications to work with Ruby. You do not need to download further files for these. These commands will install <a href="http://www.bundler.io/">Bower, Bundler, and Grunt</a>.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>Open a command prompt, if you closed your previous prompt.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Open a command prompt, if you closed your previous prompt.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Check if you have compass installed. Type and enter: <code>bundler version</code><br />If a version displays, you are done.</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>If a version does not display, type and enter: <code>sudo gem install bundler</code></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Test the compass installation. Type and enter: <code>bundler version</code><br />If a version displays, you are done.</td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Check if you have compass installed. Type and enter: <code>bundler version</code><br />If a version displays, you are done.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>If a version does not display, type and enter: <code>sudo gem install bundler</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Test the compass installation. Type and enter: <code>bundler version</code><br />If a version displays, you are done.</td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="panel-footer">Complete!</div>
                         </div>
                     </div>

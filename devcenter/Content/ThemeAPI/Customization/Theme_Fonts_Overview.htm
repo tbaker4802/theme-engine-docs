@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Fantastic Fonts</title>
+        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Adding and Using Fonts</title>
         <!-- Custom styles for this template. The file @imports the location of the Volusion bootstrap file. -->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
         <!--[if lt IE 9]>
@@ -111,11 +111,11 @@
             <div id="main" class="container theme-showcase">
                 <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../Theme_Introduction.htm">Volusion Theme Engine</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Theme_Customization.htm">Theme Customization</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Fantastic Fonts</span>
                 </div>
-                <h1 class="page-header">Fantastic Fonts</h1>
+                <h1 class="page-header">Adding and Using Fonts</h1>
                 <p>Typography is one of the most widely used content and important pieces in any webpage and site. Fonts can provide a facelift, increasing legible reading online and for print of your text. You can use incredible fonts and text not only to provide descriptions and headings, but also lends to logo design, product images, and creative backgrounds. </p>
                 <p>Each theme seed project includes a number of fonts in the <code style="font-style: normal;">{your repo}\method\app\fonts\</code> folder. For responsive themes, you should add one of all four font types to support all devices, desktops, mobiles, and browsers.</p>
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-xs-6 col-sm-4">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading">All About Fonts</div>
                             <div class="panel-body">
@@ -138,34 +138,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-xs-6 col-sm-4">
                         <div class="panel panel-primary" id="panels">
                             <div class="panel-heading">Adding Fonts</div>
                             <div class="panel-body">
                                 <p>The new responsive themes continue to develop as Volusion works on all the incredible options available within storefronts and your store data. As features progress, what pages are available will change to help you go further with every customization, cool idea, and amazing new app.</p>
-                            </div>
-                            <table class="table">
-                                <th>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <td>Step</td>
-                                        <td>What to Do</td>
+                                        <td>1</td>
+                                        <td>Open the fonts folder: <code style="font-style: normal;">{your repo}\method\app\fonts\</code>.</td>
                                     </tr>
-                                </th>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Open the fonts folder: <code style="font-style: normal;">{your repo}\method\app\fonts\</code>.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Add your font files to this folder and the repository (.ttf, .eot, .woff, .svg). Make sure every font file name is renamed to reflect the name you want to call the font in your stylesheet. For example, <code>font-family: Roboto-Italic; </code>will need to have all file names changed to "Roboto-Italic" for all file types. Every new .svg file will need to have its ID changed to "font".</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>With the fonts added, you need to add an @include line to the  <code>_fonts.scss</code> stylesheet. Locate the file at <code style="font-style: normal;">{your repo}\method\app\styles\style-guide\components\_fonts.scss</code>.</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Open this file and add declarations for your new font. For each new font, add an <code>@include app-font('font-name-here');</code> line.</td><pre>// Declare Custom Fonts Here (update any .svg file's id to 'font'!)
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Add your font files to this folder and the repository (.ttf, .eot, .woff, .svg). Make sure every font file name is renamed to reflect the name you want to call the font in your stylesheet. For example, <code>font-family: Roboto-Italic; </code>will need to have all file names changed to "Roboto-Italic" for all file types. Every new .svg file will need to have its ID changed to "font".</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>With the fonts added, you need to add an @include line to the  <code>_fonts.scss</code> stylesheet. Locate the file at <code style="font-style: normal;">{your repo}\method\app\styles\style-guide\components\_fonts.scss</code>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Open this file and add declarations for your new font. For each new font, add an <code>@include app-font('font-name-here');</code> line.<pre>// Declare Custom Fonts Here (update any .svg file's id to 'font'!)
 // Set to font's file name
 @include app-font('roboto-regular');
 @include app-font('roboto-italic');
@@ -179,9 +178,10 @@
 @include app-font('antonio-light');
 
 @include app-font('crimsontext');
-@include app-font('crimsontext-italic');</pre>
-                                </tr>
-                            </table>
+@include app-font('crimsontext-italic');</pre></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
