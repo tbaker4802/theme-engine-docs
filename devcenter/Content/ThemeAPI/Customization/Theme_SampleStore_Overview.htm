@@ -121,31 +121,28 @@
                     <li value="4">Customized display options for product options including swatches, sizes, colors, and more. Options are directly associated with stock to dynamically show what is in stock for selected products.</li>
                     <li value="5">Custom and bootstrap styles used across the theme, extendable as needed.</li>
                     <li value="6">Reviews and stars based on those reviews per product.</li>
-                    <li value="7">A file is available for entering custom settings for the theme called themeSettings.json. This content can be directly edited or generated from your {domain}/theme-settings</li>
+                    <li value="7"><a href="#Theme">A <code>themeSettings.json</code> file</a> is available for entering custom settings for the theme such as slides, footer content, and content tiles. This data can be directly edited or generated from your {domain}/theme-settings</li>
                 </ul>
                 <h3><a name="Faceted"></a>Faceted Search</h3>
                 <p>Filter categories have a refined design to create a form of faceted search. As shoppers browse the storefront, the theme displays filter categories in the left side navigation for narrowing and filtering the displayed products. Each selectable option includes a running tally of products matching the criteria, such as all products that are members of a blue or leather filter category.</p>
-                <p>The following JSON provides an example of a facet. It is an array of available filter categories for displaying products by brand. The title displays as the name of the facet. Each item in the array displays as a facet option to select. </p>
-                <ul>
-                    <li value="1"><code>id </code>- The system generated ID for the filter category.</li>
-                    <li value="2"><code>name </code>- The displayed name for the filter category.</li>
-                    <li value="3"><code>color </code>- A hex value of a color for the category. This value cannot be entered within the Admin area and is strictly supported by code.</li>
-                    <li value="4"><code>image </code>- An associated image file for the filter category.</li>
-                    <li value="5"><code>count </code>- The total amount of products as a member of this filter category.</li>
-                </ul>
-                <p>Sample JSON:</p><pre>"facets": [
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary" id="panels">
+                            <div class="panel-body">
+                                <p>The following JSON provides an example of a facet. It is an array of available filter categories for displaying products by brand. The title displays as the name of the facet. Each item in the array displays as a facet option to select. </p>
+                                <ul>
+                                    <li value="1"><code>id </code>- The system generated ID for the filter category.</li>
+                                    <li value="2"><code>name </code>- The displayed name for the filter category.</li>
+                                    <li value="3"><code>color </code>- A hex value of a color for the category. This value cannot be entered within the Admin area and is strictly supported by code.</li>
+                                    <li value="4"><code>image </code>- An associated image file for the filter category.</li>
+                                    <li value="5"><code>count </code>- The total amount of products as a member of this filter category.</li>
+                                </ul>
+                                <p>Sample JSON:</p><pre>"facets": [
 	{
 		"id": 1840,
 		"title": "Brand",
 		"displayType": "checkboxes",
 		"properties": [
-			{
-				"id": 1842,
-				"name": "City Market",
-				"color": null,
-				"image": null,
-				"count": 9
-			},
 			{
 				"id": 1841,
 				"name": "Ethan Allen",
@@ -172,13 +169,29 @@
 				"name": "Revlon",
 				"color": null,
 				"image": null,
-				"count": 4
+				"count": 1
 		}
 	]
 },</pre>
-                <p>The following image is a display in the Method theme for these facets. Shoppers then can narrow by the listed categories or select directly any of the listed brands. This sample also includes facets for color, material, and style. Each facet has an associated set of filter categories with products as members. The numbered amounts are the available products as members of the filter categories. The price further refines the displayed products by a price range (based against price or sale price). All displayed products dynamically display according to the selections made.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary" id="panels">
+                            <div class="panel-body">
+                                <p>The following image is a display in the Method theme for these facets. Shoppers then can narrow by the listed categories or select directly any of the listed brands. This sample also includes facets for color, material, and style. Each facet has an associated set of filter categories with products as members. The numbered amounts are the available products as members of the filter categories. The price further refines the displayed products by a price range (based against price or sale price). All displayed products dynamically display according to the selections made.</p>
+                                <p>
+                                    <img src="../../Resources/Images/method-facets1.png" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3><a name="Theme"></a>Theme Settings</h3>
+                <p>Your developed theme will have specific settings with default values that a merchant can modify when enabling or activating the theme. These settings typically include slide content (text and graphics), page text content, footer content, tiles, and more. The settings can be entered in a specific page for your domain by entering <code>http://{domain}/theme-settings</code>. If you turn on debugging mode, as you enter settings, the displayed content can be copied and saved into the <code>themeSettings.json</code> file. See the file in your <code style="font-style: normal;">{your repo}\method\app\settings\</code> folder all file contents and settings.</p>
+                <p>When you visit <code>http://{domain}/theme-settings</code>, you are taken to a specific page for entering customized content for the theme. You can save this content by editing the file directly, or using this location. This will create the default settings for the theme. Merchants using your theme can also use this page location to customize the theme without breaking into code directly. You can select the General, Home, and Category tabs to edit and save settings for those sections of the theme.</p>
                 <p>
-                    <img src="../../Resources/Images/method-facets1.png" />
+                    <img src="../../Resources/Images/themesettings-sample.png" class="screenshot" />
                 </p>
             </div>
         </div>
