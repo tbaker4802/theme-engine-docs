@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-conditions="General.NEWTOPIC" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
     <!-- saved from url=(0016)http://localhost -->
     <!-- This is the main flarestrap for the general content masterpage. -->
     <head>
@@ -70,13 +70,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Custom Themes <b class="caret"></b></a>
+                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Customize Themes <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li value="1"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
                                 </li>
-                                <li value="2"><a href="Theme_Customization.htm">Customizing Themes</a>
+                                <li value="2"><a href="../Installation/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
                                 </li>
-                                <li value="3"><a href="Theme_Custom_BestPractices.htm">Best Practices</a>
+                                <li value="3"><a href="Theme_Customization.htm">Customizing Themes</a>
                                 </li>
                                 <li value="4"><a href="Theme_FolderStructure.htm">Folder Structure</a>
                                 </li>
@@ -110,18 +110,84 @@
         <div id="wrap">
             <div id="main" class="container theme-showcase">
                 <h1 class="page-header">Sample Store Using Method</h1>
-                <p>In Progress</p>
-                <p>http://www.samplestore.io/ using method</p>
-                <p>List of editable options and more for customizing and using the method theme </p>
+                <p>Let's take a look at an example store using one of our themes: Method! For a full list of supported and unsupported features for responsive themes, see <a href="Theme_StorefrontPageUsage.htm">this page</a>.</p>
+                <p>
+                    <img src="../../Resources/Images/method-logo.png" style="float: left;" />Method is a great theme, focused usage currently on our <a href="http://www.samplestore.io/">sample store</a> for clothing and accessories. Of course, you may modify and use this theme for just about any business. Clean lines, modern, and minimal in black and white to place all focus on your colorful products and slider.</p>
+                <p>What features does Method provide?</p>
+                <ul>
+                    <li value="1">Landing page with a slider and optional tiles for featured content.</li>
+                    <li value="2">Navigation elements for your header with responsive design to shift into drop-down menus and expandable menus depending on your browser size and mobile device.</li>
+                    <li value="3"><a href="#Faceted">Faceted search</a> using filter categories in the storefront page navigation to narrow displayed category contents, provide a total number of items per filter, and update based on selections.</li>
+                    <li value="4">Customized display options for product options including swatches, sizes, colors, and more. Options are directly associated with stock to dynamically show what is in stock for selected products.</li>
+                    <li value="5">Custom and bootstrap styles used across the theme, extendable as needed.</li>
+                    <li value="6">Reviews and stars based on those reviews per product.</li>
+                    <li value="7">A file is available for entering custom settings for the theme called themeSettings.json. This content can be directly edited or generated from your {domain}/theme-settings</li>
+                </ul>
+                <h3><a name="Faceted"></a>Faceted Search</h3>
+                <p>Filter categories have a refined design to create a form of faceted search. As shoppers browse the storefront, the theme displays filter categories in the left side navigation for narrowing and filtering the displayed products. Each selectable option includes a running tally of products matching the criteria, such as all products that are members of a blue or leather filter category.</p>
+                <p>The following JSON provides an example of a facet. It is an array of available filter categories for displaying products by brand. The title displays as the name of the facet. Each item in the array displays as a facet option to select. </p>
+                <ul>
+                    <li value="1"><code>id </code>- The system generated ID for the filter category.</li>
+                    <li value="2"><code>name </code>- The displayed name for the filter category.</li>
+                    <li value="3"><code>color </code>- A hex value of a color for the category. This value cannot be entered within the Admin area and is strictly supported by code.</li>
+                    <li value="4"><code>image </code>- An associated image file for the filter category.</li>
+                    <li value="5"><code>count </code>- The total amount of products as a member of this filter category.</li>
+                </ul>
+                <p>Sample JSON:</p><pre>"facets": [
+	{
+		"id": 1840,
+		"title": "Brand",
+		"displayType": "checkboxes",
+		"properties": [
+			{
+				"id": 1842,
+				"name": "City Market",
+				"color": null,
+				"image": null,
+				"count": 9
+			},
+			{
+				"id": 1841,
+				"name": "Ethan Allen",
+				"color": null,
+				"image": null,
+				"count": 5
+			},
+			{
+				"id": 1844,
+				"name": "Liz Claiborne",
+				"color": null,
+				"image": null,
+				"count": 3
+			},
+			{
+				"id": 1843,
+				"name": "Marc Jacobs",
+				"color": null,
+				"image": null,
+				"count": 3
+			},
+			{
+				"id": 1845,
+				"name": "Revlon",
+				"color": null,
+				"image": null,
+				"count": 4
+		}
+	]
+},</pre>
+                <p>The following image is a display in the Method theme for these facets. Shoppers then can narrow by the listed categories or select directly any of the listed brands. This sample also includes facets for color, material, and style. Each facet has an associated set of filter categories with products as members. The numbered amounts are the available products as members of the filter categories. The price further refines the displayed products by a price range (based against price or sale price). All displayed products dynamically display according to the selections made.</p>
+                <p>
+                    <img src="../../Resources/Images/method-facets1.png" />
+                </p>
             </div>
         </div>
         <!-- Footer  -->
         <footer style="background:#3b3b3b; color: #fff;">
             <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
             <div class="row" style="padding-left:20px;">
-                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular/theme/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular/theme/issues?state=open" target="_blank">Theme Issue Log</a><br />
-							Maintained by <a href="https://github.com/volusion-angular?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular/theme/graphs/contributors">Contributors</a></p>
-                <p class="text-center"><a href="https://github.com/volusion-angular/theme" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
+                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular-themes/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular-themes/issues?state=open" target="_blank">Theme Issue Log</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a></p>
+                <p class="text-center"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
                 <p class="text-center small">Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
 					documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
 					</p>

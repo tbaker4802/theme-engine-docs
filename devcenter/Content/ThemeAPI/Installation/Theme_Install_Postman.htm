@@ -70,13 +70,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Custom Themes <b class="caret"></b></a>
+                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Customize Themes <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li value="1"><a href="Theme_DownloadaTheme.htm">Download a Theme</a>
                                 </li>
-                                <li value="2"><a href="../Customization/Theme_Customization.htm">Customizing Themes</a>
+                                <li value="2"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
                                 </li>
-                                <li value="3"><a href="../Customization/Theme_Custom_BestPractices.htm">Best Practices</a>
+                                <li value="3"><a href="../Customization/Theme_Customization.htm">Customizing Themes</a>
                                 </li>
                                 <li value="4"><a href="../Customization/Theme_FolderStructure.htm">Folder Structure</a>
                                 </li>
@@ -112,7 +112,13 @@
                 <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../Theme_Introduction.htm">Volusion Theme Engine</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Theme_Install_Environment.htm">Theme Installation</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Optional: Postman</span>
                 </div>
                 <h1 class="page-header">Install Apps and Plugins<br></br><small>Add optional apps and plugins to test API calls and preview themes.</small></h1>
-                <h3>Postman</h3>
+                <p>We recommend the following plugins, apps, and extensions for your web development:</p>
+                <ul>
+                    <li value="1"><a href="#Postman">Postman</a> for API calls in Chrome.</li>
+                    <li value="2"><a href="#JSON">JSON Viewer</a> to prettify your returned JSON&#160;using direct API calls in Chrome.</li>
+                    <li value="3"><a href="#Web">Web Developer</a> apps for managing, testing, and previewing your sites and apps in Chrome, Firefox, and Opera.</li>
+                </ul>
+                <h3><a name="Postman"></a>Postman</h3>
                 <p>Postman is an optional tool development for making API calls to view returned JSON. You can download and install Postman to Chrome through the <a href="https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en">Chrome Extension</a>. This Chrome app allows you to create requests quickly, keep a record of all sent requests and collections, provide open responses for JSON and XML, support global variables, modify headers, preview via a quick look feature, and numerous other features and options.</p>
                 <div class="row">
                     <div class="col-md-6">
@@ -210,7 +216,58 @@
                         </div>
                     </div>
                 </div>
-                <h3>Web Developer</h3>
+                <h3><a name="JSON"></a>JSON Viewer</h3>
+                <p>If you prefer making your API calls directly through a link, you can install the JSON&#160;Viewer Chrome Extension. Every returned JSON response will automatically format for ease of reading, prettified with collapsible/expandable sections of code. For example, you could make direct GET&#160;calls for listing all products and receive an automatically cleaned up view of the response data in the browser.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary" id="panels">
+                            <div class="panel-heading">
+                                <img src="../../Resources/Images/chrome.png" />JSON Viewer Installation</div>
+                            <div class="panel-body">
+                                <p>Download and install the addon through your Chrome browser for either Windows PC or Mac OS.</p>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Step</th>
+                                            <th>What to Do</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>You can download and add the Chrome Extension at <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh">this link</a>.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Click <b>Free</b> to download and install.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>You will be prompted to log into your Google account if you are not already logged in.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>All returned JSON in the browser will automatically prettify for reviewing.<br /></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="panel-footer">Complete!</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel panel-primary" id="panels">
+                            <div class="panel-heading">Using JSON Viewer</div>
+                            <div class="panel-body">
+                                <p>Enter a call to the API through the browser's URL&#160;location bar as if visiting a website. The call is received and handled by the system, returning JSON accordingly. The returned code automatically uses the viewer for viewing with controls for collapsing and expanding sections, text colors denoting values and comments.</p>
+                                <p>For example, the call <code>http://www.samplestore.io/api/v1/products</code> returns the following in the viewer:</p>
+                                <p>
+                                    <img src="../../Resources/Images/jsonviewer-sample.png" class="screenshot" />
+                                </p>
+                            </div>
+                            <div class="panel-footer">Reuse as needed for API calls!</div>
+                        </div>
+                    </div>
+                </div>
+                <h3><a name="Web"></a>Web Developer</h3>
                 <p>An extension called <a href="http://chrispederick.com/work/web-developer/">Web Developer</a> for Chrome, Firefox, and Opera is available to go beyond simple previewing of your work. The extension adds a suite of web development tools accessible through a toolbar added to your browser. When installed, the extension adds a toolbar to your browser for previewing your theme within your browser, mimicking a tablet, smart phone, and various resolutions as needed.</p>
                 <div class="row">
                     <div class="col-md-6">
@@ -275,9 +332,8 @@
         <footer style="background:#3b3b3b; color: #fff;">
             <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
             <div class="row" style="padding-left:20px;">
-                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular/theme/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular/theme/issues?state=open" target="_blank">Theme Issue Log</a><br />
-							Maintained by <a href="https://github.com/volusion-angular?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular/theme/graphs/contributors">Contributors</a></p>
-                <p class="text-center"><a href="https://github.com/volusion-angular/theme" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
+                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular-themes/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular-themes/issues?state=open" target="_blank">Theme Issue Log</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a></p>
+                <p class="text-center"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
                 <p class="text-center small">Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
 					documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
 					</p>
