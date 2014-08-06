@@ -1019,6 +1019,13 @@ html.feedback-anonymous-enabled .comment-form-wrapper .username-field
 	font-weight: bold;
 }
 
+/* Disable IE clear X button */
+
+input::-ms-clear[type=text]
+{
+	display: none;
+}
+
 .highlightGlossary
 {
 	font-weight: bold;
