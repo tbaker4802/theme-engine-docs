@@ -134,20 +134,10 @@ body
 	padding: 100px 0;
 }
 
-/* search css pulled from default.htm */
+/* search css for Google Custom Search */
 
-#search-field
+.searchbox
 {
-	
-}
-
-.search-filter
-{
-	-pie-background: linear-gradient(#f6f6f6, #f6f6f6);
-}
-
-.search-submit-wrapper
-{
-	-pie-background: url('Skins/Default/Stylesheets/Images/search-magnify2.png') no-repeat center center, linear-gradient(#f6f6f6, #f6f6f6);
+	width: 100px;
 }
 
