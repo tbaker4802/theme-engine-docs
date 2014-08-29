@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Storefront API|API Endpoints">
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Storefront API|API Endpoints">
     <!-- saved from url=(0016)http://localhost -->
     <!-- This is the main flarestrap for the general content masterpage. -->
     <head>
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Topic to Default - For search fix! 
+        <script>
+			document.getElementsByTagName('html')[0].setAttribute('data-mc-runtime-file-type', 'Default');
+		</script>-->
         <!-- You cannot use self-closing tags in Flare. -->
-        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Articles Endpoint</title>
-        <!-- Custom styles for this template. The file @imports the location of the Volusion bootstrap file. -->
+        <!-- Custom styles for this template -->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
         <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
+        <!-- navbar control -->
+        <script>/* <![CDATA[ */$(document).ready(function(){
+
+			$("#toggler").click(function(){
+			$(this).toggleClass('active, inactive');
+			})
+
+		})/* ]]> */</script>
+        <script>/* <![CDATA[ */$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 40
+		});/* ]]> */</script>
         <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
         <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
         <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
         <link href="../Resources/Stylesheets/bootstrap.css" rel="stylesheet" />
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        </script>
+        <script src="https://github.com/twbs/bootstrap/blob/master/docs/assets/js/docs.min.js">
+        </script>
+        <script src="../Resources/JS/highlighter.js">
+        </script>
         <script src="../../Resources/Scripts/custom.modernizr.js">
         </script>
         <script src="../../Resources/Scripts/jquery.min.js">
@@ -37,62 +60,23 @@
         <script src="../../Resources/Scripts/MadCapAll.js">
         </script>
     </head>
-    <body>
-        <!-- This snippet is the top nav -->
+    <body style="padding-top: 75px;">
         <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/vlogo-xs-white.png" />Developer@Volusion</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
                 <div class="navbar-collapse collapse">
-                    <!-- The list is a snippet with navigation using Volusion bootstrap. -->
+                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../Dev-Center-Index.htm">Theme Engine</a>
+                        <li value="1"><a href="Installation/Quickstart.htm">Quickstart</a>
                         </li>
-                        <li class="dropdown" value="2"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Install Tools<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="Installation/Theme_Install_Environment.htm">Environment Setup</a>
-                                </li>
-                                <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                </li>
-                                <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                </li>
-                                <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                </li>
-                                <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
-                                </li>
-                                <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                </li>
-                                <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                </li>
-                                <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                            </ul>
+                        <li value="2"><a href="../Dev-Center-Index.htm">Docs</a>
                         </li>
-                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Customize Themes <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                                <li value="2"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                </li>
-                                <li value="3"><a href="Customization/Theme_Customization.htm">Customizing Themes</a>
-                                </li>
-                                <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
-                                </li>
-                                <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                </li>
-                                <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                </li>
-                                <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                </li>
-                                <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Images Sprites</a>
-                                </li>
-                            </ul>
+                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
                         </li>
-                        <li value="4"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="5"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
                                 </li>
@@ -106,42 +90,82 @@
                 </div>
                 <!--/.nav-collapse -->
             </div>
-        </div>
-        <div id="wrap">
-            <div id="main" class="container theme-showcase">
-                <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="Theme_Overview.htm">Volusion Storefront API</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Theme_Endpoints.htm">API Endpoints</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Articles Endpoint</span>
+            <!-- <div class="divide-nav" role="navigation">
+                <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+        </nav>
+        <div class="container-fluid ">
+            <div class="col-xs-12 col-md-8 col-center-block">
+                <div class="col-xs-3">
+                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+						<p></p> -->
+                        <!--Side Nav Snippet -->
+                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="Customization/Theme_Customization.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="Customization/Theme_Translations.htm">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <h1><a name="kanchor20"></a>Articles Endpoint</h1>
-                <p>The articles endpoint supports getting a list of all available articles in your store. Articles are content "pages" or sections of content (text and images with formatting) created and maintained through the Admin and displayed through the storefront. Great examples of an article include help pages, history of your company, the About Us content, and return policies. If you provide products that need instructions for downloading, using, or even building, you could use these articles to provide that content. Or you may want to add pages to the storefront on your return policies and shipping options.</p>
-                <p>The following information provides details on the request and the response status code and JSON with further data information.</p>
-                <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Get a List of All Articles</a>
-                    <div class="MCDropDownBody dropDownBody">
-                        <p><a href="Theme_Articles_GetList.htm">Learn more about  the <code>GET </code>method for retrieving all articles.</a> When you perform this call, a list of all articles is returned. Depending on the size of your articles, the response could be lengthy.</p>
-                        <p>The URI call structure is:</p><pre>GET http://{domain}/api/v1/articles/<span style="color: #f36e34;">id</span>?slug=<span style="color: #f36e34;">slug</span></pre>
+                <!-- Main Topic Proxy -->
+                <div class="col-xs-9">
+                    <!-- FLARE SEARCH all content for flare search and results -->
+                    <h1><a name="kanchor20"></a>Articles Endpoint</h1>
+                    <p>The articles endpoint supports getting a list of all available articles in your store. Articles are content "pages" or sections of content (text and images with formatting) created and maintained through the Admin and displayed through the storefront. Great examples of an article include help pages, history of your company, the About Us content, and return policies. If you provide products that need instructions for downloading, using, or even building, you could use these articles to provide that content. Or you may want to add pages to the storefront on your return policies and shipping options.</p>
+                    <p>The following information provides details on the request and the response status code and JSON with further data information.</p>
+                    <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Get a List of All Articles</a>
+                        <div class="MCDropDownBody dropDownBody">
+                            <p><a href="Theme_Articles_GetList.htm">Learn more about  the <code>GET </code>method for retrieving all articles.</a> When you perform this call, a list of all articles is returned. Depending on the size of your articles, the response could be lengthy.</p>
+                            <p>The URI call structure is:</p><pre>GET http://{domain}/api/v1/articles/<span style="color: #f36e34;">id</span>?slug=<span style="color: #f36e34;">slug</span></pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Footer  -->
-        <footer style="background:#3b3b3b; color: #fff;">
-            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-            <div class="row" style="padding-left:20px;">
-                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular-themes/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular-themes/issues?state=open" target="_blank">Theme Issue Log</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a></p>
-                <p class="text-center"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
-                <p class="text-center small">Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-					documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-					</p>
-                <p class="text-center small">© 1999-2014 Volusion, Inc. All Rights Reserved.</p>
-            </div>
-        </footer>
-        <!-- Bootstrap core JavaScript
-		================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-        </script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
-        </script>
-        <script src="../Resources/JS/holder.js">
-        </script>
-    </body>
+            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
+			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
 </html>

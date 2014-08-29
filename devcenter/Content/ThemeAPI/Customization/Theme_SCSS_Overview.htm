@@ -1,28 +1,51 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Theme Engine|Theme Customization">
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Theme Engine|Theme Customization">
     <!-- saved from url=(0016)http://localhost -->
     <!-- This is the main flarestrap for the general content masterpage. -->
     <head>
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Topic to Default - For search fix! 
+        <script>
+			document.getElementsByTagName('html')[0].setAttribute('data-mc-runtime-file-type', 'Default');
+		</script>-->
         <!-- You cannot use self-closing tags in Flare. -->
-        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Storefront Style Overview</title>
-        <!-- Custom styles for this template. The file @imports the location of the Volusion bootstrap file. -->
+        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Storefront Style OverviewA general overview of styles with links for more info.</title>
+        <!-- Custom styles for this template -->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
         <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
+        <!-- navbar control -->
+        <script>/* <![CDATA[ */$(document).ready(function(){
+
+			$("#toggler").click(function(){
+			$(this).toggleClass('active, inactive');
+			})
+
+		})/* ]]> */</script>
+        <script>/* <![CDATA[ */$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 40
+		});/* ]]> */</script>
         <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
         <link href="../../Resources/Stylesheets/bootstrap.css" rel="stylesheet" />
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        </script>
+        <script src="https://github.com/twbs/bootstrap/blob/master/docs/assets/js/docs.min.js">
+        </script>
+        <script src="../../Resources/JS/highlighter.js">
+        </script>
         <script src="../../../Resources/Scripts/custom.modernizr.js">
         </script>
         <script src="../../../Resources/Scripts/jquery.min.js">
@@ -38,62 +61,23 @@
         <script src="../../../Resources/Scripts/MadCapAll.js">
         </script>
     </head>
-    <body>
-        <!-- This snippet is the top nav -->
+    <body style="padding-top: 75px;">
         <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/vlogo-xs-white.png" />Developer@Volusion</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
                 <div class="navbar-collapse collapse">
-                    <!-- The list is a snippet with navigation using Volusion bootstrap. -->
+                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../../Dev-Center-Index.htm">Theme Engine</a>
+                        <li value="1"><a href="../Installation/Quickstart.htm">Quickstart</a>
                         </li>
-                        <li class="dropdown" value="2"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Install Tools<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="../Installation/Theme_Install_Environment.htm">Environment Setup</a>
-                                </li>
-                                <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                </li>
-                                <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                </li>
-                                <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                </li>
-                                <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
-                                </li>
-                                <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                </li>
-                                <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                </li>
-                                <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                            </ul>
+                        <li value="2"><a href="../../Dev-Center-Index.htm">Docs</a>
                         </li>
-                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Customize Themes <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                                <li value="2"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                </li>
-                                <li value="3"><a href="Theme_Customization.htm">Customizing Themes</a>
-                                </li>
-                                <li value="4"><a href="Theme_FolderStructure.htm">Folder Structure</a>
-                                </li>
-                                <li value="5"><a href="#">Styles and Layouts</a>
-                                </li>
-                                <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                </li>
-                                <li value="7"><a href="Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                </li>
-                                <li value="8"><a href="Theme_Images_Spriting.htm">Images Sprites</a>
-                                </li>
-                            </ul>
+                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
                         </li>
-                        <li value="4"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="5"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
                                 </li>
@@ -107,154 +91,232 @@
                 </div>
                 <!--/.nav-collapse -->
             </div>
-        </div>
-        <div id="wrap">
-            <div id="main" class="container theme-showcase">
-                <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../Theme_Introduction.htm">Volusion Theme Engine</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Theme_Customization.htm">Theme Customization</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Storefront Style</span>
+            <!-- <div class="divide-nav" role="navigation">
+                <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+        </nav>
+        <div class="container-fluid ">
+            <div class="col-xs-12 col-md-8 col-center-block">
+                <div class="col-xs-3">
+                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+						<p></p> -->
+                        <!--Side Nav Snippet -->
+                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="Theme_Customization.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="Theme_FolderStructure.htm">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="#">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="Theme_Images_Spriting.htm">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="Theme_Translations.htm">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <h1 class="page-header">Storefront Style Overview</h1>
-                <p>Styles are a powerful, immediate way to add customization and branding flair to your storefront. Styles typically have been a series of formatting selections, documented as code within a CSS file (cascading style sheet) that enforced a single view site-wide. Through the CSS file(s), you could design and maintain the exact look and feel you want for all text content, display controls such as tables and menus, and assets such as images and videos all from a single controlled place.</p>
-                <p>Learn more about:</p>
-                <ul>
-                    <li value="1"><a href="#Bootstra">Bootstrap</a>
-                    </li>
-                    <li value="2"><a href="#Sass">Sass Styles, Compass, and BEM</a>
-                    </li>
-                    <li value="3"><a href="#Volusion">Volusion Theme SCSS </a>
-                    </li>
-                    <li value="4"><a href="#Developi">Developing Styles</a>
-                    </li>
-                    <li value="5"><a href="#Compilin">Compiling Styles</a>
-                    </li>
-                </ul>
-                <h3><a name="Bootstra"></a>Bootstrap?</h3>
-                <p>For info on Bootstrap Style, you should <a href="Theme_Bootstrap_Overview.htm">check out this page</a>! It has far deeper information for styling according to the power of that specific framework.</p>
-                <h3><a name="Sass"></a>Sass Styles and BEM Formatting</h3>
-                <p>Moving beyond simple CSS, Volusion has embraced Sass styles for all stylesheets. These files have a .scss file extension. This format is compatible with all versions of CSS, giving you the option of taking current CSS stylesheets and moving them into SCSS. To help using Sass, you may have <a href="../Installation/Theme_Install_Compass.htm">installed</a> the Compass framework as a Ruby gem.</p>
-                <p>Need more information?</p>
-                <ul>
-                    <li value="1"> Sass <a href="http://sass-lang.com/guide">guide</a> and <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html">documentation</a>.</li>
-                    <li value="2">Compass <a href="http://compass-style.org/help/tutorials/">documentation</a>, the Ruby gem you installed to use Sass.</li>
-                </ul>
-                <p>Style code in SCSS&#160;files follows the definition patterns of <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/"><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a></a> (block, element, modifier). Each line of code follows a specific naming convention:</p><pre xml:space="preserve">.block {} - Represents the higher level of an abstraction or component.
+                <!-- Main Topic Proxy -->
+                <div class="col-xs-9">
+                    <!-- FLARE SEARCH all content for flare search and results -->
+                    <h1 class="page-header">Storefront Style Overview<br></br><small>A general overview of styles with links for more info.</small></h1>
+                    <p>Styles are a powerful, immediate way to add customization and branding flair to your storefront. Styles typically have been a series of formatting selections, documented as code within a CSS file (cascading style sheet) that enforced a single view site-wide. Through the CSS file(s), you could design and maintain the exact look and feel you want for all text content, display controls such as tables and menus, and assets such as images and videos all from a single controlled place.</p>
+                    <p>Learn more about:</p>
+                    <ul>
+                        <li value="1"><a href="#Bootstra">Bootstrap</a>
+                        </li>
+                        <li value="2"><a href="#Sass">Sass Styles, Compass, and BEM</a>
+                        </li>
+                        <li value="3"><a href="#Volusion">Volusion Theme SCSS </a>
+                        </li>
+                        <li value="4"><a href="#Developi">Developing Styles</a>
+                        </li>
+                        <li value="5"><a href="#Compilin">Compiling Styles</a>
+                        </li>
+                    </ul>
+                    <h3><a name="Bootstra"></a>Bootstrap</h3>
+                    <p>For info on Bootstrap Style, you should <a href="Theme_Bootstrap_Overview.htm">check out this page</a>! It has far deeper information for styling according to the power of that specific framework.</p>
+                    <h3><a name="Sass"></a>Sass Styles and BEM Formatting</h3>
+                    <p>Moving beyond simple CSS, Volusion has embraced Sass styles for all stylesheets. These files have a .scss file partial. This format is compatible with all versions of CSS, giving you the option of taking current CSS stylesheets and moving them into SCSS. To help using Sass, you may have <a href="../Installation/Theme_Install_Compass.htm">installed</a> the Compass framework as a Ruby gem.</p>
+                    <p>Need more information?</p>
+                    <ul>
+                        <li value="1"> Sass <a href="http://sass-lang.com/guide">guide</a> and <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html">documentation</a>.</li>
+                        <li value="2">Compass <a href="http://compass-style.org/help/tutorials/">documentation</a>, the Ruby gem you installed to use Sass.</li>
+                    </ul>
+                    <p>Style code in SCSS files follows the definition patterns of <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/"><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a></a> (block, element, modifier). Each line of code follows a specific naming convention:</p><pre xml:space="preserve">.block {} - Represents the higher level of an abstraction or component.
 .block__element {} - Represents a descendent of .block that helps form .block as a whole.
 .block--modifier {} - Represents a different state or version of .block.</pre>
-                <h2><a name="Volusion"></a>Volusion Theme SCSS</h2>
-                <p>
-                    <img src="../../Resources/Images/method-logo.png" style="float: left;" />The following style and file information is based on the Method theme seed project. All styles are located in the <code style="font-style: normal;">{your repo}\method\app\styles\</code> folder. </p>
-                <p>The <code>main.scss</code> stylesheet combines all imported stylesheets to provide a single stylesheet to your storefront. If adding a new stylesheet, make sure to add an include to this file using just the file name without the extension, in a format of <code>@import 'stylesheetname'</code> such as <code>@import 'components/th/header'</code> for the theme header. Styles are used in the view files for setting section sizes, colors, fonts, and other formatted settings.</p>
-                <p>The styles folder includes the following subfolders and files:</p>
-                <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: 0;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
-                    <col style="width: 92px;" class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" style="width: 574px;" />
-                    <thead>
-                        <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1" colspan="2">Folder</th>
-                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" colspan="2">components</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">All stylesheets for all web components in your theme. The components styles include drop-downs, buttons, navigation sections, progress bars, and additional general settings. Additional folders include stylesheets for specific sets of components:</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" rowspan="3" style="background-color: #ffffff;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;border-right-style: solid;border-right-width: 1px;border-right-color: #272727;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #272727;">&#160;</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">js</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">JavaScript component styles for modals, tooltips, pop over content, and the carousel image slider.</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">th</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Theme component styles for sprites, the header and footer, mobile content, searches, product views, and additional options.</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">vn</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Volusion component styles for displaying Volusion data from your store on the storefront. This content includes dropzones, labeled radio buttons, product option styles, showcase, slider, and zoom.</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" colspan="2">core</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Stylesheets for the fundamental parts of your theme pages, including buttons, forms, and tables. </td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">&#160;</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">base</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
-                                <p>A base folder is available with a <code>_mixins.scss</code>&#160;file. This file supports creating groups of styles to reuse through the theme. Mixins are helpful stylesheets for making groups of CSS declarations to reuse through the storefront, especially useful for vendor prefixes. The mixins file used in the&#160;Method theme is for viewport sizes, app fonts, backgrounds, and other settings. </p>
+                    <h2><a name="Volusion"></a>Volusion Theme SCSS</h2>
+                    <p>
+                        <img src="../../Resources/Images/method-logo.png" style="float: left;" />The following style and file information is based on the Method theme seed project. All styles are located in the <code style="font-style: normal;">{your repo}\method\app\styles\</code> folder. </p>
+                    <p>The <code>main.scss</code> stylesheet combines all imported stylesheets to provide a single stylesheet to your storefront. If adding a new stylesheet, make sure to add an include to this file using just the file name without the extension, in a format of <code>@import 'stylesheetname'</code> such as <code>@import 'components/th/header'</code> for the theme header. Styles are used in the view files for setting section sizes, colors, fonts, and other formatted settings.</p>
+                    <p>The styles folder includes the following subfolders and files:</p>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Folder/File</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><code>main.scss</code>
                             </td>
+                            <td>This file is the main stylesheet for the entire theme using Sass. Within the folder are <code>@include</code> links to extended stylesheets located in subdirectories. This file also contains <code>@import</code> links for imported CSS files from CDN locations. When modifying your styles, you should create new CSS files or add content to the partial Sass sheets.
+			</td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" colspan="2">reset</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Stylesheets for importing bootstrap styles to call for normalized content and print.</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" colspan="2">style-guide</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
-                                <p>Stylesheets for the basic colors, fonts, and button looks in your theme. </p>
-                                <p>Two of the most important files are <code>_theme-vars.scss </code>and <code>_variables.scss</code> that set variables for all aspects of theme settings and content, usable by the variable names across Bootstrap. When editing styles, always extend and enhance the <code>_theme-vars.scss </code>. This file overrides the default <code>_variables.scss</code> file.</p>
+                        <tr>
+                            <td><code>_th-import.scss</code>
                             </td>
+                            <td>Partial Sass stylesheet that imports all partials from the th folder.
+				</td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&#160;</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">components</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Styles for component basic styles. This folder includes the <code>_fonts.scss</code> to add new fonts to your theme, <code>_buttons.scss</code> to control button text, and <code>_type.scss</code> for your H1. </td>
+                        <tr>
+                            <td><code>overrides.css</code>
+                            </td>
+                            <td>Any added and changed styles added by merchants using your theme will be saved to this stylesheet file. These styles are typically entered by the merchant/designers activating the theme to their storefront. Overriding styles can be entered directly to this file or using the theme settings through the Admin (or theme settings page).
+				</td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows" colspan="2">utilities</td>
-                            <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Stylesheets for styling utilities. The files in this folder import bootstrap settings for responsive utilities and utilities.</td>
+                        <tr>
+                            <td><code>base</code> folder
+				</td>
+                            <td>Includes all partial Sass stylesheets for bootstrap, fonts, and helpers.
+					<ul><li value="1"><code>_bootstrap-style.scss</code> - Review and modify the bootstrap styles for the theme throug this extension.</li><li value="2"><code>_bootstrap-variables.scss</code> - Contains all variables used by the theme to associate and use styles in the theme. For example, you can add new fonts to variables for all font families and styles that use fonts. All used styles in the theme templates and pages automatically inherit the new fonts without having to touch the page content code.</li><li value="3"><code>_fonts.scss</code> - Use this file to add or remove fonts to the theme. For details, see <a href="Theme_Fonts_Overview.htm">Adding Fonts</a>.</li><li value="4"><code>_helpers.scss</code> - Contains all mixin files and silent classes for the theme. For details, see <a href="Theme_SCSS_SupportFiles.htm">Supporting Files</a>.</li></ul></td>
                         </tr>
-                    </tbody>
-                </table>
-                <h3><a name="Developi"></a>Developing Styles</h3>
-                <p>If new to developing styles, you may want to review the documentation for Sass and Compass. Sass provides a set of modules and functions for designing. Compass augments these options, providing automation and extended design capabilities. </p>
-                <ul>
-                    <li value="1">When you add any new style partial files, always add an <code>@import </code>for the file in the <code>main.scss </code>file located in <code style="font-style: normal;">{your repo}\method\app\styles</code>.</li>
-                    <li value="2">All theme variables are located in the <code>_theme-vars.scss</code> file, located in the <code style="font-style: normal;">{your repo}\method\app\styles\style-guide</code> folder. You can adjust and the theme default component styles in these files. For example, when adding fonts, you can add them to this file.</li>
-                    <li value="3">When adding a new component to your Volusion theme, you should create a new Sass partial called <code>_component.scss</code> in the <code style="font-style: normal;">{your repo}\method\app\styles\components\th</code> folder. </li>
-                </ul>
-                <p>If using Compass, the following functions and information may be helpful in developing Sass:</p>
-                <ul>
-                    <li value="1"><a href="http://compass-style.org/reference/compass/helpers/">Helper functions</a> - Augmented functions for colors, constants, fonts, images, sprites, and more. </li>
-                    <li value="2"><a href="http://compass-style.org/reference/compass/typography/">Typography module</a> - Deeper control using mixins for common text styling patterns in links, text, and lists.</li>
-                    <li value="3"><a href="http://compass-style.org/reference/compass/layout/">Layout</a> - Information on grid backgrounds, sticky footers, and stretching.</li>
-                </ul>
-                <h3>Adjusting Current Styles</h3>
-                <p>When adjusting the style guide for the entire theme, you want to change settings in <code>_theme-vars.scss</code> and <code>_variables.scss</code> located in the <code style="font-style: normal;">{your repo}\method\app\styles</code> folder.</p>
-                <p>To learn more about stylesheets, review the <a href="#">Storefront Styles</a> information.</p>
-                <h3>Extending Styles</h3>
-                <p>If you need to extend components for the Style Guide beyond the styles in the variable SCSS files, you can extend the <code>_theme.scss</code> file located in the <code style="font-style: normal;">{your repo}\method\app\styles\style-guide</code> folder.</p>
-                <p>To learn more about stylesheets, review the <a href="#">Storefront Styles</a> information.</p>
-                <h3>Adding New Component Styles</h3>
-                <p>When you add a new component to your theme, you should create a new Sass partial file called <code>_component.scss</code> and save it into the <code style="font-style: normal;">{your repo}\method\app\styles\component\th</code> folder. You also need to add an <code>@import </code>for the file in the <code>main.scss </code>file located in <code style="font-style: normal;">{your repo}\method\app\styles</code>.</p>
-                <p>The following is an example for styling a new component and how to organize the code. Using the nesting features of Sass along with the class naming convention of BEM, you can keep code tidy and readable. Make sure to include the prefix <code>th-</code> when adding any new component. the prefix is used to inform developers what kind of component was added: Bootstrap (no prefix), Theme (<code>th-</code>) and Volusion (<code>vn-</code>) components.</p><pre><p>.th-block {</p><p>	&amp;__element {</p><p>		width: 50px;</p><p>	}</p><p>	&amp;--modifier {</p><p>		width: 100px;</p><p>	}</p><p>}</p></pre>
-                <p>To learn more about stylesheets, review the <a href="#">Storefront Styles</a> information.</p>
-                <h3>Customizing Colors</h3>
-                <p>As a best practice, you should only modify or add new colors to the variables files: <code>_theme-vars.scss</code> and <code>_variables.scss</code> located in the <code style="font-style: normal;">{your repo}\method\app\styles</code> folder. If none of the colors provided are the exact ones you want, you may want to use the Sass and Compass color functions to adjust Bootstrap variables in your stylesheets.</p><pre><p>.th-link-list {</p><p>	&amp;__link {</p><p>		color: $link-color;</p><p>	}</p><p>	&amp;--hover {</p><p>		color: darken($link-color, 10%);</p><p>	}</p><p>}</p></pre>
-                <h3><a name="Compilin"></a>Compiling Styles</h3>
-                <p>This command checks your style files to determine if any changes have occurred and compiles accordingly.</p><pre xml:space="preserve">compass watch</pre>
-                <p>When entered, Compass will poll for changes. If saved changes are found in your styles, the command automatically compiles your Sass to CSS.</p>
-            </div>
-        </div>
-        <!-- Footer  -->
-        <footer style="background:#3b3b3b; color: #fff;">
-            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-            <div class="row" style="padding-left:20px;">
-                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular-themes/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular-themes/issues?state=open" target="_blank">Theme Issue Log</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a></p>
-                <p class="text-center"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
-                <p class="text-center small">Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-					documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-					</p>
-                <p class="text-center small">© 1999-2014 Volusion, Inc. All Rights Reserved.</p>
-            </div>
-        </footer>
-        <!-- Bootstrap core JavaScript
-		================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-        </script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
-        </script>
-        <script src="../../Resources/JS/holder.js">
-        </script>
-    </body>
+                        <tr>
+                            <td><code>th</code> folder
+				</td>
+                            <td>Contains all partial Sass stylesheets for all aspects of the theme including content per template page, mobile content, faceted search, and more! Each file is named to describe the template page it formats for ease of locating and updating those styles. Remember, check the <code>_bootstrap-variables.scss</code> and <code>_bootstrap-style.scss</code> files to update styles and settings at a deeper level (like fonts, links, etc).
+				</td>
+                        </tr>
+                    </table>
+                    <!-- <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: 0;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+            <col style="width: 92px;" class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 574px;" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1" colspan="2">Folder</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" colspan="2">components</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">All stylesheets for all web components in your theme. The components styles include drop-downs, buttons, navigation sections, progress bars, and additional general settings. Additional folders include stylesheets for specific sets of components:</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" rowspan="3" style="background-color: #ffffff;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;border-right-style: solid;border-right-width: 1px;border-right-color: #272727;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #272727;">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">js</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">JavaScript component styles for modals, tooltips, pop over content, and the carousel image slider.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">th</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Theme component styles for sprites, the header and footer, mobile content, searches, product views, and additional options.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">vn</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Volusion component styles for displaying Volusion data from your store on the storefront. This content includes dropzones, labeled radio buttons, product option styles, showcase, slider, and zoom.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" colspan="2">core</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Stylesheets for the fundamental parts of your theme pages, including buttons, forms, and tables. </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">base</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>A base folder is available with a <code>_mixins.scss</code>&#160;file. This file supports creating groups of styles to reuse through the theme. Mixins are helpful stylesheets for making groups of CSS declarations to reuse through the storefront, especially useful for vendor prefixes. The mixins file used in the&#160;Method theme is for viewport sizes, app fonts, backgrounds, and other settings. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" colspan="2">reset</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Stylesheets for importing bootstrap styles to call for normalized content and print.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" colspan="2">style-guide</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Stylesheets for the basic colors, fonts, and button looks in your theme. </p>
+                        <p>Two of the most important files are <code>_theme-vars.scss </code>and <code>_variables.scss</code> that set variables for all aspects of theme settings and content, usable by the variable names across Bootstrap. When editing styles, always extend and enhance the <code>_theme-vars.scss </code>. This file overrides the default <code>_variables.scss</code> file.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">components</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Styles for component basic styles. This folder includes the <code>_fonts.scss</code> to add new fonts to your theme, <code>_buttons.scss</code> to control button text, and <code>_type.scss</code> for your H1. </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows" colspan="2">utilities</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Stylesheets for styling utilities. The files in this folder import bootstrap settings for responsive utilities and utilities.</td>
+                </tr>
+            </tbody>
+        </table> -->
+                    <h3><a name="Developi"></a>Developing Styles</h3>
+                    <p>If new to developing styles, you may want to review the documentation for Sass and Compass. Sass provides a set of modules and functions for designing. Compass augments these options, providing automation and extended design capabilities. </p>
+                    <ul>
+                        <li value="1">When you add any new style partial files, always add an <code>@import </code>for the file in the <code>main.scss </code>file located in <code style="font-style: normal;">{your repo}\method\app\styles</code>.</li>
+                        <li value="2">All theme variables are located in the <code>_theme-vars.scss</code> file, located in the <code style="font-style: normal;">{your repo}\method\app\styles\style-guide</code> folder. You can adjust and the theme default component styles in these files. For example, when adding fonts, you can add them to this file.</li>
+                        <li value="3">When adding a new component to your Volusion theme, you should create a new Sass partial called <code>_component.scss</code> in the <code style="font-style: normal;">{your repo}\method\app\styles\components\th</code> folder. </li>
+                    </ul>
+                    <p>If using Compass, the following functions and information may be helpful in developing Sass:</p>
+                    <ul>
+                        <li value="1"><a href="http://compass-style.org/reference/compass/helpers/">Helper functions</a> - Augmented functions for colors, constants, fonts, images, sprites, and more. </li>
+                        <li value="2"><a href="http://compass-style.org/reference/compass/typography/">Typography module</a> - Deeper control using mixins for common text styling patterns in links, text, and lists.</li>
+                        <li value="3"><a href="http://compass-style.org/reference/compass/layout/">Layout</a> - Information on grid backgrounds, sticky footers, and stretching.</li>
+                    </ul>
+                    <h3>Adjusting Current Styles</h3>
+                    <p>When adjusting the style guide for the entire theme, you want to change settings in <code>_theme-vars.scss</code> and <code>_variables.scss</code> located in the <code style="font-style: normal;">{your repo}\method\app\styles</code> folder.</p>
+                    <p>To learn more about stylesheets, review the <a href="#">Storefront Styles</a> information.</p>
+                    <h3>Extending Styles</h3>
+                    <p>If you need to extend components for the Style Guide beyond the styles in the variable SCSS files, you can extend the <code>_theme.scss</code> file located in the <code style="font-style: normal;">{your repo}\method\app\styles\style-guide</code> folder.</p>
+                    <p>To learn more about stylesheets, review the <a href="#">Storefront Styles</a> information.</p>
+                    <h3>Adding New Component Styles</h3>
+                    <p>When you add a new component to your theme, you should create a new Sass partial file called <code>_component.scss</code> and save it into the <code style="font-style: normal;">{your repo}\method\app\styles\component\th</code> folder. You also need to add an <code>@import </code>for the file in the <code>main.scss </code>file located in <code style="font-style: normal;">{your repo}\method\app\styles</code>.</p>
+                    <p>The following is an example for styling a new component and how to organize the code. Using the nesting features of Sass along with the class naming convention of BEM, you can keep code tidy and readable. Make sure to include the prefix <code>th-</code> when adding any new component. the prefix is used to inform developers what kind of component was added: Bootstrap (no prefix), Theme (<code>th-</code>) and Volusion (<code>vn-</code>) components.</p><pre><p>.th-block {</p><p>	&amp;__element {</p><p>		width: 50px;</p><p>	}</p><p>	&amp;--modifier {</p><p>		width: 100px;</p><p>	}</p><p>}</p></pre>
+                    <p>To learn more about stylesheets, review the <a href="#">Storefront Styles</a> information.</p>
+                    <h3>Customizing Colors</h3>
+                    <p>As a best practice, you should only modify or add new colors to the variables files: <code>_theme-vars.scss</code> and <code>_variables.scss</code> located in the <code style="font-style: normal;">{your repo}\method\app\styles</code> folder. If none of the colors provided are the exact ones you want, you may want to use the Sass and Compass color functions to adjust Bootstrap variables in your stylesheets.</p><pre><p>.th-link-list {</p><p>	&amp;__link {</p><p>		color: $link-color;</p><p>	}</p><p>	&amp;--hover {</p><p>		color: darken($link-color, 10%);</p><p>	}</p><p>}</p></pre>
+                    <h3><a name="Compilin"></a>Compiling Styles</h3>
+                    <p>This command checks your style files to determine if any changes have occurred and compiles accordingly.</p><pre xml:space="preserve">compass watch</pre>
+                    <p>When entered, Compass will poll for changes. If saved changes are found in your styles, the command automatically compiles your Sass to CSS.</p>
+                </div>
+            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
+			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
 </html>

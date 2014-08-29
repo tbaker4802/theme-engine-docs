@@ -223,15 +223,6 @@ a.glossaryTerm
 	display: none;
 }
 
-div.MCBreadcrumbsBox_0
-{
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
-
 .dropDownHotspot
 {
 	text-decoration: none;
@@ -269,35 +260,6 @@ div.MCBreadcrumbsBox_0
 .dropDownHead:link
 {
 	text-decoration: none;
-}
-
-.expandingHead
-{
-	text-decoration: none;
-}
-
-.expandingHead:link
-{
-	text-decoration: none;
-}
-
-.MCExpandingHotSpot_
-{
-	background-position: right;
-}
-
-.MCExpanding_Open .MCExpandingHotSpot_
-{
-	background-image: url('ExpandingOpen.gif');
-	padding-right: 1px;
-	padding-left: 0px;
-}
-
-.MCExpanding_Closed .MCExpandingHotSpot_
-{
-	background-image: url('ExpandingClosed.gif');
-	padding-right: 0px;
-	padding-left: 0px;
 }
 
 .MCWebHelpFramesetLink a

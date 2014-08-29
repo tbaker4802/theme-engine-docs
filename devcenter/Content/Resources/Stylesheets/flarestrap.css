@@ -1,0 +1,24 @@
+﻿/*
+Theme Name: Flarestrap using Volusion bootswatch
+Description: A Bootstrap/swatch theme for Madcap Flare's HTML5 webhelp target.
+Author: Lori Krell
+*/
+
+/* This imports the core Bootstrap styles from the Volusion minified theme. You'll see errors in when you build the target. That's because Flare doesn't like HTML5+CSS3 code. But do not remove this import line if you want Flarestrap to work. */
+@import url("https://cdn.rawgit.com/volusion/bootstrap/master/dist/css/bootstrap.min.css");
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}

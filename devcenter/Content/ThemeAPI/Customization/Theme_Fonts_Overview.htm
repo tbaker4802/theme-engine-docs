@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Theme Engine|Theme Customization">
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Theme Engine|Theme Customization">
     <!-- saved from url=(0016)http://localhost -->
     <!-- This is the main flarestrap for the general content masterpage. -->
     <head>
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Topic to Default - For search fix! 
+        <script>
+			document.getElementsByTagName('html')[0].setAttribute('data-mc-runtime-file-type', 'Default');
+		</script>-->
         <!-- You cannot use self-closing tags in Flare. -->
-        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Adding and Using Fonts</title>
-        <!-- Custom styles for this template. The file @imports the location of the Volusion bootstrap file. -->
+        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Adding and Using FontsQuickly add a new font to your theme.</title>
+        <!-- Custom styles for this template -->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
         <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
+        <!-- navbar control -->
+        <script>/* <![CDATA[ */$(document).ready(function(){
+
+			$("#toggler").click(function(){
+			$(this).toggleClass('active, inactive');
+			})
+
+		})/* ]]> */</script>
+        <script>/* <![CDATA[ */$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 40
+		});/* ]]> */</script>
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
         <link href="../../Resources/Stylesheets/bootstrap.css" rel="stylesheet" />
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        </script>
+        <script src="https://github.com/twbs/bootstrap/blob/master/docs/assets/js/docs.min.js">
+        </script>
+        <script src="../../Resources/JS/highlighter.js">
+        </script>
         <script src="../../../Resources/Scripts/custom.modernizr.js">
         </script>
         <script src="../../../Resources/Scripts/jquery.min.js">
@@ -37,62 +60,23 @@
         <script src="../../../Resources/Scripts/MadCapAll.js">
         </script>
     </head>
-    <body>
-        <!-- This snippet is the top nav -->
+    <body style="padding-top: 75px;">
         <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/vlogo-xs-white.png" />Developer@Volusion</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
                 <div class="navbar-collapse collapse">
-                    <!-- The list is a snippet with navigation using Volusion bootstrap. -->
+                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../../Dev-Center-Index.htm">Theme Engine</a>
+                        <li value="1"><a href="../Installation/Quickstart.htm">Quickstart</a>
                         </li>
-                        <li class="dropdown" value="2"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Install Tools<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="../Installation/Theme_Install_Environment.htm">Environment Setup</a>
-                                </li>
-                                <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                </li>
-                                <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                </li>
-                                <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                </li>
-                                <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
-                                </li>
-                                <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                </li>
-                                <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                </li>
-                                <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                            </ul>
+                        <li value="2"><a href="../../Dev-Center-Index.htm">Docs</a>
                         </li>
-                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Customize Themes <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                                <li value="2"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                </li>
-                                <li value="3"><a href="Theme_Customization.htm">Customizing Themes</a>
-                                </li>
-                                <li value="4"><a href="Theme_FolderStructure.htm">Folder Structure</a>
-                                </li>
-                                <li value="5"><a href="Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                </li>
-                                <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                </li>
-                                <li value="7"><a href="#">Adding Fonts</a>
-                                </li>
-                                <li value="8"><a href="Theme_Images_Spriting.htm">Images Sprites</a>
-                                </li>
-                            </ul>
+                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
                         </li>
-                        <li value="4"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="5"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
                                 </li>
@@ -106,107 +90,171 @@
                 </div>
                 <!--/.nav-collapse -->
             </div>
-        </div>
-        <div id="wrap">
-            <div id="main" class="container theme-showcase">
-                <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../Theme_Introduction.htm">Volusion Theme Engine</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Theme_Customization.htm">Theme Customization</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Fantastic Fonts</span>
-                </div>
-                <h1 class="page-header">Adding and Using Fonts</h1>
-                <p>Typography is one of the most widely used content and important pieces in any webpage and site. Fonts can provide a facelift, increasing legible reading online and for print of your text. You can use incredible fonts and text not only to provide descriptions and headings, but also lends to logo design, product images, and creative backgrounds. </p>
-                <p>Each theme seed project includes a number of fonts in the <code style="font-style: normal;">{your repo}\method\app\fonts\</code> folder. For responsive themes, you should add one of all four font types to support all devices, desktops, mobiles, and browsers.</p>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-4">
-                        <div class="panel panel-primary" id="panels">
-                            <div class="panel-heading">All About Fonts</div>
-                            <div class="panel-body">
-                                <p>Font types include:</p>
-                                <ul>
-                                    <li value="1">Embedded Open Type (.eot) - These are compact OpenType fonts that can be created from TrueType fonts. You can create these as needed using <a href="http://www.microsoft.com/typography/WEFT.mspx">Microsoft's Web Embedding Fonts Tool</a>. These are typically loaded for Interest Explorer older than IE9.</li>
-                                    <li value="2">Scalable Vector Graphic (.svg) - An XML-based vector image format for 2D graphics. These can be created with text editors, but typically designers create them with graphic apps.</li>
-                                    <li value="3">TrueType (.ttf) - One of the most common font types available, usable on Mac and Windows systems and most device browsers.</li>
-                                    <li value="4">Web Open Font Format (.woff) - These are OpenType or TrueType fonts with compression and metadata, powerfully helpful for bandwidth usage. This is a widely popular font and supported by iOS 5.</li>
+            <!-- <div class="divide-nav" role="navigation">
+                <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+        </nav>
+        <div class="container-fluid ">
+            <div class="col-xs-12 col-md-8 col-center-block">
+                <div class="col-xs-3">
+                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+						<p></p> -->
+                        <!--Side Nav Snippet -->
+                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
                                 </ul>
-                                <p>Method provides the following fonts in the GitHub project: Antonio (bold, light, regular), Crimson Text (regular, italic), GLYPHICONS Halflings (regular), Roboto (regular, bold, bold italic, italic, condensed regular, condensed bold).</p>
-                                <p>When adding a font, you can purchase font files, create your own, or use the sets already provided in the theme seed projects. You can also use font generators found online. If you have a few fonts with only a couple of formats, you may find a font generator (to provide the other font formats you may need. One example of a site is <a href="http://www.font-face-generator.com/">@font-face Generator</a>.</p>
-                                <p>Having all four font formats is recommended, though you may get away with only supporting a few key formats. </p>
-                                <h3>Fonts as Buttons</h3>
-                                <p>Numerous fonts are available for use as buttons. Using fonts as an icon for a button provides a range of options as vectors, resizable without pixelating! The best and most supported with Bootstrap include glyphicons, <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a>, IcoMoon, Ionicons, and Octicons. You can use <a href="http://glyphsearch.com/"> Glyphsearch</a> to find the right font image for you. </p>
-                                <p>One of the best is <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Font Awesome</a>, with a full range of icon images including social icons! If you @import the Font Awesome SSC from their CDN link, you can add these icons as buttons. Here is an example of a Facebook button!</p>
-                                <p><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>
-                                </p>
-                                <p>The code for this includes: <code><p>&lt;a href="https://www.facebook.com/Volusion"&gt;&lt;button type="button" class="btn btn-primary"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/a&gt;</p></code></p>
+                            </div>
+                            <p>
+                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="Theme_Customization.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="Theme_FolderStructure.htm">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="#">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="Theme_Images_Spriting.htm">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="Theme_Translations.htm">Custom Content</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4">
-                        <div class="panel panel-primary" id="panels">
-                            <div class="panel-heading">Adding Fonts</div>
-                            <div class="panel-body">
-                                <p>The new responsive themes continue to develop as Volusion works on all the incredible options available within storefronts and your store data. As features progress, what pages are available will change to help you go further with every customization, cool idea, and amazing new app.</p>
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Step</th>
-                                            <th>What to Do</th>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Open the fonts folder: <code style="font-style: normal;">{your repo}\method\app\fonts\</code>.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Add your font files to this folder and the repository (.ttf, .eot, .woff, .svg). Make sure every font file name is renamed to reflect the name you want to call the font in your stylesheet. For example, <code>font-family: Roboto-Italic; </code>will need to have all file names changed to "Roboto-Italic" for all file types. Every new .svg file will need to have its ID changed to "font".</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>With the fonts added, you need to add an @include line to the  <code>_fonts.scss</code> stylesheet. Locate the file at <code style="font-style: normal;">{your repo}\method\app\styles\style-guide\components\_fonts.scss</code>.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Open this file and add declarations for your new font. For each new font, add an <code>@include app-font('font-name-here');</code> line.<pre>// Declare Custom Fonts Here (update any .svg file's id to 'font'!)
-// Set to font's file name
-@include app-font('roboto-regular');
-@include app-font('roboto-italic');
-@include app-font('roboto-bold');
-@include app-font('roboto-bolditalic');
-@include app-font('robotocondensed-regular');
-@include app-font('robotocondensed-bold');
-
-@include app-font('antonio-regular');
-@include app-font('antonio-bold');
-@include app-font('antonio-light');
-
-@include app-font('crimsontext');
-@include app-font('crimsontext-italic');</pre></td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                    </nav>
                 </div>
-            </div>
-        </div>
-        <!-- Footer  -->
-        <footer style="background:#3b3b3b; color: #fff;">
-            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-            <div class="row" style="padding-left:20px;">
-                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular-themes/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular-themes/issues?state=open" target="_blank">Theme Issue Log</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a></p>
-                <p class="text-center"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
-                <p class="text-center small">Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-					documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-					</p>
-                <p class="text-center small">© 1999-2014 Volusion, Inc. All Rights Reserved.</p>
-            </div>
-        </footer>
-        <!-- Bootstrap core JavaScript
-		================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-        </script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
-        </script>
-        <script src="../../Resources/JS/holder.js">
-        </script>
-    </body>
+                <!-- Main Topic Proxy -->
+                <div class="col-xs-9">
+                    <!-- FLARE SEARCH all content for flare search and results -->
+                    <h1 class="page-header">Adding and Using Fonts<br></br><small>Quickly add a new font to your theme.</small></h1>
+                    <p>Typography is one of the most widely used content and important pieces in any webpage and site. Fonts can provide a facelift, increasing legible reading online and for print of your text. You can use incredible fonts and text not only to provide descriptions and headings, but also lends to logo design, product images, and creative backgrounds. </p>
+                    <p>Each theme seed project includes a number of fonts in the <code style="font-style: normal;">{your repo}\method\app\fonts\</code> folder. For responsive themes, you should add one of all four font types to support all devices, desktops, mobiles, and browsers.</p>
+                    <h3>All About Fonts</h3>
+                    <p>Font types include:</p>
+                    <ul>
+                        <li value="1">Embedded Open Type (.eot) - These are compact OpenType fonts that can be created from TrueType fonts. You can create these as needed using <a href="http://www.microsoft.com/typography/WEFT.mspx">Microsoft's Web Embedding Fonts Tool</a>. These are typically loaded for Interest Explorer older than IE9.</li>
+                        <li value="2">Scalable Vector Graphic (.svg) - An XML-based vector image format for 2D graphics. These can be created with text editors, but typically designers create them with graphic apps.</li>
+                        <li value="3">TrueType (.ttf) - One of the most common font types available, usable on Mac and Windows systems and most device browsers.</li>
+                        <li value="4">Web Open Font Format (.woff) - These are OpenType or TrueType fonts with compression and metadata, powerfully helpful for bandwidth usage. This is a widely popular font and supported by iOS 5.</li>
+                    </ul>
+                    <p>Method provides the following fonts in the GitHub project: Antonio (bold, light, regular), Crimson Text (regular, italic), GLYPHICONS Halflings (regular), Roboto (regular, bold, bold italic, italic, condensed regular, condensed bold).</p>
+                    <p>When adding a font, you can purchase font files, create your own, or use the sets already provided in the theme seed projects. You can also use font generators found online. If you have a few fonts with only a couple of formats, you may find a font generator (to provide the other font formats you may need. One example of a site is <a href="http://www.font-face-generator.com/">@font-face Generator</a>.</p>
+                    <p>Having all four font formats is recommended, though you may get away with only supporting a few key formats. </p>
+                    <h3>Fonts as Buttons</h3>
+                    <p>Numerous fonts are available for use as buttons. Using fonts as an icon for a button provides a range of options as vectors, resizable without pixelating! The best and most supported with Bootstrap include glyphicons, <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a>, IcoMoon, Ionicons, and Octicons. You can use <a href="http://glyphsearch.com/"> Glyphsearch</a> to find the right font image for you. </p>
+                    <p>One of the best is <a href="http://fortawesome.github.io/Font-Awesome/get-started/">Font Awesome</a>, with a full range of icon images including social icons! If you @import the Font Awesome SSC from their CDN link, you can add these icons as buttons. Here is an example of a Facebook button!</p>
+                    <p><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>
+                    </p>
+                    <p>The code for this includes:</p>
+                    <p><code>&lt;a href="https://www.facebook.com/Volusion"&gt;&lt;button type="button" class="btn btn-primary"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/a&gt;</code>
+                    </p>
+                    <h3>Adding Font Files</h3>
+                    <p>The new responsive themes continue to develop as Volusion works on all the incredible options available within storefronts and your store data. As features progress, what pages are available will change to help you go further with every customization, cool idea, and amazing new app. You have a couple of methods for adding a new font to your theme. The following instructions detail one method that includes your font files to your theme repository, font list, and variables. This way, you only have to add the files, the name to the font list, and add the font to any styles via variables without searching out every single style.</p>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>What to Do</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>Open the fonts folder: <code style="font-style: normal;">{your repo}\method\app\fonts\</code>.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Add your font files to this folder and the repository. You should include every file type with the font (.ttf, .eot, .woff, .svg). Make sure every font file name is named to reflect the name you want to call the font in your stylesheet. For example, <code>font-family: Roboto-Italic; </code>will need to have all file names changed to "Roboto-Italic" for all file types. Every new .svg file will need to have its ID changed to "font".</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>With the fonts added, you need to add an @include line to the  <code>_fonts.scss</code> stylesheet extension. Locate the file at <code style="font-style: normal;">{your repo}\method\app\styles\base\_fonts.scss</code>.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Open this file and add declarations for your new font. For each new font, add an <code>@include app-font('font-name-here');</code> line: <code>@include app-font('roboto-regular');</code>.
+			</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <p>You can then add the font to a specific font family in the  <code>_bootstrap-variables.scss</code> stylesheet extension located at <code style="font-style: normal;">{your repo}\method\app\styles\base\_bootstrap-variables.scss</code>. The typography section includes variables for font families to be used throughout your theme's styles. For example, you can add "robotoregular" to the font-family-sans-serif. This becomes a default font to use for this family in styles and web browsers: <code>$font-family-sans-serif: "roboto-regular", Arial, sans-serif !default;</code>.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Adding Google Fonts</h3>
+                    <p>Google also provides fantastic fonts to use in your themes. You can review and test out all of their fonts at https://www.google.com/fonts. When you have found a font you like, do the following to add it to your theme using an <code>@import</code> line of code. The standard and Javascript options are directly added to the code of your theme pages and templates rather than handled in your styles like other fonts. You can use any of these options. </p>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>What to Do</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <p>Click the <b>Quick-use</b> button for the font you like. </p>
+                                <p>
+                                    <img src="../../Resources/Images/google-quickuse.png" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Select the styles you want for the font. You can select one or more using the checkboxes. Each option has a sample.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Select the character sets, one or more. Latin is the default for the font. Remember, you can always add more later!</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <p>You then have a choice of standard, a generated @import line, and Javascript. We use the <code>@import</code> for ease of use and simplicity. Copy that line of code, such as: <code>@import url(http://fonts.googleapis.com/css?family=Open+Sans);</code></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Time to add the font to your styles. Locate and open the <code>_fonts.scss</code> file at <code style="font-style: normal;">{your repo}\method\app\styles\base\_fonts.scss</code>.Add the <code>@import </code>line provided by Google: <code>@import url(http://fonts.googleapis.com/css?family=Ubuntu);</code>. </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <p>You can then add the font to a specific font family in the  <code>_bootstrap-variables.scss</code> stylesheet extension located at <code style="font-style: normal;">{your repo}\method\app\styles\base\_bootstrap-variables.scss</code>. The typography section includes variables for font families to be used throughout your theme's styles. Ubuntu is a sans serif font that could be added to that this line:<code>$font-family-sans-serif: "Ubuntu", "roboto-regular", Helvetica, Arial, sans-serif !default;</code>.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
+			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
 </html>

@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Theme Engine|Theme Customization">
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Theme Engine|Theme Customization">
     <!-- saved from url=(0016)http://localhost -->
     <!-- This is the main flarestrap for the general content masterpage. -->
     <head>
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Topic to Default - For search fix! 
+        <script>
+			document.getElementsByTagName('html')[0].setAttribute('data-mc-runtime-file-type', 'Default');
+		</script>-->
         <!-- You cannot use self-closing tags in Flare. -->
-        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Theme Folder StructureA quick overview of where files are.</title>
-        <!-- Custom styles for this template. The file @imports the location of the Volusion bootstrap file. -->
+        <!-- Custom styles for this template -->
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
         <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
-        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" />
+        <!-- navbar control -->
+        <script>/* <![CDATA[ */$(document).ready(function(){
+
+			$("#toggler").click(function(){
+			$(this).toggleClass('active, inactive');
+			})
+
+		})/* ]]> */</script>
+        <script>/* <![CDATA[ */$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 40
+		});/* ]]> */</script>
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
         <link href="../../Resources/Stylesheets/bootstrap.css" rel="stylesheet" />
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        </script>
+        <script src="https://github.com/twbs/bootstrap/blob/master/docs/assets/js/docs.min.js">
+        </script>
+        <script src="../../Resources/JS/highlighter.js">
+        </script>
         <script src="../../../Resources/Scripts/custom.modernizr.js">
         </script>
         <script src="../../../Resources/Scripts/jquery.min.js">
@@ -38,62 +60,23 @@
         <script src="../../../Resources/Scripts/MadCapAll.js">
         </script>
     </head>
-    <body>
-        <!-- This snippet is the top nav -->
+    <body style="padding-top: 75px;">
         <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/vlogo-xs-white.png" />Developer@Volusion</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
                 <div class="navbar-collapse collapse">
-                    <!-- The list is a snippet with navigation using Volusion bootstrap. -->
+                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../../Dev-Center-Index.htm">Theme Engine</a>
+                        <li value="1"><a href="../Installation/Quickstart.htm">Quickstart</a>
                         </li>
-                        <li class="dropdown" value="2"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Install Tools<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="../Installation/Theme_Install_Environment.htm">Environment Setup</a>
-                                </li>
-                                <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                </li>
-                                <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                </li>
-                                <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                </li>
-                                <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
-                                </li>
-                                <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                </li>
-                                <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                </li>
-                                <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                            </ul>
+                        <li value="2"><a href="../../Dev-Center-Index.htm">Docs</a>
                         </li>
-                        <li class="dropdown" value="3"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Customize Themes <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                </li>
-                                <li value="2"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                </li>
-                                <li value="3"><a href="Theme_Customization.htm">Customizing Themes</a>
-                                </li>
-                                <li value="4"><a href="#">Folder Structure</a>
-                                </li>
-                                <li value="5"><a href="Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                </li>
-                                <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                </li>
-                                <li value="7"><a href="Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                </li>
-                                <li value="8"><a href="Theme_Images_Spriting.htm">Images Sprites</a>
-                                </li>
-                            </ul>
+                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
                         </li>
-                        <li value="4"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="5"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
                                 </li>
@@ -107,91 +90,129 @@
                 </div>
                 <!--/.nav-collapse -->
             </div>
-        </div>
-        <div id="wrap">
-            <div id="main" class="container theme-showcase">
-                <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../Theme_Introduction.htm">Volusion Theme Engine</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Theme_Customization.htm">Theme Customization</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Theme Folder Structure</span>
+            <!-- <div class="divide-nav" role="navigation">
+                <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+        </nav>
+        <div class="container-fluid ">
+            <div class="col-xs-12 col-md-8 col-center-block">
+                <div class="col-xs-3">
+                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+						<p></p> -->
+                        <!--Side Nav Snippet -->
+                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="Theme_Customization.htm">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="#">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="Theme_Images_Spriting.htm">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="Theme_Translations.htm">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <h1 class="page-header">Theme Folder Structure<br /><small>A quick overview of where files are.</small></h1>
-                <p>After you have created a copy of the theme files from GitHub (by clone, branch, fork or other method), you can begin digging into the files and customizing the theme formats. </p>
-                <p>The following table details a simplified directory of the typical theme folder structure and file locations. The main folders in the theme are:</p>
-                <ul>
-                    <li value="1"><code>app </code>- Source code for the theme, scripts, fonts, images, styles, and more</li>
-                    <li value="2"><code>config </code>- Configuration settings for the theme and environment</li>
-                </ul>
-                <p>Depending on your installed tools and applications, you may have additional folders display in your Volusion theme. When creating your own themes by scratch, or extending one of the Volusion seed themes, you will want to mirror this folder structure.</p>
-                <h3>App Folder</h3>
-                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <thead>
-                        <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Folder</th>
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>bower_components</code>
+                <!-- Main Topic Proxy -->
+                <div class="col-xs-9">
+                    <!-- FLARE SEARCH all content for flare search and results -->
+                    <h1 class="page-header">Theme Folder Structure<br></br><small>A quick overview of where files are.</small></h1>
+                    <p>After you have created a copy of the theme files from GitHub (by clone, branch, fork or other method), you can begin digging into the files and customizing the theme formats. </p>
+                    <p>The following table details a simplified directory of the typical theme folder structure and file locations. The main folders in the theme is <code>app </code>. This folder contains all source code for the theme, scripts, fonts, images, styles, and more. </p>
+                    <p>Depending on your installed tools and applications, you may have additional folders display in your Volusion theme. When creating your own themes by scratch, or extending one of the Volusion seed themes, you will want to mirror this folder structure.</p>
+                    <h3>App Folder</h3>
+                    <p>The following folders and files are located in the <code>app</code> folder. The content includes all vital files and components for your theme. Additional files may generate if you compile new code.</p>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Folder</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><code>fonts </code>
                             </td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The source code and test package dependencies.</td>
+                            <td>All font files used by the theme. For each font you add, include all files from a webfont package: embedded open type (.eot), scalable vector graphic (.svg), truetype (.ttf), and web open font format (.woff). You then add those fonts to specific scss files for use in your theme. For more information, see <a href="Theme_Fonts_Overview.htm">Adding Fonts</a>.</td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>fonts </code>
+                        <tr>
+                            <td><code>images </code>
                             </td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">All font files used by the theme. For each font you add, include all files from a webfont package: embedded open type (.eot), scalable vector graphic (.svg), truetype (.ttf), and web open font format (.woff). <a href="Theme_Fonts_Overview.htm">Learn more here!</a></td>
+                            <td>Images and sprites used in your storefront. We recommend using JPG and PNG file types. The images should be in folders as used in the themes. For more information, see <a href="Theme_Images_Spriting.htm">Image Sprites</a>.</td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>images </code>
+                        <tr>
+                            <td><code>scripts </code>
                             </td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Images and sprites used in your storefront. We recommend using JPG and PNG file types. The images should be in folders as used in the themes. <a href="Theme_Images_Spriting.htm">Learn more here!</a></td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>scripts </code>
-                            </td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                            <td>
                                 <p>JavaScript files used by the theme, including a custom app (<code>app.js</code>). This folder includes another set of folders: </p>
                                 <ul>
                                     <li value="1"><code>controllers </code>- Provide JavaScript functions bound to a particular scope (connects a View with a Controller). The controller passes data to a view through the scope. The Method theme includes a controller per view to make calls to the Storefront API, providing that data to the view for displaying products, categories, and other content to your storefront. Controllers are one part of the key elements needed for creating custom API interactions with your storefront.</li>
-                                    <li value="2"><code>decorators </code>- Allows you to make slight changes on third-party and upstream services for use with your modules, while leaving the module intact. Example of decorator actions include caching, debugging/tracing, and throttling. In the Method theme, a decorator is used for wrapping around the translation service.</li>
-                                    <li value="3"><code>directives </code>- Application special behaviors to perform, matched with DOM elements in a page/code (such as an attribute, element name, comment, or style class). For example, the Method theme includes an <code>easy-zoom.js</code> directive that zooms in and out on an image when an element is used.</li>
-                                    <li value="4"><code>filters </code>- Customized filter formats for values in the theme. for example, the Method theme includes an <code>seoFriendly.js</code> filter for formatting SEO&#160;content and values.</li>
-                                    <li value="5"><code>services </code>- Customized services</li>
+                                    <!-- <li><code>decorators </code>- Allows you to make slight changes on third-party and upstream services for use with your modules, while leaving the module intact. Example of decorator actions include caching, debugging/tracing, and throttling. In the Method theme, a decorator is used for wrapping around the translation service.</li> -->
+                                    <li value="2"><code>directives </code>- Application special behaviors to perform, matched with DOM elements in a page/code (such as an attribute, element name, comment, or style class). For example, the Method theme includes an <code>easy-zoom.js</code> directive that zooms in and out on an image when an element is used.</li>
+                                    <li value="3"><code>filters </code>- Customized filter formats for values in the theme. for example, the Method theme includes an <code>seoFriendly.js</code> filter for formatting SEO&#160;content and values.</li>
+                                    <li value="4"><code>services </code>- Customized services</li>
                                 </ul>
                             </td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>settings</code>
+                        <tr>
+                            <td><code>settings</code>
                             </td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Contains the<code> themeSettings.json</code> file. This file provides the default settings available to Merchants that use your theme. For details, see the <a href="Theme_SampleStore_Overview.htm">Method theme tour</a> for info on the file.</td>
+                            <td>Contains the<code> themeSettings.json</code> file. This file provides the default settings available to Merchants that use your theme. For details, see the <a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a> for info on the file.</td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>styles</code>
+                        <tr>
+                            <td><code>styles</code>
                             </td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" style="padding: 0px;">
+                            <td>
                                 <p>Holds all stylesheets as Sass files (SCSS) for your storefront's display. These files control the look and feel of your entire storefront. The <code>main.scss</code> stylesheet imports all styles added to its list to provide a single stylesheet to your storefront. This allows you to breakdown lengthy style formatting into multiple files, in multiple folders as needed, to plan out and update styles. </p>
                                 <p>If adding a new stylesheet, make sure to add an include to this file. Styles are used in the view files for setting section sizes, colors, fonts, and other formatted settings.</p>
-                                <p>For more information, see <a href="Theme_SCSS_Overview.htm">Storefront Styles</a>.</p>
-                                <p>This folder includes addition subfolders:</p>
-                                <ul>
-                                    <li value="1"><code>components </code>- All stylesheets for all web components in your theme. This includes styles for modals, the slider carousel, alerts, breadcrumbs, and more.</li>
-                                    <li value="2"><code>core </code>- Stylesheets for the fundamental parts of your theme pages, including buttons, forms, and tables.</li>
-                                    <li value="3"><code>reset </code>- Stylesheets for importing bootstrap styles, such as normalize and print.</li>
-                                    <li value="4"><code>style-guide</code> - Stylesheets for the basic colors, fonts, and button looks in your theme. You will use the <code>_fonts.scss</code> to add new fonts to your theme, <code>_buttons.scss</code> to control button text, and <code>_type.scss</code> for your H1. One of the most important files is the <code>_theme-vars.scss </code>which sets variables for all aspects of theme settings and content, usable by the variable name across Bootstrap.</li>
-                                    <li value="5"><code>utilities </code>- Stylesheets for styling utilities. The files in this folder import bootstrap settings for responsive utilities and utilities.</li>
-                                </ul>
+                                <p>For more information, see <a href="Theme_SCSS_Overview.htm">Styles and Layouts</a>.</p>
                             </td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>translations</code>
+                        <tr>
+                            <td><code>translations</code>
                             </td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">For every language your storefronts supports, you will need to add a JSON file with that content in each folder. The folders correspond to the storefront pages supporting translation text. </td>
+                            <td>The files in this folder are primarily used for customizing the text used on your theme page templates. For every language your storefronts supports, you will need to add a JSON file with that content in each folder. The folders correspond to the storefront pages supporting translation text. For more info, see <a href="Theme_Translations.htm">Custom Content</a>.</td>
                         </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>views</code>
+                        <tr>
+                            <td><code>views</code>
                             </td>
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                            <td>
                                 <p>Views act as templates to display data received from a controller.&#160;The controllers make calls to the Storefront API and modify data, sending it through a scope, to display in this view. The themes include a view per controller. These templates provide the container settings for desktop, tablet, and mobile responsive layouts.</p>
                                 <ul>
                                     <li value="1">Page Templates: about, article, category, contact, home, i18n (used for translations), product, style-guide, theme-settings.</li>
@@ -200,62 +221,11 @@
                                 <p>Views are a key element in your theme for displaying custom content on your storefront. </p>
                             </td>
                         </tr>
-                    </tbody>
-                </table>
-                <h3>Config Folder</h3>
-                <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <thead>
-                        <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Folder</th>
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>env</code>
-                            </td>
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
-                                <p>Provides configuration JSON files per environment. These files set the localhost, API URL, if translations are enabled or disabled, the URL&#160;prefix, and localization settings for region, language, and country. </p>
-                                <p>Example of <code>dev.json</code>:</p><pre>{
-	"config": {
-		"LOCALHOST": true,
-		"API_URL": "http://www.samplestore.io/api/v1",
-		"DISABLE_TRANSLATIONS": true,
-		"URL_PREFIX": "",
-		"REGION": "",
-		"LANG": "",
-		"COUNTRY": ""
-	}
-}</pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- Footer  -->
-        <footer style="background:#3b3b3b; color: #fff;">
-            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-            <div class="row" style="padding-left:20px;">
-                <p class="text-center"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular/theme" target="_blank">Github Themes</a> · <a href="https://github.com/volusion-angular-themes/releases" target="_blank">Theme Releases</a>  · <a href="https://github.com/volusion-angular-themes/issues?state=open" target="_blank">Theme Issue Log</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a></p>
-                <p class="text-center"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a> <a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p>
-                <p class="text-center small">Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-					documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-					</p>
-                <p class="text-center small">© 1999-2014 Volusion, Inc. All Rights Reserved.</p>
-            </div>
-        </footer>
-        <!-- Bootstrap core JavaScript
-		================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-        </script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
-        </script>
-        <script src="../../Resources/JS/holder.js">
-        </script>
-    </body>
+                    </table>
+                </div>
+            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
+			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
 </html>
