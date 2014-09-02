@@ -23,7 +23,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
-        <!-- navbar control -->
+        <!-- navbar toggle control -->
         <script>/* <![CDATA[ */$(document).ready(function(){
 
 			$("#toggler").click(function(){
@@ -61,158 +61,163 @@
         </script>
     </head>
     <body style="padding-top: 75px;">
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="Quickstart.htm">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../Dev-Center-Index.htm">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="Quickstart.htm">Quickstart</a>
                                 </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                <li value="2"><a href="../../Dev-Center-Index.htm">Docs</a>
                                 </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
                 </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!-- <div class="divide-nav" role="navigation">
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div class="container-fluid ">
-            <div class="col-xs-12 col-md-8 col-center-block">
-                <div class="col-xs-3">
-                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
-                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
 						<p></p> -->
-                        <!--Side Nav Snippet -->
-                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
 				Install and Setup</a>
-                            <div id="setup" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Theme_EnvironmentOverview.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Theme_Install_GitHub.htm">GitHub</a>
-                                    </li>
-                                    <li value="3"><a href="Theme_Install_Nodejs.htm">NodeJS</a>
-                                    </li>
-                                    <li value="4"><a href="Theme_Install_Ruby.htm">Ruby</a>
-                                    </li>
-                                    <li value="5"><a href="#">Compass</a>
-                                    </li>
-                                    <li value="6"><a href="Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                    </li>
-                                    <li value="7"><a href="Theme_Install_Postman.htm">Apps and Plugins</a>
-                                    </li>
-                                    <li value="8"><a href="Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>
-                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
-                            <div id="custom" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="../Customization/Theme_Customization.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                    <li value="3"><a href="../Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                    </li>
-                                    <li value="4"><a href="../Customization/Theme_FolderStructure.htm">Folder Structure</a>
-                                    </li>
-                                    <li value="5"><a href="../Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                    </li>
-                                    <li value="6"><a href="../Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                    </li>
-                                    <li value="7"><a href="../Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                    </li>
-                                    <li value="8"><a href="../Customization/Theme_Images_Spriting.htm">Image Sprites</a>
-                                    </li>
-                                    <li value="9"><a href="../Customization/Theme_Translations.htm">Custom Content</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Theme_EnvironmentOverview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Theme_Install_GitHub.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="Theme_Install_Nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="Theme_Install_Ruby.htm">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="#">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="Theme_Install_Postman.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="../Customization/Theme_Customization.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="../Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="../Customization/Theme_FolderStructure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="../Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="../Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="../Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="../Customization/Theme_Images_Spriting.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="../Customization/Theme_Translations.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                    </nav>
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1 class="page-header">Step 4: Install Sass and Compass<br></br><small>If you have the Compass gem installed, continue to <a href="Theme_Install_Bootstrap.htm">Bootstrap</a> or <a href="Theme_Install_Postman.htm">Postman</a>.</small></h1>
+                            <p><a href="http://sass-lang.com/">Sass</a> is an extension of CSS as a stylesheet format and code of choice for Volusion. You can install and use Sass as a command line tool, a standalone Ruby module or as a plugin for a Rack-enabled framework. </p>
+                            <p>For Volusion theme development, you can add the Ruby gem for Sass called Compass.</p>
+                            <p><a href="http://compass-style.org/">Compass</a> is a stylesheet authoring framework and a popular option used by Volusion developers. This software has an <a href="http://compass-style.org/install/">open-source install</a> (with a <a href="http://compass.kkbox.com/">paid GUI version</a> also available). The application works on Ruby as an installed gem, which integrates with the environment you have set up in previous steps.</p>
+                            <p>For the Sass development efforts, install the Compass gem!</p>
+                            <p>New to Sass and Compass? You can learn more about Compass <a href="http://compass-style.org/help/tutorials/configuration-reference/">configurations</a>, <a href="http://compass-style.org/help/tutorials/command-line/">command line documentation</a>, and their <a href="http://compass-style.org/help/tutorials/">general tutorials</a>!</p>
+                            <h3>
+                                <img src="../../Resources/Images/windows.png" /> Windows Installation</h3>
+                            <p>The Windows installation uses a command line prompt.</p>
+                            <table class="table">
+                                <th>
+                                    <tr>
+                                        <td>Step</td>
+                                        <td>What to Do</td>
+                                    </tr>
+                                </th>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Open a Terminal.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Type and enter: <code>gem install compass</code></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Test the compass installation. Type and enter: <code>compass version</code><br />If a version displays, you are done. </td>
+                                </tr>
+                            </table>
+                            <h3>
+                                <img src="../../Resources/Images/mac.png" /> Mac Installation</h3>
+                            <p>These instructions are completed through command line terminal.</p>
+                            <table class="table">
+                                <th>
+                                    <tr>
+                                        <td>Step</td>
+                                        <td>What to Do</td>
+                                    </tr>
+                                </th>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Open a Terminal application.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Check if you have compass installed. Type and enter: <code>compass version</code><br />If a version displays, you are done.</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>If a version does not display, type and enter: <code>sudo gem install compass</code></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Test the compass installation. Type and enter: <code>compass version</code><br />If a version displays, you are done.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <!-- Main Topic Proxy -->
-                <div class="col-xs-9">
-                    <!-- FLARE SEARCH all content for flare search and results -->
-                    <h1 class="page-header">Step 4: Install Sass and Compass<br></br><small>If you have the Compass gem installed, continue to <a href="Theme_Install_Bootstrap.htm">Bootstrap</a> or <a href="Theme_Install_Postman.htm">Postman</a>.</small></h1>
-                    <p><a href="http://sass-lang.com/">Sass</a> is an extension of CSS as a stylesheet format and code of choice for Volusion. You can install and use Sass as a command line tool, a standalone Ruby module or as a plugin for a Rack-enabled framework. </p>
-                    <p>For Volusion theme development, you can add the Ruby gem for Sass called Compass.</p>
-                    <p><a href="http://compass-style.org/">Compass</a> is a stylesheet authoring framework and a popular option used by Volusion developers. This software has an <a href="http://compass-style.org/install/">open-source install</a> (with a <a href="http://compass.kkbox.com/">paid GUI version</a> also available). The application works on Ruby as an installed gem, which integrates with the environment you have set up in previous steps.</p>
-                    <p>For the Sass development efforts, install the Compass gem!</p>
-                    <p>New to Sass and Compass? You can learn more about Compass <a href="http://compass-style.org/help/tutorials/configuration-reference/">configurations</a>, <a href="http://compass-style.org/help/tutorials/command-line/">command line documentation</a>, and their <a href="http://compass-style.org/help/tutorials/">general tutorials</a>!</p>
-                    <h3>
-                        <img src="../../Resources/Images/windows.png" /> Windows Installation</h3>
-                    <p>The Windows installation uses a command line prompt.</p>
-                    <table class="table">
-                        <th>
-                            <tr>
-                                <td>Step</td>
-                                <td>What to Do</td>
-                            </tr>
-                        </th>
-                        <tr>
-                            <td>1</td>
-                            <td>Open a Terminal.</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Type and enter: <code>gem install compass</code></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Test the compass installation. Type and enter: <code>compass version</code><br />If a version displays, you are done. </td>
-                        </tr>
-                    </table>
-                    <h3>
-                        <img src="../../Resources/Images/mac.png" /> Mac Installation</h3>
-                    <p>These instructions are completed through command line terminal.</p>
-                    <table class="table">
-                        <th>
-                            <tr>
-                                <td>Step</td>
-                                <td>What to Do</td>
-                            </tr>
-                        </th>
-                        <tr>
-                            <td>1</td>
-                            <td>Open a Terminal application.</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Check if you have compass installed. Type and enter: <code>compass version</code><br />If a version displays, you are done.</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>If a version does not display, type and enter: <code>sudo gem install compass</code></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Test the compass installation. Type and enter: <code>compass version</code><br />If a version displays, you are done.</td>
-                        </tr>
-                    </table>
-                </div>
-            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
 							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
 							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
-			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
 </html>

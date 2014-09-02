@@ -23,7 +23,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
-        <!-- navbar control -->
+        <!-- navbar toggle control -->
         <script>/* <![CDATA[ */$(document).ready(function(){
 
 			$("#toggler").click(function(){
@@ -62,135 +62,138 @@
         </script>
     </head>
     <body style="padding-top: 75px;">
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="Installation/Quickstart.htm">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../Dev-Center-Index.htm">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="Installation/Quickstart.htm">Quickstart</a>
                                 </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                <li value="2"><a href="../Dev-Center-Index.htm">Docs</a>
                                 </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
                 </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!-- <div class="divide-nav" role="navigation">
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div class="container-fluid ">
-            <div class="col-xs-12 col-md-8 col-center-block">
-                <div class="col-xs-3">
-                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
-                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
 						<p></p> -->
-                        <!--Side Nav Snippet -->
-                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
 				Install and Setup</a>
-                            <div id="setup" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Installation/Theme_EnvironmentOverview.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                    </li>
-                                    <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                    </li>
-                                    <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                    </li>
-                                    <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
-                                    </li>
-                                    <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                    </li>
-                                    <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                    </li>
-                                    <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>
-                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
-                            <div id="custom" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Customization/Theme_Customization.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                    <li value="3"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                    </li>
-                                    <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
-                                    </li>
-                                    <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                    </li>
-                                    <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                    </li>
-                                    <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                    </li>
-                                    <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Image Sprites</a>
-                                    </li>
-                                    <li value="9"><a href="Customization/Theme_Translations.htm">Custom Content</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Customization/Theme_Customization.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="Customization/Theme_Translations.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                    </nav>
-                </div>
-                <!-- Main Topic Proxy -->
-                <div class="col-xs-9">
-                    <!-- FLARE SEARCH all content for flare search and results -->
-                    <h1>Get Navigation&#160;Links</h1>
-                    <p>This <code>GET&#160;</code>method requests a full list of all links for a navigation area of the storefront. The response provides a list of all categories with subcategories linked to the input navigation area by numbered location. The storefront supports up to eight navigation menus that display across the top of side depending on the design of your theme. Depending on the depth of subcategories in your category hierarchy, the response may be lengthy.</p>
-                    <h2>Request</h2>
-                    <p>The URI call structure is:</p><pre xml:space="preserve">GET http://{domain}/api/v1/navs/<span style="color: #fc6003;">id</span>?levels=<span style="color: #f36e34;">levels</span></pre>
-                    <h3>Parameters</h3>
-                    <p>The following parameter can be entered into the request:</p>
-                    <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>id</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Numeric ID for the specific navigation menu area. The options are one through eight for displaying the possible links. This endpoint cannot be used for locating all links for additional navigation areas and categories such as home page (H), search results (S), photo gallery (G), the home page super deals (W)or the home page top sellers (T).</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>levels</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Depth of categories/subcategories to retrieve, up to 3 levels. Example: 2.</td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Number</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2>Response</h2>
-                    <p>The response includes a response code and data for the all links available in the passed numbered navigation area. These links are associated categories and subcategories, displayed according to the design and settings of your storefront navigation. Depending on the hierarchy of your categories and subcategories, this response may be lengthy.</p>
-                    <p><b>Status Code</b> 200</p>
-                    <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />JSON Response</a></span>
-                        <div class="MCDropDownBody dropDownBody"><pre class="CodeSample">{
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1>Get Navigation&#160;Links</h1>
+                            <p>This <code>GET&#160;</code>method requests a full list of all links for a navigation area of the storefront. The response provides a list of all categories with subcategories linked to the input navigation area by numbered location. The storefront supports up to eight navigation menus that display across the top of side depending on the design of your theme. Depending on the depth of subcategories in your category hierarchy, the response may be lengthy.</p>
+                            <h2>Request</h2>
+                            <p>The URI call structure is:</p><pre xml:space="preserve">GET http://{domain}/api/v1/navs/<span style="color: #fc6003;">id</span>?levels=<span style="color: #f36e34;">levels</span></pre>
+                            <h3>Parameters</h3>
+                            <p>The following parameter can be entered into the request:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>id</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Numeric ID for the specific navigation menu area. The options are one through eight for displaying the possible links. This endpoint cannot be used for locating all links for additional navigation areas and categories such as home page (H), search results (S), photo gallery (G), the home page super deals (W)or the home page top sellers (T).</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>levels</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Depth of categories/subcategories to retrieve, up to 3 levels. Example: 2.</td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2>Response</h2>
+                            <p>The response includes a response code and data for the all links available in the passed numbered navigation area. These links are associated categories and subcategories, displayed according to the design and settings of your storefront navigation. Depending on the hierarchy of your categories and subcategories, this response may be lengthy.</p>
+                            <p><b>Status Code</b> 200</p>
+                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />JSON Response</a></span>
+                                <div class="MCDropDownBody dropDownBody"><pre class="CodeSample">{
 	"data": [
 		{
 		"id": 1814,
@@ -286,101 +289,103 @@
 		}
 	]
 }</pre>
+                                </div>
+                            </div>
+                            <h3>Data</h3>
+                            <p>The response includes a data collection with detailed information per category and associated subcategories all linked and displayed in the entered navigation area. Due to the parent-child relationship of categories, the data may return multiple nested subcategories with further nested subcategories.</p>
+                            <p>The following <code>data </code>is returned for the articles:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>id</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The generated ID&#160;for the category when created. This is generated automatically by the Volusion system. Example: 1814</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>name</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The category name entered at category creation. The name is alphanumeric and supports some special characters. This is a required setting and always returns content. Example: Apparel.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>alternateUrl</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This URL generates from the entered Category URL&#160;Text for the SEO&#160;options for a category. A dependency for this value is required through the Marketing &gt; SEO &gt; Search Engine Friendly URLs section of the Admin. With this activated and content entered, a new alternate, SEO&#160;friendly category displays. If <code>NULL</code>, the URL may default to the category ID. </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                            <p>String</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>subCategories</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                                            <p>This is a collection of all subcategories to this category. Any category with the Subcategory of... entered with a parent category ID will be considered a subcategory of that parent category and display in that collection. The collection includes the following information:</p>
+                                            <ul>
+                                                <li value="1"><code>id </code>- The generated ID of the category.</li>
+                                                <li value="2"><code>name </code>- The entered name for the category.</li>
+                                                <li value="3"><code>alternateUrl </code>- As the <code>alternateURL </code>above, it is a generated URL using SEO options and entered text to create an easily read and used category URL. Otherwise, it defaults to the category ID.</li>
+                                                <li value="4"><code>subcategories </code>- A collection of categories with this category listed as the parent category ID.</li>
+                                                <li value="5"><code>imgUrl </code>- Sets the URL location of the category image to use and display. If no image is included for the category, the setting defaults to a placeholder image URL.</li>
+                                                <li value="6"><code>description </code>- Fully defined description of the category.</li>
+                                                <li value="7"><code>seo </code>- This data provides a series of SEO values:<ul><li value="1"><code>metaTagTitle </code>- Sets an SEO&#160;friendly name for the category. If NULL, the data defaults to the category name.</li><li value="2"><code>metaTagKeywords </code>- Sets all keywords used by search engines to locate and return this category in search results. Keywords are separated by commas. This is an unlimited String.</li><li value="3"><code>metaTagDescriptions </code>- Sets the category description used in search engine results. This is a 255 character String.</li><li value="4"><code>metaTagsOverride </code>- Sets advanced code that overrides all existing HTML meta tag information. This option is for advanced users.</li></ul></li>
+                                                <li value="8"><code>slug</code>- Provides the SEO&#160;friendly name for the category. A category may have a long name or contain numerous special characters.&#160;This content may not adhere to SEO&#160;usage. The name is used when generating the URL.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>imageUrl</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This text sets the URL&#160;path for the category image. If no image is included for the category, the setting defaults to a placeholder image URL. Example: /v/vspfiles/templates/99999/images/nophoto-0.gif</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>description</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">This option sets the description displayed for the category, on the category page when loaded in the storefront. The content can be deeply detailed, supporting plain text and HTML&#160;code. </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>seo</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                            <p>This data sets the SEO&#160;friendly content for the category, including the following:</p>
+                                            <ul>
+                                                <li value="1"><code>metaTagTitle </code>- Sets an SEO&#160;friendly name for the category. If NULL, the data defaults to the category name.</li>
+                                                <li value="2"><code>metaTagKeywords </code>- Sets all keywords used by search engines to locate and return this category in search results. Keywords are separated by commas. This is an unlimited String.</li>
+                                                <li value="3"><code>metaTagDescriptions </code>- Sets the category description used in search engine results. This is a 255 character String.</li>
+                                                <li value="4"><code>metaTagsOverride </code>- Sets advanced code that overrides all existing HTML meta tag information. This option is for advanced users.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>slug</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                                            <p>This attribute provides the SEO&#160;friendly name for the category. A category may have a long name or contain numerous special characters.&#160;This content may not adhere to SEO&#160;usage. The name is used when generating the URL.</p>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">&#160;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <h3>Data</h3>
-                    <p>The response includes a data collection with detailed information per category and associated subcategories all linked and displayed in the entered navigation area. Due to the parent-child relationship of categories, the data may return multiple nested subcategories with further nested subcategories.</p>
-                    <p>The following <code>data </code>is returned for the articles:</p>
-                    <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>id</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The generated ID&#160;for the category when created. This is generated automatically by the Volusion system. Example: 1814</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>name</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The category name entered at category creation. The name is alphanumeric and supports some special characters. This is a required setting and always returns content. Example: Apparel.</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>alternateUrl</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This URL generates from the entered Category URL&#160;Text for the SEO&#160;options for a category. A dependency for this value is required through the Marketing &gt; SEO &gt; Search Engine Friendly URLs section of the Admin. With this activated and content entered, a new alternate, SEO&#160;friendly category displays. If <code>NULL</code>, the URL may default to the category ID. </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                                    <p>String</p>
-                                </td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>subCategories</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
-                                    <p>This is a collection of all subcategories to this category. Any category with the Subcategory of... entered with a parent category ID will be considered a subcategory of that parent category and display in that collection. The collection includes the following information:</p>
-                                    <ul>
-                                        <li value="1"><code>id </code>- The generated ID of the category.</li>
-                                        <li value="2"><code>name </code>- The entered name for the category.</li>
-                                        <li value="3"><code>alternateUrl </code>- As the <code>alternateURL </code>above, it is a generated URL using SEO options and entered text to create an easily read and used category URL. Otherwise, it defaults to the category ID.</li>
-                                        <li value="4"><code>subcategories </code>- A collection of categories with this category listed as the parent category ID.</li>
-                                        <li value="5"><code>imgUrl </code>- Sets the URL location of the category image to use and display. If no image is included for the category, the setting defaults to a placeholder image URL.</li>
-                                        <li value="6"><code>description </code>- Fully defined description of the category.</li>
-                                        <li value="7"><code>seo </code>- This data provides a series of SEO values:<ul><li value="1"><code>metaTagTitle </code>- Sets an SEO&#160;friendly name for the category. If NULL, the data defaults to the category name.</li><li value="2"><code>metaTagKeywords </code>- Sets all keywords used by search engines to locate and return this category in search results. Keywords are separated by commas. This is an unlimited String.</li><li value="3"><code>metaTagDescriptions </code>- Sets the category description used in search engine results. This is a 255 character String.</li><li value="4"><code>metaTagsOverride </code>- Sets advanced code that overrides all existing HTML meta tag information. This option is for advanced users.</li></ul></li>
-                                        <li value="8"><code>slug</code>- Provides the SEO&#160;friendly name for the category. A category may have a long name or contain numerous special characters.&#160;This content may not adhere to SEO&#160;usage. The name is used when generating the URL.</li>
-                                    </ul>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">&#160;</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>imageUrl</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This text sets the URL&#160;path for the category image. If no image is included for the category, the setting defaults to a placeholder image URL. Example: /v/vspfiles/templates/99999/images/nophoto-0.gif</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>description</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">This option sets the description displayed for the category, on the category page when loaded in the storefront. The content can be deeply detailed, supporting plain text and HTML&#160;code. </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">&#160;</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>seo</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                                    <p>This data sets the SEO&#160;friendly content for the category, including the following:</p>
-                                    <ul>
-                                        <li value="1"><code>metaTagTitle </code>- Sets an SEO&#160;friendly name for the category. If NULL, the data defaults to the category name.</li>
-                                        <li value="2"><code>metaTagKeywords </code>- Sets all keywords used by search engines to locate and return this category in search results. Keywords are separated by commas. This is an unlimited String.</li>
-                                        <li value="3"><code>metaTagDescriptions </code>- Sets the category description used in search engine results. This is a 255 character String.</li>
-                                        <li value="4"><code>metaTagsOverride </code>- Sets advanced code that overrides all existing HTML meta tag information. This option is for advanced users.</li>
-                                    </ul>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>slug</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
-                                    <p>This attribute provides the SEO&#160;friendly name for the category. A category may have a long name or contain numerous special characters.&#160;This content may not adhere to SEO&#160;usage. The name is used when generating the URL.</p>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">&#160;</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
-            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
 							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
 							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
-			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
 </html>

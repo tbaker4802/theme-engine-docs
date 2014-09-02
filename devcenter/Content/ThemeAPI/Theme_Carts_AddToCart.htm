@@ -23,7 +23,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
-        <!-- navbar control -->
+        <!-- navbar toggle control -->
         <script>/* <![CDATA[ */$(document).ready(function(){
 
 			$("#toggler").click(function(){
@@ -62,155 +62,160 @@
         </script>
     </head>
     <body style="padding-top: 75px;">
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="Installation/Quickstart.htm">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../Dev-Center-Index.htm">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="Installation/Quickstart.htm">Quickstart</a>
                                 </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                <li value="2"><a href="../Dev-Center-Index.htm">Docs</a>
                                 </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
                 </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!-- <div class="divide-nav" role="navigation">
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div class="container-fluid ">
-            <div class="col-xs-12 col-md-8 col-center-block">
-                <div class="col-xs-3">
-                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
-                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
 						<p></p> -->
-                        <!--Side Nav Snippet -->
-                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
 				Install and Setup</a>
-                            <div id="setup" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Installation/Theme_EnvironmentOverview.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                    </li>
-                                    <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                    </li>
-                                    <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                    </li>
-                                    <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
-                                    </li>
-                                    <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                    </li>
-                                    <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                    </li>
-                                    <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>
-                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
-                            <div id="custom" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Customization/Theme_Customization.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                    <li value="3"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                    </li>
-                                    <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
-                                    </li>
-                                    <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                    </li>
-                                    <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                    </li>
-                                    <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                    </li>
-                                    <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Image Sprites</a>
-                                    </li>
-                                    <li value="9"><a href="Customization/Theme_Translations.htm">Custom Content</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Customization/Theme_Customization.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="Customization/Theme_Translations.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                    </nav>
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1>Add a Product to a Cart</h1>
+                            <p>To add a product to the shopper's cart, you use a <code>POST</code>method. You can add a product using the product code, quantity being purchased, and any configured options available and requested for that product. The endpoint receives the cart ID from the cookie for the shopper, not requiring the cart ID&#160;for the method. The response only provides a 201 status code on success. </p>
+                            <p>You can also use the<code>GET </code>method to check the content of a cart for successful add to cart methods. </p>
+                            <p class="note" style="font-weight: normal;">When passing the entire cart in a <code>POST </code>request, the<code>totals </code>attribute is the only read-only attribute validated. All other read-only attributes are ignored.</p>
+                            <h2>Request</h2>
+                            <p>The URI call structure is:</p><pre class="CodeSample">POST http://volusion.apiary-mock.com/api/v1/carts</pre>
+                            <p>The header is: </p><pre class="CodeSample"><code>vMethod: POST</code></pre>
+                            <h3>Parameters</h3>
+                            <p>The cart ID is not required for the request as a cookie provides any required cart identification. The following parameters can be entered into the request:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>code</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Required. Alphanumeric code entered when creating a product for the storefront. </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>qty</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Required. The numeric amount of the product code to add to the current cart.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>options</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                                            <p>Required. Nested attributes of options selected for the product. These options may include custom text for adding to the product as part of order fulfillment. A product can include multiple options such as size, color, custom text, and material choices.</p>
+                                            <ul>
+                                                <li value="1"><code>id </code>- Required. The numeric ID&#160;for the option available for the product and added to the cart update.<br /></li>
+                                                <li value="2"><code>optionText </code>- Optional. Text entered with specific punctuation for adding to the product, such as etching, embroidery, and laser printing.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                                            <p>Number</p>
+                                            <p>String</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2>Response</h2>
+                            <p>The response includes only the status code for success or failure. To verify the product has been added, you can use a <code>GET </code>method  on the cart.</p>
+                            <p><b>Status Code</b> 201</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Main Topic Proxy -->
-                <div class="col-xs-9">
-                    <!-- FLARE SEARCH all content for flare search and results -->
-                    <h1>Add a Product to a Cart</h1>
-                    <p>To add a product to the shopper's cart, you use a <code>POST</code>method. You can add a product using the product code, quantity being purchased, and any configured options available and requested for that product. The endpoint receives the cart ID from the cookie for the shopper, not requiring the cart ID&#160;for the method. The response only provides a 201 status code on success. </p>
-                    <p>You can also use the<code>GET </code>method to check the content of a cart for successful add to cart methods. </p>
-                    <p class="note" style="font-weight: normal;">When passing the entire cart in a <code>POST </code>request, the<code>totals </code>attribute is the only read-only attribute validated. All other read-only attributes are ignored.</p>
-                    <h2>Request</h2>
-                    <p>The URI call structure is:</p><pre class="CodeSample">POST http://volusion.apiary-mock.com/api/v1/carts</pre>
-                    <p>The header is: </p><pre class="CodeSample"><code>vMethod: POST</code></pre>
-                    <h3>Parameters</h3>
-                    <p>The cart ID is not required for the request as a cookie provides any required cart identification. The following parameters can be entered into the request:</p>
-                    <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>code</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Required. Alphanumeric code entered when creating a product for the storefront. </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>qty</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Required. The numeric amount of the product code to add to the current cart.</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Number</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>options</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
-                                    <p>Required. Nested attributes of options selected for the product. These options may include custom text for adding to the product as part of order fulfillment. A product can include multiple options such as size, color, custom text, and material choices.</p>
-                                    <ul>
-                                        <li value="1"><code>id </code>- Required. The numeric ID&#160;for the option available for the product and added to the cart update.<br /></li>
-                                        <li value="2"><code>optionText </code>- Optional. Text entered with specific punctuation for adding to the product, such as etching, embroidery, and laser printing.</li>
-                                    </ul>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                                    <p>Number</p>
-                                    <p>String</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2>Response</h2>
-                    <p>The response includes only the status code for success or failure. To verify the product has been added, you can use a <code>GET </code>method  on the cart.</p>
-                    <p><b>Status Code</b> 201</p>
-                </div>
-            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
 							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
 							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
-			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
 </html>

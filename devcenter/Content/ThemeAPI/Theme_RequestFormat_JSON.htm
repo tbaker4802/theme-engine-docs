@@ -23,7 +23,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
-        <!-- navbar control -->
+        <!-- navbar toggle control -->
         <script>/* <![CDATA[ */$(document).ready(function(){
 
 			$("#toggler").click(function(){
@@ -62,124 +62,127 @@
         </script>
     </head>
     <body style="padding-top: 75px;">
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="Installation/Quickstart.htm">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../Dev-Center-Index.htm">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="Installation/Quickstart.htm">Quickstart</a>
                                 </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                <li value="2"><a href="../Dev-Center-Index.htm">Docs</a>
                                 </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
                 </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!-- <div class="divide-nav" role="navigation">
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div class="container-fluid ">
-            <div class="col-xs-12 col-md-8 col-center-block">
-                <div class="col-xs-3">
-                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
-                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
 						<p></p> -->
-                        <!--Side Nav Snippet -->
-                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
 				Install and Setup</a>
-                            <div id="setup" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Installation/Theme_EnvironmentOverview.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                    </li>
-                                    <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                    </li>
-                                    <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                    </li>
-                                    <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
-                                    </li>
-                                    <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                    </li>
-                                    <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                    </li>
-                                    <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>
-                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
-                            <div id="custom" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Customization/Theme_Customization.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                    <li value="3"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                    </li>
-                                    <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
-                                    </li>
-                                    <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                    </li>
-                                    <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                    </li>
-                                    <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                    </li>
-                                    <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Image Sprites</a>
-                                    </li>
-                                    <li value="9"><a href="Customization/Theme_Translations.htm">Custom Content</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="Installation/Theme_Install_Compass.htm">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Customization/Theme_Customization.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="Customization/Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="Customization/Theme_FolderStructure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="Customization/Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="Customization/Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="Customization/Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="Customization/Theme_Images_Spriting.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="Customization/Theme_Translations.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                    </nav>
-                </div>
-                <!-- Main Topic Proxy -->
-                <div class="col-xs-9">
-                    <!-- FLARE SEARCH all content for flare search and results -->
-                    <h1>JSON Request Format</h1>
-                    <p>Primarily, <span class="GeneralCompanyName">Volusion</span> <span class="GeneralThemeEngineAPI">Storefront API</span> accepts and returns in JSON. This information details the methods, structure of the JSON requests, with applicable samples for formatting.</p>
-                    <h2>Methods</h2>
-                    <p>Requests to the API include the following methods:</p>
-                    <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Operation</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>GET</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                                    <p>Retrieves data and items from the <span class="GeneralProductName">Volusion</span> store. A successful request returns a status code of 200 with JSON displaying data and additional information as appropriate for pagination of results and possible warnings that occur.</p><pre class="CodeSample">GET http://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/</pre>
-                                </td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>POST</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
-                                    <p>Creates a new object or item in the store. A successful request  returns a status code of 201 and the JSON&#160;response of the new data. For example, a <code>POST&#160;</code>method against the User endpoint could create a new user account object in the store returning their ID. </p><pre class="CodeSample">POSThttp://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1>JSON Request Format</h1>
+                            <p>Primarily, <span class="GeneralCompanyName">Volusion</span> <span class="GeneralThemeEngineAPI">Storefront API</span> accepts and returns in JSON. This information details the methods, structure of the JSON requests, with applicable samples for formatting.</p>
+                            <h2>Methods</h2>
+                            <p>Requests to the API include the following methods:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Operation</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>GET</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                            <p>Retrieves data and items from the <span class="GeneralProductName">Volusion</span> store. A successful request returns a status code of 200 with JSON displaying data and additional information as appropriate for pagination of results and possible warnings that occur.</p><pre class="CodeSample">GET http://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/</pre>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>POST</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                                            <p>Creates a new object or item in the store. A successful request  returns a status code of 201 and the JSON&#160;response of the new data. For example, a <code>POST&#160;</code>method against the User endpoint could create a new user account object in the store returning their ID. </p><pre class="CodeSample">POSThttp://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/
 vMethod: POST
 {
 	"firstName": "John",
@@ -195,13 +198,13 @@ vMethod: POST
 	"residential": true,
 	"preferred": true
 }	</pre>
-                                </td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>PUT</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                                    <p>Updates the data for an existing item in the store. A successful request returns a status code of 200 with a JSON response detailing the data. For example, a <code>PUT </code>operation for shipping information against the Cart endpoint will provide an updated shopping cart object with returned data for the shipping, cart totals, and other pertinent information.</p><pre class="CodeSample">PUT http://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/id
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>PUT</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                            <p>Updates the data for an existing item in the store. A successful request returns a status code of 200 with a JSON response detailing the data. For example, a <code>PUT </code>operation for shipping information against the Cart endpoint will provide an updated shopping cart object with returned data for the shipping, cart totals, and other pertinent information.</p><pre class="CodeSample">PUT http://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/id
 vMethod: PUT
 {
 	"id": 12663,
@@ -218,58 +221,60 @@ vMethod: PUT
 	"residential": true,
 	"preferred": true
 }</pre>
-                                </td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>DELETE</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
-                                    <p>Deletes data for an existing item in the store. A successful request returns a 204 status without further data in the body of the JSON. For example, a <code>DELETE </code>method for an existing billing address returns a 204 and removes the billing address for that specific user account.</p><pre class="CodeSample">DELETE http://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>DELETE</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                                            <p>Deletes data for an existing item in the store. A successful request returns a 204 status without further data in the body of the JSON. For example, a <code>DELETE </code>method for an existing billing address returns a 204 and removes the billing address for that specific user account.</p><pre class="CodeSample">DELETE http://volusion.apiary-mock.com/api/v1/users/current/shippingAddresses/
 vMethod: DELETE</pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2>URI Structure</h2>
-                    <p>The request includes one of the methods and a URI&#160;structure that includes the API&#160;resource and any specific parameters. </p>
-                    <p>The following is a sample of the URI&#160;structure:</p><pre class="CodeSample">METHOD https://{domain}/api/v1/{resource}/{resourceId}</pre>
-                    <p>Another format includes:</p><pre class="CodeSample">METHOD https://{domain}/api/v1/{resource}/{aspect}</pre>
-                    <p>Depending on the request made and header, the URL&#160;structure may include additional parameters. For example, when getting a collection of reviews, you need to provide a parameter for the product code. All additional required and optional parameters are detailed per endpoint.</p>
-                    <p>You can also use query methods to enhance the <code>GET </code>method. Example: </p><pre class="CodeSample">GET&#160;https://{domain}/api/v1/products?page=2&amp;pageSize=10  </pre>
-                    <p>The following table details this structure in-depth:</p>
-                    <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Structure</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/api/v1/</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">All endpoints begin with this information as the location for calling that specific endpoint. The service endpoint includes the current version (v1). When subsequent release are provided, this version may change and need updating. Further information will be provided for future releases. </td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>{resource}</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">This signifies the  resource endpoint for a specific set of data or objects in the system. Supported endpoints include products, categories, articles, navigation, config, components, reviews, carts, countries, users, login and orders. For details, see <a href="Theme_Endpoints.htm">the list of resource endpoints</a>.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>{resourceId}</code>
-                                    <p><code>{aspect}</code>
-                                    </p>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">The <code>resourceId </code>sets the ID for a specific object to reference for the operation. Optionally, <code>{aspect}</code>can be used in place of <code>resourceId </code>. For example, <code>current</code>captures current data for the referenced resource. For example, <code>/users/current</code> would retrieve the current shoppers without having to provide the specific ID. </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2>URI Structure</h2>
+                            <p>The request includes one of the methods and a URI&#160;structure that includes the API&#160;resource and any specific parameters. </p>
+                            <p>The following is a sample of the URI&#160;structure:</p><pre class="CodeSample">METHOD https://{domain}/api/v1/{resource}/{resourceId}</pre>
+                            <p>Another format includes:</p><pre class="CodeSample">METHOD https://{domain}/api/v1/{resource}/{aspect}</pre>
+                            <p>Depending on the request made and header, the URL&#160;structure may include additional parameters. For example, when getting a collection of reviews, you need to provide a parameter for the product code. All additional required and optional parameters are detailed per endpoint.</p>
+                            <p>You can also use query methods to enhance the <code>GET </code>method. Example: </p><pre class="CodeSample">GET&#160;https://{domain}/api/v1/products?page=2&amp;pageSize=10  </pre>
+                            <p>The following table details this structure in-depth:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Structure</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/api/v1/</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">All endpoints begin with this information as the location for calling that specific endpoint. The service endpoint includes the current version (v1). When subsequent release are provided, this version may change and need updating. Further information will be provided for future releases. </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>{resource}</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">This signifies the  resource endpoint for a specific set of data or objects in the system. Supported endpoints include products, categories, articles, navigation, config, components, reviews, carts, countries, users, login and orders. For details, see <a href="Theme_Endpoints.htm">the list of resource endpoints</a>.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>{resourceId}</code>
+                                            <p><code>{aspect}</code>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">The <code>resourceId </code>sets the ID for a specific object to reference for the operation. Optionally, <code>{aspect}</code>can be used in place of <code>resourceId </code>. For example, <code>current</code>captures current data for the referenced resource. For example, <code>/users/current</code> would retrieve the current shoppers without having to provide the specific ID. </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
 							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
 							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
-			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
 </html>

@@ -23,7 +23,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
 		<![endif]-->
         <!-- Insert Google Analytics Here -->
-        <!-- navbar control -->
+        <!-- navbar toggle control -->
         <script>/* <![CDATA[ */$(document).ready(function(){
 
 			$("#toggler").click(function(){
@@ -62,179 +62,182 @@
         </script>
     </head>
     <body style="padding-top: 75px;">
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../Installation/Quickstart.htm">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../Dev-Center-Index.htm">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="../Installation/Quickstart.htm">Quickstart</a>
                                 </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                <li value="2"><a href="../../Dev-Center-Index.htm">Docs</a>
                                 </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
                 </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!-- <div class="divide-nav" role="navigation">
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div class="container-fluid ">
-            <div class="col-xs-12 col-md-8 col-center-block">
-                <div class="col-xs-3">
-                    <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
-                        <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
 						<p></p> -->
-                        <!--Side Nav Snippet -->
-                        <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
 				Install and Setup</a>
-                            <div id="setup" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="../Installation/Theme_EnvironmentOverview.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
-                                    </li>
-                                    <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
-                                    </li>
-                                    <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
-                                    </li>
-                                    <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
-                                    </li>
-                                    <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
-                                    </li>
-                                    <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
-                                    </li>
-                                    <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>
-                            </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
-                            <div id="custom" class="collapse in">
-                                <ul class="nav nav-list">
-                                    <li value="1"><a href="Theme_Customization.htm">Overview </a>
-                                    </li>
-                                    <li value="2"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
-                                    </li>
-                                    <li value="3"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
-                                    </li>
-                                    <li value="4"><a href="Theme_FolderStructure.htm">Folder Structure</a>
-                                    </li>
-                                    <li value="5"><a href="Theme_SCSS_Overview.htm">Styles and Layouts</a>
-                                    </li>
-                                    <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
-                                    </li>
-                                    <li value="7"><a href="Theme_Fonts_Overview.htm">Adding Fonts</a>
-                                    </li>
-                                    <li value="8"><a href="Theme_Images_Spriting.htm">Image Sprites</a>
-                                    </li>
-                                    <li value="9"><a href="Theme_Translations.htm">Custom Content</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="../Installation/Theme_EnvironmentOverview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="../Installation/Theme_Install_GitHub.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="../Installation/Theme_Install_Nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="../Installation/Theme_Install_Ruby.htm">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="../Installation/Theme_Install_Compass.htm">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="../Installation/Theme_Install_Bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="../Installation/Theme_Install_Postman.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="Theme_Customization.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="../Installation/Theme_DownloadaTheme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="Theme_SampleStore_Overview.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="Theme_FolderStructure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="Theme_SCSS_Overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="Theme_Bootstrap_Overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="Theme_Fonts_Overview.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="Theme_Images_Spriting.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="Theme_Translations.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                    </nav>
-                </div>
-                <!-- Main Topic Proxy -->
-                <div class="col-xs-9">
-                    <!-- FLARE SEARCH all content for flare search and results -->
-                    <h1 class="page-header">Storefront Theme Page Usage</h1>
-                    <p>Adding a responsive theme to your store changes specific pages to become "theme-specific". This means, specific pages load the customized responsive theme layouts, formats, styles, and content over the legacy templates you previously used for your store. Each customized responsive theme may affect these pages differently, depending on the designed content, styles, and web components. </p>
-                    <p style="text-align: center;">
-                        <img src="../../Resources/Images/architecture.png" />
-                    </p>
-                    <p>For all pages in your added responsive theme, the following occurs:</p>
-                    <ul>
-                        <li value="1">As shoppers access pages, they may be redirected to the new responsive theme page or a legacy page.</li>
-                        <li value="2">All pages will use the customized image, CSS style code, fonts, and apps added to your theme.</li>
-                        <li value="3">The Theme Engine determines served up pages and content based on entered settings.</li>
-                        <li value="4">The Storefront API provides data responses to entered requests in the responsive theme code. </li>
-                    </ul>
-                    <p>The following sections detail what those pages are, what they support, and how they are handled.</p>
-                    <h3>New Responsive Theme Pages</h3>
-                    <p>The responsive theme provides extensibility and customization for specific pages, depending on the supported theme-specific features. Each Volusion theme seed project may include different options and formats, best used for specific business verticals or current storefront content. </p>
-                    <p>Not all theme seed project provide all of these listed features immediately after you create a copy of the code. This gives you the opportunity to use the Angular framework, developer code, and designer skills to create your own extended features. </p>
-                    <p class="Method">For the examples in this guide, we are looking at the Method theme seed project. This project does not support the following options without editing.</p>
-                    <p>When adding these themes to your store, the following storefront pages will typically load the following responsive theme pages with associated features:</p>
-                    <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Storefront Page</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">URL</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameters</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Features</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Method Theme</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Header</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">N/A</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&#160;</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                                    <p>Logo<br />Navigation<br />Cart Item Count<br />Search<br />Content Blocks</p>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Nav can only display 1 level deep (root and sub-categories)</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Footer</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">N/A</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">&#160;</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Content Blocks</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Supports all content in Features.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Home</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>{domain}/</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&#160;</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">    Carousel/Slider
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1 class="page-header">Storefront Theme Page Usage</h1>
+                            <p>Adding a responsive theme to your store changes specific pages to become "theme-specific". This means, specific pages load the customized responsive theme layouts, formats, styles, and content over the legacy templates you previously used for your store. Each customized responsive theme may affect these pages differently, depending on the designed content, styles, and web components. </p>
+                            <p style="text-align: center;">
+                                <img src="../../Resources/Images/architecture.png" />
+                            </p>
+                            <p>For all pages in your added responsive theme, the following occurs:</p>
+                            <ul>
+                                <li value="1">As shoppers access pages, they may be redirected to the new responsive theme page or a legacy page.</li>
+                                <li value="2">All pages will use the customized image, CSS style code, fonts, and apps added to your theme.</li>
+                                <li value="3">The Theme Engine determines served up pages and content based on entered settings.</li>
+                                <li value="4">The Storefront API provides data responses to entered requests in the responsive theme code. </li>
+                            </ul>
+                            <p>The following sections detail what those pages are, what they support, and how they are handled.</p>
+                            <h3>New Responsive Theme Pages</h3>
+                            <p>The responsive theme provides extensibility and customization for specific pages, depending on the supported theme-specific features. Each Volusion theme seed project may include different options and formats, best used for specific business verticals or current storefront content. </p>
+                            <p>Not all theme seed project provide all of these listed features immediately after you create a copy of the code. This gives you the opportunity to use the Angular framework, developer code, and designer skills to create your own extended features. </p>
+                            <p class="Method">For the examples in this guide, we are looking at the Method theme seed project. This project does not support the following options without editing.</p>
+                            <p>When adding these themes to your store, the following storefront pages will typically load the following responsive theme pages with associated features:</p>
+                            <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Storefront Page</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">URL</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameters</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Features</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Method Theme</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Header</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">N/A</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&#160;</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                            <p>Logo<br />Navigation<br />Cart Item Count<br />Search<br />Content Blocks</p>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Nav can only display 1 level deep (root and sub-categories)</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Footer</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">N/A</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">&#160;</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Content Blocks</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Supports all content in Features.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Home</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>{domain}/</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&#160;</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">    Carousel/Slider
     <br />Content Block(s)
     <br />Featured Products</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Supports all content in Features.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Category</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}/c/{<span style="color: #fc6003;">id</span>}?search={<span style="color: #fc6003;">terms</span>}</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>slug: Replace(categoryTitle,' ','-')
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Supports all content in Features.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Category</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}/c/{<span style="color: #fc6003;">id</span>}?search={<span style="color: #fc6003;">terms</span>}</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>slug: Replace(categoryTitle,' ','-')
 </code>
-                                    <br /><code>id: categoryId</code> This is optional if search terms are provided.<br /><code>terms</code>: entered value These are user entered search terms.</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">    Category Name &amp; Description
+                                            <br /><code>id: categoryId</code> This is optional if search terms are provided.<br /><code>terms</code>: entered value These are user entered search terms.</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">    Category Name &amp; Description
     <br />Faceted Search<br />   Product Results
 <br />    Pagination</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Does not display category graphics.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Product</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/{</code><code style="color: #fc6003;">slug</code><code>}/p/{</code><code style="color: #fc6003;">code</code><code>}</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>slug: Replace(productNameShort,' ','-')
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Does not display category graphics.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Product</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/{</code><code style="color: #fc6003;">slug</code><code>}/p/{</code><code style="color: #fc6003;">code</code><code>}</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>slug: Replace(productNameShort,' ','-')
 </code>
-                                    <br style="mc-tag-and-class: code;" /><code>code: productCode</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">    Photos &amp; Zoom
+                                            <br style="mc-tag-and-class: code;" /><code>code: productCode</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">    Photos &amp; Zoom
     <br />Sale Price
     <br />Options (including inventory control &amp; color swatches)
     <br />Quantity Input Box
@@ -243,242 +246,244 @@
     <br />Related Products
     <br />Accessory Products
     <br />Reviews</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">    No VAT display
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">    No VAT display
     <br />No members only pricing
     <br />No Wish List
 <br />No Recently Viewed
     <br />No Multi-child Add to Cart display<br />No quantity discount grid displayed. The store will continue to support quantity discounts
     if configured.<br />No MyRewards display
     <br />No breadcrumbs displayed</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Article</td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}/a/{<span style="color: #fc6003;">id</span>}</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>slug: Replace(articleTitle,' ','-')
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Article</td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}/a/{<span style="color: #fc6003;">id</span>}</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>slug: Replace(articleTitle,' ','-')
 <br />id: articleId</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Article "body" content</td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Supports the "body" content, without the Article Title.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>
-                        <img src="../../Resources/Images/InfoIcon-orange.png" /> When a user in a responsive theme clicks <b>Add To Cart</b>, the storefront detects the screen size and system loading the page, such as a desktop browser, mobile device, or smart phone. If a smart phone is detected, mobile checkout (<code>/checkout.asp</code>) is used for completing purchases if your site has mobile enabled. Otherwise, depending on the screen size, the shopper is sent to <code>/shoppingcart.asp</code> then to <code>/one-page-checkout.asp</code> during purchase completion.</p>
-                    <h2>Legacy and Responsive Storefront Pages</h2>
-                    <p>Specific legacy theme storefront pages will redirect to responsive theme pages as supported. These pages automatically redirect according to the following mapping when a responsive theme is added and activated. Numerous other legacy pages will continue to use those legacy templates, with the customized styles and images you added with the installed theme.  </p>
-                    <p class="note">As the project continues, the redirection and availability of these pages within the project seed themes, or extendable and customizable by your custom code, may change. This information will be updated as quickly as possible to match the latest theme and API support.</p>
-                    <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Storefront Page</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">URL</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Engine</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Behavior</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Home</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>{domain}/</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Theme Engine</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Serves up the new responsive theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Category</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}-c/{<span style="color: #fc6003;">id</span>}.html</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
-                                    <p>Theme Engine</p>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">301 redirect to new responsive URL.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Product</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/{</code><code style="color: #fc6003;">slug</code><code>}-p/{</code><code style="color: #fc6003;">code</code><code>}.html</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                                    <p>Theme Engine
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Article "body" content</td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Supports the "body" content, without the Article Title.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                <img src="../../Resources/Images/InfoIcon-orange.png" /> When a user in a responsive theme clicks <b>Add To Cart</b>, the storefront detects the screen size and system loading the page, such as a desktop browser, mobile device, or smart phone. If a smart phone is detected, mobile checkout (<code>/checkout.asp</code>) is used for completing purchases if your site has mobile enabled. Otherwise, depending on the screen size, the shopper is sent to <code>/shoppingcart.asp</code> then to <code>/one-page-checkout.asp</code> during purchase completion.</p>
+                            <h2>Legacy and Responsive Storefront Pages</h2>
+                            <p>Specific legacy theme storefront pages will redirect to responsive theme pages as supported. These pages automatically redirect according to the following mapping when a responsive theme is added and activated. Numerous other legacy pages will continue to use those legacy templates, with the customized styles and images you added with the installed theme.  </p>
+                            <p class="note">As the project continues, the redirection and availability of these pages within the project seed themes, or extendable and customizable by your custom code, may change. This information will be updated as quickly as possible to match the latest theme and API support.</p>
+                            <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Storefront Page</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">URL</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Engine</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Behavior</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Home</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>{domain}/</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Theme Engine</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Serves up the new responsive theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Category</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}-c/{<span style="color: #fc6003;">id</span>}.html</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                                            <p>Theme Engine</p>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">301 redirect to new responsive URL.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Product</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/{</code><code style="color: #fc6003;">slug</code><code>}-p/{</code><code style="color: #fc6003;">code</code><code>}.html</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                            <p>Theme Engine
 </p>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">301 redirect to new responsive URL.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Article</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}-a/{<span style="color: #fc6003;">id</span>}.html</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Mobile Storefront Theme</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">301 redirect to new responsive URL.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Mobile Storefront Pages</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">(all pages but Mobile Checkout)</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Theme Engine</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">301 redirect to new responsive URL.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Mobile Checkout</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/checkout.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Mobile Checkout</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Cart</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/shoppingcart/asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Desktop Checkout</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/one-page-checkout.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Login</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/login.asp</code>
-                                    <br /><code>/login_sendpass.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Deal of the Day</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/dealoftheday.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">My Account</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/myaccount.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Newlestter Signup</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/mailinglist_subscribe.asp</code><code>/mailinglist_unsubscribe.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Affiliate </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/affiliate_info.asp</code>
-                                    <br /><code>/affiliate_signup.asp</code>
-                                    <br style="mc-tag-and-class: code;" /><code>/affiliate_thankyou.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Category Index</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/cindex.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Product Index</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/pindex.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Google Sitemap</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/sitemap.xml</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">N/A</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Donations</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/donate.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Email When Back In Stock</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/email_me_when_back_in_stock.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Search Results</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/searchresults.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Knowledge Base</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/kb_results.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Help</td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>/help.asp</code>
-                                </td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Legacy Desktop Template</td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Accessible with legacy theme.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h3>Theme Settings Editor in Admin</h3>
-                    <p>The following features will become "theme-specific" with direct editing options within the Admin, accessible in future additions through the Admin. Until the editor and settings are available, you can plan and code towards the new Admin feature.</p>
-                    <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <col class="TableStyle-PatternedRows-Column-Regular" />
-                        <thead>
-                            <tr class="TableStyle-PatternedRows-Head-Header1">
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Feature</th>
-                                <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Legacy Theme</th>
-                                <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Responsive Theme Engine</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Display Settings</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Category grid options are used.</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                                    <p>The theme designer can optionally expose different grid styles. The extent of designs to be supported and customizable through the Admin will be part of the Storefront Editor.</p>
-                                </td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Language</td>
-                                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Article Spot Keys are used. This is a global set of text labels specific to the legacy Volusion storefront design.</td>
-                                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
-                                    <p>All translation and language support, such as labels or small content blocks on a theme, will come with each Theme.  You can add translation text in JSON using the framework. The extent of site translation to be supported and customizable through the Admin will be part of the Storefront Editor.</p>
-                                </td>
-                            </tr>
-                            <tr class="TableStyle-PatternedRows-Body-LightRows">
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Storefront Editor</td>
-                                <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Ability to edit your home page content block and text/html in your template using the Storefront Edit toolbar.</td>
-                                <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                                    <p>The Storefront Editor toolbar will be available in future releases. This editor will access a limited set of always available settings expected per theme, such as language support and sets of display and style options. Full details for this editor will be available as the project continues.</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">301 redirect to new responsive URL.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Article</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/{<span style="color: #fc6003;">slug</span>}-a/{<span style="color: #fc6003;">id</span>}.html</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Mobile Storefront Theme</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">301 redirect to new responsive URL.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Mobile Storefront Pages</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">(all pages but Mobile Checkout)</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Theme Engine</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">301 redirect to new responsive URL.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Mobile Checkout</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/checkout.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Mobile Checkout</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Cart</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/shoppingcart/asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Desktop Checkout</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/one-page-checkout.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Login</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/login.asp</code>
+                                            <br /><code>/login_sendpass.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Deal of the Day</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/dealoftheday.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">My Account</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/myaccount.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Newlestter Signup</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/mailinglist_subscribe.asp</code><code>/mailinglist_unsubscribe.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Affiliate </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/affiliate_info.asp</code>
+                                            <br /><code>/affiliate_signup.asp</code>
+                                            <br style="mc-tag-and-class: code;" /><code>/affiliate_thankyou.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Category Index</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/cindex.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Product Index</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/pindex.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Google Sitemap</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/sitemap.xml</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">N/A</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Donations</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/donate.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Email When Back In Stock</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/email_me_when_back_in_stock.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Search Results</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>/searchresults.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Knowledge Base</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>/kb_results.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Help</td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>/help.asp</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Legacy Desktop Template</td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Accessible with legacy theme.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>Theme Settings Editor in Admin</h3>
+                            <p>The following features will become "theme-specific" with direct editing options within the Admin, accessible in future additions through the Admin. Until the editor and settings are available, you can plan and code towards the new Admin feature.</p>
+                            <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Feature</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Legacy Theme</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Responsive Theme Engine</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Display Settings</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Category grid options are used.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                            <p>The theme designer can optionally expose different grid styles. The extent of designs to be supported and customizable through the Admin will be part of the Storefront Editor.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Language</td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Article Spot Keys are used. This is a global set of text labels specific to the legacy Volusion storefront design.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                                            <p>All translation and language support, such as labels or small content blocks on a theme, will come with each Theme.  You can add translation text in JSON using the framework. The extent of site translation to be supported and customizable through the Admin will be part of the Storefront Editor.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Storefront Editor</td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Ability to edit your home page content block and text/html in your template using the Storefront Edit toolbar.</td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                                            <p>The Storefront Editor toolbar will be available in future releases. This editor will access a limited set of always available settings expected per theme, such as language support and sets of display and style options. Full details for this editor will be available as the project continues.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div> <!-- row ends --></div> <!-- container fluid ends --><!-- Footer --><footer><footer><div class="container-full" style="background-color: #2E2E2E;color:#ffffff; padding-top:10px;"><div class="container-fluid"><div class="col-xs-12 col-md-8 col-center-block"><div class="col-xs-6"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
 							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
 							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
-							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer></footer><!-- Bootstrap core JavaScript
-			================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
 </html>
