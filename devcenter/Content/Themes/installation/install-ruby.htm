@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <!-- saved from url=(0016)http://localhost -->
+    <!-- This is the main flarestrap for the general content masterpage. -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Topic to Default - For search fix! 
+        <script>
+			document.getElementsByTagName('html')[0].setAttribute('data-mc-runtime-file-type', 'Default');
+		</script>-->
+        <!-- You cannot use self-closing tags in Flare. -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Step 3: Install RubyIf you have Ruby installed, review the instructions for tools, gems, and scripts. Next, install Compass with step 4.</title>
+        <!-- Custom styles for this template -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <!-- navbar toggle control -->
+        <script>/* <![CDATA[ */$(document).ready(function(){
+
+			$("#toggler").click(function(){
+			$(this).toggleClass('active, inactive');
+			})
+
+		})/* ]]> */</script>
+        <script>/* <![CDATA[ */$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 40
+		});/* ]]> */</script>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/bootstrap.css" rel="stylesheet" />
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        </script>
+        <script src="https://github.com/twbs/bootstrap/blob/master/docs/assets/js/docs.min.js">
+        </script>
+        <script src="../../Resources/JS/highlighter.js">
+        </script>
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body style="padding-top: 75px;">
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../../index.htm"> <img src="../../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="quick-start.htm">Quickstart</a>
+                                </li>
+                                <li value="2"><a href="../../documentation.htm">Docs</a>
+                                </li>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+						<p></p> -->
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="install-overview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="install-github.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="install-nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="#">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="install-compass.htm">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="install-bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="install-optional.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="download-a-theme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="../customization/customization-overview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="download-a-theme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="../customization/method-tour.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="../customization/folder-structure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="../customization/styles-overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="../customization/bootstrap-overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="../customization/adding-fonts.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="../customization/image-sprites.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="../customization/custom-text.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1 class="page-header">Step 3: Install Ruby<br></br><small>If you have Ruby installed, review the instructions for tools, gems, and scripts. Next, install Compass with <a href="install-compass.htm">step 4</a>.</small></h1>
+                            <p>Ruby is a powerful programming language Volusion uses alongside <a href="http://sass-lang.com/">SASS</a> and the Compass gem for style sheets in themes. For theme development, you should install Ruby, a few applications to work with Ruby, and the Ruby Development Toolkit (for Windows). You can learn more about Ruby through their <a href="https://www.ruby-lang.org/en/documentation/">documentation</a>. In these instructions, the following applications will be installed for each OS:</p>
+                            <ul>
+                                <li value="1">Windows: Ruby, Bower, Bundler, and Grunt</li>
+                                <li value="2">Mac: Ruby, Yeoman (with Grunt and Bower) , Compass, Bundler (nice-to-have)</li>
+                            </ul>
+                            <p>Of course, you can install additional applications and gems as you prefer. These are the tools used in the development and release of the Volusion responsive themes and interacting with the Theme Engine and Storefront API.</p>
+                            <p>So what are these applications?</p>
+                            <ul>
+                                <li value="1"><a href="https://www.ruby-lang.org/en/">Ruby</a> is a flexible, dynamic open source programming language. It has multiple supportive applications and gems for creating, maintaining, compiling, and testing your CSS theme content.</li>
+                                <li value="2"><a href="http://bundler.io/">Bundler</a> provides an environment for your Ruby projects. It tracs and installs gems as needed. </li>
+                                <li value="3"><a href="http://yeoman.io/">Yeoman</a> aids with starting projects with generated workflows and best practices. For Mac, it includes Grunt and Bower.</li>
+                                <li value="4"><a href="http://gruntjs.com/">Grunt</a> is the build, preview, and test system for your project.</li>
+                                <li value="5"><a href="http://bower.io/">Bower</a> is a package manager for dependency management.</li>
+                                <li value="6"><a href="https://rubygems.org/gems/compass">Compass</a> is a Sass-based Stylesheet Framework that streamlines the creation and maintenance of CSS.
+            </li>
+                            </ul>
+                            <h3>Download Ruby </h3>
+                            <p>When selecting your installations, make sure to match the Ruby version with the dev kit version. The site provides guidance on the best version to install for your system. For this example set of instructions,  version 1.9.3 is installed for stability of all packages (or gems). If you are on a 64 bit machine, download version 2.0.0. Optionally, you can also download the core and standard library set of documentation as needed for your efforts. </p>
+                            <p>Specific information is provided for both Windows and Max OS&#160;systems. </p>
+                            <p>Ruby provides a RubyInstaller for Windows as a wizard that walks through the installation process. For Mac OS X systems, you should have Ruby already installed and need to only install a few other applications. If you need Ruby for your Mac, you can use third party tools such as <a href="http://rbenv.org/">rbenv</a> and <a href="http://rvm.io/">RVM</a>. For a full list of installation options, see this page and locate your choice! </p>
+                            <h3>
+                                <img src="../../Resources/Images/windows.png" /> Install Ruby on Windows</h3>
+                            <p>For Windows systems, we recommend downloading the Ruby installer and the development kit <a href="http://rubyinstaller.org/downloads/">from this location</a>. Run the file once it is downloaded. A wizard displays to walk through the installation instructions for your operating system. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Step</th>
+                                        <th>What to Do</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Run the Ruby Installer.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Select your language. <br /><img src="../../Resources/Images/install-ruby1.jpg" class="screenshot" /><br /></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Read through the license agreement and click acceptance.<br /><img src="../../Resources/Images/install-ruby2.jpg" class="screenshot" /><br /></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Click <b>Next</b>.</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Select the location you want to install Ruby, or use the default location provided. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.<br /><img src="../../Resources/Images/install-ruby3.jpg" class="screenshot" /><br /></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Click <b>Install</b>.</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <p>A progress bar displays with a completion screen. Click <b>Finish</b>! </p>
+                                        <p>
+                                            <img src="../../Resources/Images/install-ruby4.jpg" class="screenshot" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4>Install Ruby Development Kit</h4>
+                            <p>For the Ruby Development Kit, the executable extracts all content to a specified location. Part of the installation will include running commands. You may want to change the location for extraction from the default. After extracting, open a command prompt and navigate to the path for the extracted Ruby Development Kit.</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Step</th>
+                                        <th>What to Do</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Open a command prompt.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>CD to the location of the director you extracted the development kit.</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Type and enter the following commands and keep your terminal open: 
+<pre>ruby dk.rb init
+ruby dk.rb install</pre></td>
+                                </tr>
+                            </table>
+                            <h4>Install Bower, Bundler, and Grunt</h4>
+                            <p>Next, install a set of applications to work with Ruby. You do not need to download further files for these. These commands will install <a href="http://www.bundler.io/">Bower, Bundler, and Grunt</a>.</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Step</th>
+                                        <th>What to Do</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>You should still have your command prompt open.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Type and enter the following commands:
+<pre>gem install bundler
+npm install -g grunt-cli bower</pre></td>
+                                </tr>
+                            </table>
+                            <h3>
+                                <img src="../../Resources/Images/mac.png" /> Install Ruby on Mac OS</h3>
+                            <p>Typically, Ruby comes as default on your Mac OS X. These instructions walk through checking if the application is installed, installing it, and testing it worked! These instructions are completed through command line, and take only minutes.</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Step</th>
+                                        <th>What to Do</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>To test if Ruby is installed, type the following and enter: <code>ruby -v</code> For Mac OS X, Ruby is already installed. <br />If you do not see a version, you can install it through <a href="http://rvm.io/">Ruby Version Manager</a> (RVM). For details, see their <a href="http://rvm.io/rvm/install">documentation</a>.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>If it is installed, you will see the Ruby version. Keep your terminal open!</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Read through the license agreement and click acceptance.<br /><img src="../../Resources/Images/install-ruby2.jpg" class="screenshot" /><br /></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Click <b>Next</b>.</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Select the location you want to install Ruby, or use the default location provided. You can also select options for further support and development. You can mouse over each option provided. For this install, we are selecting all options.&#160;The required disk space updates based on your selections.<br /><img src="../../Resources/Images/install-ruby3.jpg" class="screenshot" /><br /></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Click <b>Install</b>.</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <p>A progress bar displays with a completion screen. Click <b>Finish</b>! </p>
+                                        <p>
+                                            <img src="../../Resources/Images/install-ruby4.jpg" class="screenshot" />
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4>Install Yeoman</h4>
+                            <p>For the Ruby Development Kit, the executable extracts all content to a specified location. Part of the installation will include running commands. You may want to change the location for extraction from the default. After extracting, open a command prompt and navigate to the path for the extracted Ruby Development Kit.</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Step</th>
+                                        <th>What to Do</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>You should still have a terminal open.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>To test if Yeoman is installed, type the following and enter: <code>yo -v</code></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>If installed, it will return a version. If not, type the following and enter: <code>sudo npm install -g yo</code></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>You will be prompted for your system password. After entering, Yeoman, Grunt, and Bower will install. <br />To test if it is installed, type <code>yo -v</code> again. If a version displays, you are done with these apps. Keep the terminal open!</td>
+                                </tr>
+                            </table>
+                            <h4>Install Bundler</h4>
+                            <p>Next, install a set of applications to work with Ruby. You do not need to download further files for these. These commands will install <a href="http://www.bundler.io/">Bower, Bundler, and Grunt</a>.</p>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Step</th>
+                                        <th>What to Do</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Open a command prompt, if you closed your previous prompt.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Check if you have compass installed. Type and enter: <code>bundler version</code><br />If a version displays, you are done.</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>If a version does not display, type and enter: <code>sudo gem install bundler</code></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Test the compass installation. Type and enter: <code>bundler version</code><br />If a version displays, you are done.</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../../Resources/JS/holder.js"></script></body>
+</html>

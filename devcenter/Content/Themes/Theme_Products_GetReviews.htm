@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Storefront API|API Endpoints|Products">
+    <!-- saved from url=(0016)http://localhost -->
+    <!-- This is the main flarestrap for the general content masterpage. -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Topic to Default - For search fix! 
+        <script>
+			document.getElementsByTagName('html')[0].setAttribute('data-mc-runtime-file-type', 'Default');
+		</script>-->
+        <!-- You cannot use self-closing tags in Flare. -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Get Product Reviews</title>
+        <!-- Custom styles for this template -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <!-- navbar toggle control -->
+        <script>/* <![CDATA[ */$(document).ready(function(){
+
+			$("#toggler").click(function(){
+			$(this).toggleClass('active, inactive');
+			})
+
+		})/* ]]> */</script>
+        <script>/* <![CDATA[ */$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 40
+		});/* ]]> */</script>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/bootstrap.css" rel="stylesheet" />
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        </script>
+        <script src="https://github.com/twbs/bootstrap/blob/master/docs/assets/js/docs.min.js">
+        </script>
+        <script src="../Resources/JS/highlighter.js">
+        </script>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body style="padding-top: 75px;">
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="installation/quick-start.htm">Quickstart</a>
+                                </li>
+                                <li value="2"><a href="../documentation.htm">Docs</a>
+                                </li>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+						<p></p> -->
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="installation/install-overview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="installation/install-github.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="installation/install-nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="installation/install-ruby.htm">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="installation/install-compass.htm">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="installation/install-bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="installation/install-optional.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="installation/download-a-theme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="customization/customization-overview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="installation/download-a-theme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="customization/method-tour.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="customization/folder-structure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="customization/styles-overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="customization/bootstrap-overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="customization/adding-fonts.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="customization/image-sprites.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="customization/custom-text.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1>Get Product Reviews</h1>
+                            <p>This <code>GET </code>method retrieves the available reviews for a specific product. The method allows you to enter a specific product code to retrieve shopper entered review comments and ratings. These reviews in turn could be highlighted with design, page layouts, and  additional app functionality for enhancing shopper purchases. The resulting data includes numerical ratings, a number of total reviews for the product, and all specific reviews by poster, rating, content written, the number of shoppers finding it as helpful, and posted date.</p>
+                            <p>You can review these entered shopper comments and rating through the Admin Customer &gt; Customer Reviews page. Shoppers can enter their name, geographic location, a title for the review, comments, and a star rating. Each star or half star is has an equivalent numerical value based on the minimum and maximum values sets for reviews. </p>
+                            <p>The response returns a collection of review data. Depending on the entered responses by your shoppers, the response could be lengthy.</p>
+                            <p class="note">If you have reviews set to review prior to publishing or an inactive setting turned on for a review, these reviews may not be returned for the request. Hidden products may not return when queried from the store.</p>
+                            <h2>Request</h2>
+                            <p>The URI call structure is:</p><pre class="CodeSample">GET http://{domain}/api/v1/products/<span style="color: #fc6003;">code</span>/reviews</pre>
+                            <h3>Parameters</h3>
+                            <p>The following parameter can be entered into the request:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>code</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Alphanumeric product code for the product. All product reviews are associated to the product via this code. Example: <code>mermaid-tshirt-summer-2014</code>.</td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Number</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2>Response</h2>
+                            <p>The response JSON provides a status code 200 and data for the specific product on success.</p>
+                            <p><b>Status Code</b> 200</p>
+                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />JSON Response</a></span>
+                                <div class="MCDropDownBody dropDownBody"><pre>{
+  "cursor": {
+	"total": 3
+  },
+  "data": {
+	"cumulativeRating": 4.3,
+	"minRating": 0,
+	"maxRating": 5,
+	"numberOfReviews": 58,
+	"reviews": [
+		{
+		"rating": 4.5,
+		"nameOfReviewer": "A. Hansen",
+		"title": "Review 1",
+		"body": "Review 1 text here...  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+		"numberOfPeopleWhoFoundReviewHelpful": 16,
+		"date": "02/12/2012"
+		},
+		{
+		"rating": 4.1,
+		"nameOfReviewer": "J. Doe",
+		"title": "Review 2",
+		"body": "Review 2 text here...  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+		"numberOfPeopleWhoFoundReviewHelpful": 12,
+		"date": "02/11/2012"
+		},
+		{
+		"rating": 4.2,
+		"nameOfReviewer": "K. Jackson",
+		"title": "Review 3",
+		"body": "Review 3 text here...  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+		"numberOfPeopleWhoFoundReviewHelpful": 35,
+		"date": "02/10/2012"
+		}
+	]
+  }
+}</pre>
+                                </div>
+                            </div>
+                            <h3>Data</h3>
+                            <p>The response includes a section of JSON detailing the cumulative results of the reviews and a collection of all entered reviews for the specified product code.</p>
+                            <p>The following <code>cursor </code>data is returned to set the pagination of response product data:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>total</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Numeric amount of all product reviews returned matching the product code. </td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Number</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>The following <code>data </code>is returned in a collection, one data element per product for the request:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>cumulativeRating</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The averaged score for the product based on all entered numerical ratings by shoppers. The amount will fall within the minimum and maximum rating allowances.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>minRating</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The minimum rating allowed for a product review. This value is zero by default.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>maxRating</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The maximum rating allowed for a product review. This value is five by default.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>numberOfReviews</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The total amount of entered reviews for the product code.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                                            <p>Number</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>reviews</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                                            <p>This is a collection of review objects, providing all data for the shopper entered review. Not all reviews may include a title or comment. </p>
+                                            <ul>
+                                                <li value="1"><code>rating </code>- The numerical rating assigned to the product by the shopper. This rating is associated to the number of stars selected for the product. The <code>cumulativeRating </code>averages this score for all review objects.</li>
+                                                <li value="2"><code>nameOfReviewer </code>- Name of the shopper reviewing the product as entered by the shopper. This is not pulled from a logged in account name for the shopper.</li>
+                                                <li value="3"><code>title </code>- A title entered for the review.</li>
+                                                <li value="4"><code>body </code>- The full comment content entered by the shopper. </li>
+                                                <li value="5"><code>numberOfPeopleWhoFoundReviewHelpful </code>- A numerical amount of other shoppers that selected this review as helpful when considering a purchase of the product.</li>
+                                                <li value="6"><code>date </code>- System generated date of the entered comment.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                                            <p>String</p>
+                                            <p>Number</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
+</html>

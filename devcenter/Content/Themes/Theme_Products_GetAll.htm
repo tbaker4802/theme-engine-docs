@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html data-mc-runtime-file-type="Topic" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="topic" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Volusion Storefront API|API Endpoints|Products">
+    <!-- saved from url=(0016)http://localhost -->
+    <!-- This is the main flarestrap for the general content masterpage. -->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- Topic to Default - For search fix! 
+        <script>
+			document.getElementsByTagName('html')[0].setAttribute('data-mc-runtime-file-type', 'Default');
+		</script>-->
+        <!-- You cannot use self-closing tags in Flare. -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="http://www.volusion.com/favicon.ico" /><title>Get a Collection of All Products</title>
+        <!-- Custom styles for this template -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Again, you should technically remove "http:"; however, doing so increases Flare's build time on the oder of HOURS. -->
+        <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+		<![endif]-->
+        <!-- Insert Google Analytics Here -->
+        <!-- navbar toggle control -->
+        <script>/* <![CDATA[ */$(document).ready(function(){
+
+			$("#toggler").click(function(){
+			$(this).toggleClass('active, inactive');
+			})
+
+		})/* ]]> */</script>
+        <script>/* <![CDATA[ */$('body').scrollspy({
+			target: '.bs-docs-sidebar',
+			offset: 40
+		});/* ]]> */</script>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/bootstrap.css" rel="stylesheet" />
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+        </script>
+        <script src="https://github.com/twbs/bootstrap/blob/master/docs/assets/js/docs.min.js">
+        </script>
+        <script src="../Resources/JS/highlighter.js">
+        </script>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body style="padding-top: 75px;">
+        <div id="main">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button><a class="navbar-brand" href="../index.htm"> <img src="../Resources/Images/volusionlogo-white-top.png" style="margin-top: -9px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /> / DEVELOPER</a> <!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                        <div class="navbar-collapse collapse">
+                            <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li value="1"><a href="installation/quick-start.htm">Quickstart</a>
+                                </li>
+                                <li value="2"><a href="../documentation.htm">Docs</a>
+                                </li>
+                                <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                                </li>
+                                <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                        </li>
+                                        <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                        </li>
+                                        <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
+                <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
+            </div> -->
+            </nav>
+            <div class="container-full">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <nav class="bs-docs-sidebar" id="sidebar" data-spy="affix" data-offset-top="75" data-offset-bottom="100">
+                                <!-- Removing search <input id="search-field" class="needs-pie" type="text" placeholder="Search" data-mc-style="Search Input" />
+						<p></p> -->
+                                <!--Side Nav Snippet -->
+                                <div class="pull-left"><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                                    <div id="setup" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="installation/install-overview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="installation/install-github.htm">GitHub</a>
+                                            </li>
+                                            <li value="3"><a href="installation/install-nodejs.htm">NodeJS</a>
+                                            </li>
+                                            <li value="4"><a href="installation/install-ruby.htm">Ruby</a>
+                                            </li>
+                                            <li value="5"><a href="installation/install-compass.htm">Compass</a>
+                                            </li>
+                                            <li value="6"><a href="installation/install-bootstrap.htm">Bootstrap</a>
+                                            </li>
+                                            <li value="7"><a href="installation/install-optional.htm">Apps and Plugins</a>
+                                            </li>
+                                            <li value="8"><a href="installation/download-a-theme.htm">Download a Theme</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p>
+                                    </p><a id="toggler" href="#" data-toggle="collapse" class="active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                                    <div id="custom" class="collapse in">
+                                        <ul class="nav nav-list">
+                                            <li value="1"><a href="customization/customization-overview.htm">Overview </a>
+                                            </li>
+                                            <li value="2"><a href="installation/download-a-theme.htm">Download a Theme</a>
+                                            </li>
+                                            <li value="3"><a href="customization/method-tour.htm">Method Theme Tour</a>
+                                            </li>
+                                            <li value="4"><a href="customization/folder-structure.htm">Folder Structure</a>
+                                            </li>
+                                            <li value="5"><a href="customization/styles-overview.htm">Styles and Layouts</a>
+                                            </li>
+                                            <li value="6"><a href="customization/bootstrap-overview.htm">Bootstrap Styles</a>
+                                            </li>
+                                            <li value="7"><a href="customization/adding-fonts.htm">Adding Fonts</a>
+                                            </li>
+                                            <li value="8"><a href="customization/image-sprites.htm">Image Sprites</a>
+                                            </li>
+                                            <li value="9"><a href="customization/custom-text.htm">Custom Content</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-md-10">
+                            <!-- Flare topic compiler -->
+                            <h1>Get a Collection of All Products</h1>
+                            <p>This <code>GET&#160;</code>method requests and receives all possible products in the store. Depending on the size of the store, the amount could be extensive. To refine the returned results, the request can specify specific categories, search terms, facets, minimum and maximum price, accessories, sorting and pagination for a limited set of all products. </p>
+                            <p>You can use this method to provide content for displays custom categories in the storefront navigation, custom sorting by additional product values, and much more through interactions with additional endpoints and your own creativity. </p>
+                            <h3>Related Products</h3>
+                            <p>This method also supports getting all related products for a product. Related products share the same subcategory as an entered product code. These products could be best bought together or as alternate options, such as other types of running shoes or other hiking accessories for a trip. To <code>GET&#160;</code>related products, you can call this endpoint using the category ID: <code>/products?categoryId={<span style="color: #f36e34;">id</span>}</code>.</p>
+                            <h3>Accessories</h3>
+                            <p>You can GET&#160;all associated accessories as well. Accessories are associated products in your store that are assigned as Accessories during product creation or editing. For example, you could have a MP3 Player on your store with multiple accessory products including headphones and power cables (wall plug, car, USB&#160;computer). To <code>GET&#160;</code>accessories, you can call this endpoint passing one or more product codes through the <code>accessoryOf </code>parameter: <code>/products?accessoriesOf={accessoriesOf}</code>.</p>
+                            <h2>Request</h2>
+                            <p>The URI call structure is:</p><pre>GET http://{domain}/api/v1/products/?categoryIds=<span style="color: #fc6003;">categoryIds</span>&amp;slug=<span style="color: #fc6003;">slug</span>&amp;search=<span style="color: #f36e34;">search</span>&amp;facets=<span style="color: #fc6003;">facets</span>&amp;minPrice=<span style="color: #f36e34;">minPrice</span>&amp;maxPrice=<span style="color: #f36e34;">maxPrice</span>&amp;accesoriesOf=<span style="color: #f36e34;">accessoriesOf</span>&amp;sort=<span style="color: #f36e34;">sort</span>&amp;pageNumber=<span style="color: #fc6003;">pageNumber</span>&amp;pageSize=<span style="color: #fc6003;">pageSize</span></pre>
+                            <h3>Parameters</h3>
+                            <p>The following parameters can be entered into the request:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" style="width: 103px;" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" style="width: 446px;" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>categoryIds</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Numeric ID of the category of associated products to retrieve. Example: 1347.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>slug</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">String of the product name, which is the SEO optimized URL&#160;keywords. Example: <code>fitness-shoe-mens</code>. </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>search</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">A searchable String using the first four words separated by spaces.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>facets</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">String for filtering the products using filter category IDs. For example, a String of <code>1822, 1818, 1829</code> would return those products that are Orange [1822], Red [1818], Brown [1832].</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>minPrice</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Sets the minimum price for products. All returned products will have a price equal to or greater than this amount. Example: 25.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>maxPrice</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Sets the maximum price for products. All returned products will have a price equal to or less than this amount. Example: 100.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>accessoriesOf</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Retrieves the accessory products for the entered product code(s) in this String.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>sort</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Sets the sort priority using one of the following: relevance, lowest price, highest price, newest, oldest, or popularity. Example: <code>relevance</code>.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>pageNumber</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Numeric page number of the returned products to retrieve. Example: 1.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>pageSize</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Numeric amount of products to retrieve for the page. Example: 10.</td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2>Response</h2>
+                            <p>If successful, the response includes a 200 status code and a collection of data per product located in the storefront.</p>
+                            <p><b>Status Code</b> 200 </p>
+                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />JSON Response</a></span>
+                                <div class="MCDropDownBody dropDownBody"><pre>{
+	"cursor": {
+		"total": 30,
+		"totalPages": 10
+		},
+	"data": [
+		{
+		"id": 37340,
+		"code": "GF-malbec",
+		"name": "Malbec 2008",
+		"price": {
+			"regularPrice": 8,
+			"listPrice": null,
+			"recurringPrice": {
+				"price": null,
+				"howOften": null,
+				"duration": null,
+				"startDuration": null,
+				"startPrice": null
+				},
+			"requireActionForSalePrice": null,
+			"salePrice": null
+			},
+		"productUrl": "/Malbec-2008/p/GF-malbec",
+		"shipping": {
+			"weight": null
+			},
+		"descriptions": {
+			"features": null,
+			"extendedInfo": null,
+			"techSpecs": null,
+			"photoCaptionText": null,
+			"short": "Organically grown in our City Market vineyard, these luscious grapes make the perfect Malbec for any dinner party or night of relaxation. This wine, aged since 2008, provides the classic flavors of a traditional Malbec with a surprise hint of cherry.",
+			"detail": "Organically grown in our City Market vineyard, these luscious grapes make the perfect Malbec for any dinner party or night of relaxation. This wine, aged since 2008, provides the classic flavors of a traditional Malbec with a surprise hint of cherry. Your middle palette will be brought to life with this satfisfying treat. Try pairing this delectable wine with equally bold flavors, such as a chile-rubbed steak or tenderloin to give yourself and your guests the ultimate taste of elegance."
+			},
+		"seoFriendlyProductTitle": "Malbec-2008",
+		"taxable": false,
+		"isGiftWrapAvailable": false,
+		"mainImage": {
+			"id": 1,
+			"medium": "http://txlpt374-VM.corp.volusion.com/v/vspfiles/photos/GF-malbec-2T.jpg",
+			"large": "http://txlpt374-VM.corp.volusion.com/v/vspfiles/photos/GF-malbec-2.jpg",
+			"small": "http://txlpt374-VM.corp.volusion.com/v/vspfiles/templates/99999/images/nophoto.gif",
+			"type": "photo"
+			},
+			"altImages": [],
+			"giftwrap": {
+				"price": null
+				},
+			"seo": {
+				"photoAltText": "Malbec 2008",
+				"metaTagKeywords": null,
+				"metaTagDescription": null,
+				"metaTagsOverride": null,
+				"metaTagTitle": null
+				},
+			"availability": {
+				"description": null,
+				"allowBackOrders": true,
+				"stock": null
+				},
+			"avgReview": 4
+		},
+		{"..."}
+	]
+}</pre>
+                                </div>
+                            </div>
+                            <h3>Data</h3>
+                            <p>The response includes a section of JSON detailing the pagination of the product content for displaying and navigating the collection. A data collection follows with detailed information per product.</p>
+                            <p>The following <code>cursor </code>data is returned to set the pagination of response product data:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>total</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Numeric amount of all products returned matching the request. </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>totalPages</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Numeric amount of total pages for pagination of the returned products. The total amount is divided across the total amount of pages. </td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>The following <code>data </code>is returned in a collection, one data element per product for the request:</p>
+                            <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <col class="TableStyle-PatternedRows-Column-Regular" />
+                                <thead>
+                                    <tr class="TableStyle-PatternedRows-Head-Header1">
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th>
+                                        <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                        <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>id</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The generated ID&#160;for the product. This is generated automatically by the Volusion system. Example: <code>37349</code></td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>code</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The product code you entered at product creation. This is an alphanumeric entry that can include some special characters. Example: <code>ah-chest</code></td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>name</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The product name entered at product creation that describes the product. The name is alphanumeric and supports some special characters. This is a required setting and will always return content. Example: <code>3-Drawer Chest</code></td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>price</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                                            <p>The price includes a number of available options for setting the shopper payment for the product:</p>
+                                            <ul>
+                                                <li value="1"><code>regularPrice </code>- This is the <code>price </code>of the product entered at product creation. The price is required and always returns a value. Example: 300</li>
+                                                <li value="2"><code>listPrice </code>- This is the recommended retail price for the product.</li>
+                                                <li value="3"><code>recurringPrice </code>- Provides information for any recurring price options for the product, such as with a subscription product. This price includes a starting price, normally charged price, and data on the length of term for charging each price.<ul><li value="1"><code>price </code>- The normally charged price for the recurring product that begins charging after the initial starting price completes its term. </li><li value="2"><code>howOften </code>- Sets the recurring charge frequency in months.</li><li value="3"><code>duration </code>- Sets the complete duration of the recurring price in months. This terms starts after the starting price term ends.</li><li value="4"><code>startDuration </code>- Sets the complete duration of the starting price recurring charge. After this term, the normal duration begins.</li><li value="5"><code>startPrice </code>- Sets the initial price for the recurring charges, only charged during the starting duration.</li></ul></li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                                            <p>Currency</p>
+                                            <p>Long</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>requireActionForSalePrice</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This option sets the required action for the shopper to complete or perform to receive the sale price for the product. These actions can include of the current offered options (Add to Cart and Email Better Price) or custom actions as entered. </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>salePrice</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The sale price is a reduced price for the product, lower than the assigned price. This amount can display in themes with a bolder format, the difference also displayed to show the savings.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Currency</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>productURL</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This text sets the URL&#160;path for the product, supporting SEO usage. Rather than the full URL using product codes, this URL&#160;includes plain text for ease of entering and locating. The URL is appended to the domain location of your storefront. Example: <code>/product/p/ah-chest</code></td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>shipping</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                                            <p>The shipping information for the product, typically returning the weight. Additional shipping information may display or be included for the product as viewed through the Admin.</p>
+                                            <ul>
+                                                <li value="1"><code>weight </code>- The amount of weight for the product. This setting is required and always returns a value.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>descriptions</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                            <p>Every product can include multiple entries for descriptions that display throughout the storefront, the mobile app, through search engines, and for SEO. This information includes the following options:</p>
+                                            <ul>
+                                                <li value="1"><code>features </code>- Provides specific product feature information that displays in a bulleted list on a Features tab for the product. This entry supports plain text and HTML formatting.</li>
+                                                <li value="2"><code>extendedInfo </code>- Provides any additional information for the product in an Extended Information tab for the product. This entry supports plain text and HTML formatting.</li>
+                                                <li value="3"><code>techSpecs </code>-  Provides specific technical information that displays in a bulleted list on a Technical Specs tab for the product. This entry supports plain text and HTML formatting.</li>
+                                                <li value="4"><code>photoCaptionText </code>- Provides a line of text to display below a product image, as a caption for that image. </li>
+                                                <li value="5"><code>short </code>- Provides a short description for the product, used on category and search results pages performed within the storefront. It is also used when using the email social option for a product. The content supports plain text, HTML formatting, and images.</li>
+                                                <li value="6"><code>detail </code>- Provides a full description of the product, used by search engines. The content supports plain text, HTML formatting, and images.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>seoFriendlyProductTitle</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The data provides the SEO friendly product name. This option is extremely helpful for searches performed by search engines. Example: <code>3-Drawer-Chest</code></td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>photoAltText</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This option sets the alternate text to display for a product image.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>isGiftWrapAvailable</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">This setting indicates if the product can be gift wrapped. If this setting is <code>true</code>, the cost of the gift wrap displays for <code>giftwrap price</code>.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">True/False String </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>isTaxable</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This setting indicates if the product can be taxed, or is non-taxed. If <code>false</code>, taxes are not applied to this product during purchase. Non-taxed products vary state-to-state.</td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">True/False String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>quantity</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">This setting indicates the minimum quantity allowed to purchase. </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>images</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                            <p>This setting returns an array of values for every image available for the product. The digital size of the images are important to consider not only for quality and zooming in, but bandwidth usage (a charged amount per Volusion account). You may want to use a different sized image for initial page loads in your theme to balance bandwidth usage.</p>
+                                            <p>Each image includes the following:</p>
+                                            <ul>
+                                                <li value="1"><code>id </code>- Sets the generated ID for the photo when uploaded. The first image is always 1.</li>
+                                                <li value="2"><code>medium </code>- Sets the URL to the medium size image file.</li>
+                                                <li value="3"><code>large </code>- Sets the URL to the large size image file. This file allows for zooming in for details.</li>
+                                                <li value="4"><code>small </code>- Sets the URL to the small size image file. This image is typically used for thumbnails.</li>
+                                                <li value="5"><code>type </code>- Sets the image type. Example: photo.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                            <p>Number</p>
+                                            <p>String</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>mainImage</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">This setting indicates the main image from the array of images. This image is displayed first on product pages, as a thumbnail in product lists, and in the image slider.<p>The image includes the following:</p><ul><li value="1"><code>id </code>- Sets the generated ID for the photo when uploaded. The first image is always 1.</li><li value="2"><code>medium </code>- Sets the URL to the medium size image file.</li><li value="3"><code>large </code>- Sets the URL to the large size image file. This file allows for zooming in for details.</li><li value="4"><code>small </code>- Sets the URL to the small size image file. This image is typically used for thumbnails.</li><li value="5"><code>type </code>-Sets the image type. Example: photo.</li></ul></td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                                            <p>Number</p>
+                                            <p>String</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>giftwrap</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                            <p>This setting indicates the price for giftwrapping if the product supports the option (<code>isGiftWrapAvailable </code>as true). This cost is added to the price of the product on purchase. </p>
+                                            <ul>
+                                                <li value="1"><code>price</code> - The cost of giftwrapping when selected by a shopper.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Currency</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>seo</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                                            <p>This data provides a series of SEO values:</p>
+                                            <ul>
+                                                <li value="1"><code>metaTagTitle </code>- Sets the product name for the menu bar of the product page. If <code>NULL</code>, the storefront and search engines default to the product name.</li>
+                                                <li value="2"><code>metaTagKeywords </code>- Sets the keywords used by search engines to locate products. </li>
+                                                <li value="3"><code>metaTagDescription </code>- Sets the product description used by search engines when displaying the product in results. </li>
+                                                <li value="4"><code>metaTagsOverride </code>- Sets advanced code that overrides all existing HTML meta tag information. This option is for advanced users.</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>availability</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                            <p>This setting provides information regarding the current availability of the product and allowance of backorders.</p>
+                                            <ul>
+                                                <li value="1"><code>description </code>- Provides a list of descriptive options for the availability, including custom text content.</li>
+                                                <li value="2"><code>allowBackOrders </code>- Indicates if backorders are allowed for the product. If true, the product still displays on the storefront and accepts more orders. The stock status will display a negative number for the product if tracked.</li>
+                                                <li value="3"><code>stock </code>- Setting that indicates the stock status of the currently available amount of the product in-stock. If this amount is <code>NULL</code>, the stock of the product is not tracked and always considered "in-stock".</li>
+                                            </ul>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                            <p>String</p>
+                                            <p>True/False String</p>
+                                            <p>Number</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>avgReview</code>
+                                        </td>
+                                        <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">This value indicates the average rating for customer reviews with an associated rating. This value may be used for displaying a numeric rating or amount of stars for the product on the storefront.</td>
+                                        <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Number</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- close container, row, main id  --><!-- Footer --><footer class="footer"><div class="container-full" style="background-color: #2E2E2E;color:#ffffff;"><div class="col-md-10 col-md-offset-1"><div class="row"><div class="col-md-9"><p><img src="../Resources/Images/volusionlogo-white.png" /></p><p class="text-left small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />							Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />							Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>,
+							documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p></div><div class="col-md-3"><p class="text-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a> <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p><p class="text-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a> <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a> <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a> <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a> <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a> <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a> <![CDATA[ ]]></p></div></div></div></div></footer><!-- Bootstrap core JavaScript ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script><script src="../Resources/JS/holder.js"></script></body>
+</html>
