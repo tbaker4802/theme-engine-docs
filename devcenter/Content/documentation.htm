@@ -43,7 +43,6 @@
 	<script src="../Resources/Scripts/custom.modernizr.js"></script>
 	<script src="../Resources/Scripts/jquery.min.js"></script>
 	<script src="../Resources/Scripts/jquery-ui.min.js"></script>
-	<script src="../Resources/Scripts/jquery.visible.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 	<!-- TODO: Why are we linking Zurb's Foundation here?  Should only need Bootstrap
@@ -82,16 +81,40 @@
 		var primaryNavigation = $("nav.header");
 		var interiorHeadingImage = $('.interior-heading');
 
-		$(window).scroll(function() {
-			if (interiorHeadingImage.visible(true) && !primaryNavigation.hasClass('isTransparent')){
-				primaryNavigation.addClass('isTransparent');
-				primaryNavigation.removeClass('isColored');
-				primaryNavigation.animate({'backgroundColor': 'rgba(59, 187, 130, 0.0)'}, 'fast');
-			} else if (!interiorHeadingImage.visible(true) && primaryNavigation.hasClass('isTransparent')){
-				primaryNavigation.removeClass('isTransparent');
-				primaryNavigation.addClass('isColored');
-				primaryNavigation.animate({'backgroundColor': 'rgba(59, 187, 130, 0.80)'}, 'fast');
+		var goTransparent = function(){
+			primaryNavigation.addClass('isTransparent');
+			primaryNavigation.removeClass('isColored');
+			primaryNavigation.animate({'backgroundColor': 'rgba(59, 187, 130, 0.0)'}, 'slow');
+		};
+
+		var goColored = function(){
+			primaryNavigation.removeClass('isTransparent');
+			primaryNavigation.addClass('isColored');
+			primaryNavigation.animate({'backgroundColor': 'rgba(59, 187, 130, 0.80)'}, 'slow');
+		};
+
+		var doTransitionCheck = function(isFirstLoad) {
+			var scroll = $(window).scrollTop();
+
+			if (scroll <= interiorHeadingImage.height() - 40){
+				if (isFirstLoad){
+					goTransparent();
+				} else if (!primaryNavigation.hasClass('isTransparent')){
+					goTransparent();
+				}
+			} else if (scroll > interiorHeadingImage.height() - 40){
+				if (isFirstLoad){
+					goColored();
+				} else if (primaryNavigation.hasClass('isTransparent')){
+					goColored();
+				}
 			}
+		};
+
+		doTransitionCheck(true);
+
+		$(window).scroll(function() {
+			doTransitionCheck(false);
 		});
 	});
 	</script>
