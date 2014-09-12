@@ -6722,19 +6722,19 @@ nav.header .btn {
 	margin-right: 10px;
 	margin-left: 20px;
 	background-color: transparent;
-	border-color: #99d4bd;
-	color: white;
+	border-color: #5b757f;
+	color: #89a4b1;
 	text-transform: uppercase;
 	font-size: 85%;
 }
 
 nav.header .btn:hover {
 	background-color: white;
-	color: #62c99b;
+	color: #253d49;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	background-color: rgba(52, 143, 104, 0.50);
+	background-color: rgba(45, 70, 81, 0.80);
 }
 
 /* typography styles */
@@ -6744,7 +6744,7 @@ body {
 }
 
 h1 {
-	color: #148282;
+	color: #799bac;
 	font-size: 48px;
 	font-weight: 300;
 	margin-top: 35px;
@@ -6778,18 +6778,18 @@ p.lead {
 }
 
 code {
-	color: #dd624a;
-	background-color: #fcefed;
+	color: #4f5f68;
+	background-color: #e9ebec;
 	padding-left: 6px;
 	padding-right: 6px;
 }
 
 a {
-	color: #3dc085;
+	color: #abc369;
 }
 
 a:hover, a:focus {
-	color: #0d8a45;
+	color: #5d743a;
 	text-decoration: none;
 }
 
@@ -6809,7 +6809,7 @@ ol.table-of-contents li {
 ol.table-of-contents li:before {
 	content: counters(item, ".")" ";
 	counter-increment: item;
-	color: #3dc085;
+	color: #abc369;
 	padding-right: 10px;
 }
 
@@ -6831,7 +6831,7 @@ nav#sidebar .sidebar-heading {
 
 nav#sidebar .toggler {
 	text-transform: uppercase;
-	color: #138281;
+	color: #253d49;
 	font-weight: 700;
 }
 
@@ -7025,10 +7025,10 @@ img.screenshot {
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
-	color: #138281;
+	color: #253d49;
 	text-decoration: none;
 	background-color: transparent;
-	border-left: 2px solid #138281;
+	border-left: 2px solid #253d49;
 }
 
 /* collapse - hide all (inactive) nested list */
