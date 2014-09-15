@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Glossary_Chunk',terms:[{t:'Articles',c:0},{t:'cart',c:0},{t:'Config',c:0},{t:'Config Variables',c:0},{t:'cursor',c:0},{t:'data',c:0},{t:'Endpoint',c:0},{t:'errors',c:0},{t:'exceptions',c:0},{t:'facets',c:0},{t:'Navigation',c:0},{t:'Product',c:0},{t:'status code',c:0},{t:'Theme Engine',c:0},{t:'user',c:0},{t:'warnings',c:0},{t:'Web Component',c:0}]});
