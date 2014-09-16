@@ -5608,6 +5608,15 @@ nav .navbar-brand {
 	display: block;
 	padding-bottom: 3px;
 }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	background-color: transparent;
+	color: #333;
+}
 /* typography styles */
 body {
 	color: #666;
