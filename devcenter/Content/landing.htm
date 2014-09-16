@@ -96,7 +96,7 @@
 				var scroll = $(window).scrollTop();
 
 				var heightToCheck = fixedHeight ? fixedHeight : elementToCheckHeight ? elementToCheckHeight.height() - 40 : 0;
-				console.log(heightToCheck);
+
 				if (scroll <= heightToCheck){
 					if (isFirstLoad){
 						goTransparent();
@@ -124,7 +124,35 @@
 </head>
 <body>
 <div id="main">
-	<div class="interior-heading"></div>
+	<div class="landing-heading">
+		<div class="landing-heading__content">
+			<h1>Coming soon, an easy way to build Volusion themes</h1>
+			<h2>Sign up below for early access to the Theme Engine beta</h2>
+			<div class="landing-heading__form hidden-xs">
+				<form action="http://volusion.us9.list-manage.com/subscribe/post?u=733cd9762a5e37e6e7d712989&amp;id=43bb7b9e0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div class="input-group">
+						<div style="position: absolute; left: -5000px;"><input type="text" name="b_733cd9762a5e37e6e7d712989_43bb7b9e0c" tabindex="-1" value=""></div>
+						<input required class="form-control input-lg required email" placeholder="me@developer.com" type="email" name="EMAIL" id="mce-EMAIL" />
+						<span class="input-group-btn">
+							<button class="btn btn-lg btn-default" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Join</button>
+						</span>
+					</div>
+				</form>
+			</div>
+			<div class="visible-xs">
+				<form action="http://volusion.us9.list-manage.com/subscribe/post?u=733cd9762a5e37e6e7d712989&amp;id=43bb7b9e0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div class="input-group">
+						<div style="position: absolute; left: -5000px;"><input type="text" name="b_733cd9762a5e37e6e7d712989_43bb7b9e0c" tabindex="-1" value=""></div>
+						<input required class="form-control input-lg required email" placeholder="me@developer.com" type="email" name="EMAIL" id="mce-EMAIL" />
+						<span class="input-group-btn">
+							<button class="btn btn-lg btn-default" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Join</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="landing-method-theme"></div>
 	<!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
 	<nav class="header navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
@@ -158,130 +186,42 @@
 		</div>
 	</nav>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<nav class="bs-docs-sidebar" id="sidebar">
-					<!--Side Nav Snippet -->
-					<div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active"
-					                                data-target="#setup"><i class="icon-folder-open"></i><i
-							class="icon-folder-close"></i>Install and Setup</a>
-					</div>
-					<div id="setup" class="collapse in">
-						<ul class="nav nav-list">
-							<li value="1"><a href="Themes/installation/install-overview.htm">Overview </a></li>
-							<li value="2"><a href="Themes/installation/install-github.htm">GitHub</a></li>
-							<li value="3"><a href="Themes/installation/install-nodejs.htm">NodeJS</a></li>
-							<li value="4"><a href="Themes/installation/install-ruby.htm">Ruby</a></li>
-							<li value="5"><a href="Themes/installation/install-compass.htm">Compass</a></li>
-							<li value="6"><a href="Themes/installation/install-bootstrap.htm">Bootstrap</a></li>
-							<li value="7"><a href="Themes/installation/install-optional.htm">Apps and Plugins</a></li>
-							<li value="8"><a href="Themes/installation/download-a-theme.htm">Download a Theme</a></li>
-						</ul>
-					</div>
-					<div class="sidebar-heading">
-						<a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
-					</div>
-					<div id="custom" class="collapse in">
-						<ul class="nav nav-list">
-							<li value="1"><a href="Themes/customization/customization-overview.htm">Overview </a></li>
-							<li value="2"><a href="Themes/installation/download-a-theme.htm">Download aTheme</a></li>
-							<li value="3"><a href="Themes/customization/method-tour.htm">Method Theme Tour</a></li>
-							<li value="4"><a href="Themes/customization/folder-structure.htm">Folder Structure</a></li>
-							<li value="5"><a href="Themes/customization/styles-overview.htm">Styles and Layouts</a></li>
-							<li value="6"><a href="Themes/customization/bootstrap-overview.htm">Bootstrap Styles</a></li>
-							<li value="7"><a href="Themes/customization/adding-fonts.htm">Adding Fonts</a></li>
-							<li value="8"><a href="Themes/customization/image-sprites.htm">Image Sprites</a></li>
-							<li value="9"><a href="Themes/customization/custom-text.htm">Custom Content</a></li>
-						</ul>
-					</div>
-				</nav>
+		<div class="landing-feature-1">
+			<h3>Modern Stack</h3>
+			<p class="lead">Using the latest front end development frameworks</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="feature-image"><img src="resources/images/angular-feature.jpg" atl="AngularJS" /></div>
+					<div class="feature-title">AngularJS</div>
+					<div class="feature-description">Vivamus eget tellus vitae nisl lobortis varius. Aenean quis elit tellus. Duis sed ligula rutrum lectus aliquam blandit. Nunc id odio et nisi cursus dictum. Sed a lobortis elit, id placerat sem. Curabitur ex erat, fermentum eu urna et, lacinia ultricies mi. Fusce sit amet efficitur ipsum, in sollicitudin massa.</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature-image"><img src="resources/images/sass-feature.jpg" atl="AngularJS" /></div>
+					<div class="feature-title">SASS</div>
+					<div class="feature-description">Vivamus eget tellus vitae nisl lobortis varius. Aenean quis elit tellus. Duis sed ligula rutrum lectus aliquam blandit. Nunc id odio et nisi cursus dictum. Sed a lobortis elit, id placerat sem. Curabitur ex erat, fermentum eu urna et, lacinia ultricies mi. Fusce sit amet efficitur ipsum, in sollicitudin massa.</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature-image"><img src="resources/images/api-feature.jpg" atl="AngularJS" /></div>
+					<div class="feature-title">API</div>
+					<div class="feature-description">Vivamus eget tellus vitae nisl lobortis varius. Aenean quis elit tellus. Duis sed ligula rutrum lectus aliquam blandit. Nunc id odio et nisi cursus dictum. Sed a lobortis elit, id placerat sem. Curabitur ex erat, fermentum eu urna et, lacinia ultricies mi. Fusce sit amet efficitur ipsum, in sollicitudin massa.</div>
+				</div>
 			</div>
-			<div class="col-md-9 content">
-				<h1>Use an h1 for the title of the page</h1>
-				<p class="lead">Sample text here for testing of padding and marginging.</p>
-				<h2>Table of Contents</h2>
-				<ol class="table-of-contents">
-					<li><a href="#">Top Level Heading</a></li>
-					<ol class="table-of-contents">
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-					</ol>
-					<li><a href="#">Top Level Heading</a></li>
-					<ol class="table-of-contents">
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-						<li><a href="#">Second Level Heading</a></li>
-					</ol>
-				</ol>
-				<h2>Second Level Heading Here</h2>
-				<h3>Third Level Heading Here</h3>
-				<p>This is just sample text... Web designers can edit the bootstrap.css file directly to change the colors and fonts in their installation of Bootstrap. Or you can @import into your own CSS file and extend from there. To modify bootstrap formats directly to a downloaded theme, locate the _bootstrap-variables.scss and _bootstrap-style.scss files in the {your repo}\app\styles\base folder.</p>
-				<!-- Flare topic compiler -->
-				<h3 class="text-center">Everything you need to get started.</h3>
-
-				<p class="text-center" style="font-size: large;">The duo of Theme Engine and Storefront API
-					documentation gives more than just a kickstart. This site will grow as your innovation
-					demands!</p>
-				<hr width="100%" size="0" align="center"/>
-				<p class="text-center">
-					<img src="Resources/Images/theme-intro.png"/></p>
-
-				<h3>Volusion Theme Engine, Storefront API, and You</h3>
-
-				<p>Storefronts and company websites have become far more interactive experiences for shoppers,
-					accessed on a variety of devices, mobile phones, and computers. Volusion sees the trends and
-					responds with new opportunities to match your business needs and dreams with the latest
-					technologies. </p>
-
-				<p>There are no limits to what you can create with the Theme Engine. Let your imagination run wild
-					and create that site you have been dreaming about. The Theme Engine will include a variety of
-					pre-built starter themes to empower you in creating beautiful websites and custom apps. You can
-					leverage any number of available web components or code and use your own with these
-					designs. </p>
-
-				<p>Coming soon, you can add new responsive themes to your storefronts, powered by a Volusion theme
-					engine and supported with a REST Storefront API. The Theme Engine will integrate with the
-					Volusion Storefront API to support limitless possibilities. All APIs are RESTful with a detailed
-					documentation reference and mock system for testing your ideas towards customizations. Turn your
-					designer concepts into responsive realities for your storefront.</p>
-
-				<p>You can start following our progress and work with our available sample store and theme! <i>Updates
-					coming as we have them!</i></p>
-
-				<h3>What is a responsive theme?</h3>
-
-				<p>Mix design concepts, CSS styles, JavaScript, custom code, and web components and images into a
-					theme that changes with any viewing device...and you have responsive design. The site interacts
-					with shoppers on desktop browsers, tablets, and mobile devices seamlessly to browse, search, and
-					purchase your products. Beauty and function.</p>
-
-				<h3>How it works!</h3>
-
-				<p>The Volusion Theme Engine powers your storefront themes. The themes and engine make calls to the
-					Storefront API for retrieving data, creating and updating objects, and enhancing shopper
-					experiences. The API is a fully RESTful API, providing HTTP&#160;verb operations for
-					<code>GET</code>, <code>PUT</code>, <code>POST</code>, and <code>DELETE&#160;</code>through
-					endpoints. Every request receives JSON. Every theme and app provides the interactions.</p>
-
-				<h3>How do I use this guide?</h3>
-
-				<p>This documentation grows with our features and your needs. We want to support your goals.</p>
-
-				<p>Designers may want to customize styles of text, images, colors, and slider images. Developers may
-					want to deeply change the core of the themes or add custom apps to interact with the APIs and
-					data. Your store. Your design.</p>
-
-				<p><i class="fa fa-info-circle"></i>The top navbar gives you options for <a
-						href="Themes/installation/Theme_EnvironmentOverview.htm">installing tools</a>, <a
-						href="Themes/customization/Theme_Customization.htm">customizing themes</a>, visiting <a
-						href="http://docs.volusion.apiary.io/">Apiary</a>, and contacting us!</p>
+		</div>
+	</div>
+	<div class="landing-feature-2">
+		<h3>Unlimited Design</h3>
+		<p class="lead">100% design freedom to create the perfect storefront.</p>
+		<div class="landing-feature-2__featured-themes">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="../../assets/images/themes/gizmo.jpg" alt="Gizmo Theme" class="img-responsive" />
+				</div>
+				<div class="col-md-4">
+					<img src="../../assets/images/themes/sven.jpg" alt="Sven Theme" class="img-responsive" />
+				</div>
+				<div class="col-md-4">
+					<img src="../../assets/images/themes/rogue.jpg" alt="Rogue Theme" class="img-responsive" />
+				</div>
 			</div>
 		</div>
 	</div>
