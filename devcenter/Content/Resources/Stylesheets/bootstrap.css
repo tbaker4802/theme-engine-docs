@@ -5614,7 +5614,7 @@ body {
 	font-size: 16px;
 }
 h1 {
-	color: #799bac;
+	color: #076db2;
 	font-size: 48px;
 	font-weight: 300;
 	margin-top: 35px;
@@ -5665,18 +5665,6 @@ a:hover, a:focus {
 	background-position: center;
 }
 
-.method-landing {
-	position: absolute;
-	top: 369px;
-	background-image: url('../Images/method-landing.jpg');
-	background-repeat: no-repeat;
-	height: 644px;
-	width: 100%;
-	background-position: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .landing-heading__content {
 	text-align: center;
 	padding-top: 145px;
@@ -5697,38 +5685,50 @@ a:hover, a:focus {
 	font-weight: 300;
 }
 
-.landing-heading_form {
+.landing-heading__form {
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 
 }
 
-.landing-heading__content input {
+.landing-heading__form input {
 	background-color: rgba(8, 111, 189, 0.50);
 	border-radius: 0px;
 	border: 0px;
 	color: white;
 }
 
-.landing-heading__content .form-control::-webkit-input-placeholder {
+.landing-heading__form .form-control::-webkit-input-placeholder {
 	color: white;
 }
 
-.landing-heading__content .form-control::-moz-placeholder {
+.landing-heading__form .form-control::-moz-placeholder {
 	color: white;
 }
 
-.landing-heading__content .form-control:-ms-input-placeholder {
+.landing-heading__form .form-control:-ms-input-placeholder {
 	color: white;
 }
 
-.landing-heading__content .btn-default {
+.landing-heading__form .btn-default {
 	background-color: white;
 	border-radius: 0px;
 	border: 0px;
 	text-transform: uppercase;
 	color: #09548c;
+}
+
+.landing-method-theme {
+	position: absolute;
+	top: 369px;
+	background-image: url('../Images/method-landing.jpg');
+	background-repeat: no-repeat;
+	height: 644px;
+	width: 100%;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Landing Feature 1 */
@@ -5809,12 +5809,12 @@ ol.table-of-contents li {
 ol.table-of-contents li:before {
 	content: counters(item, ".")" ";
 	counter-increment: item;
-	color: #abc369;
+	color: #0972ba;
 	padding-right: 10px;
 }
 /* .interior-heading styles */
 .interior-heading {
-	background-image: url('../Images/interior-header.png');
+	background-image: url('../Images/interior-header.jpg');
 	background-repeat: no-repeat;
 	height: 248px;
 	background-size: cover;
@@ -5851,11 +5851,11 @@ nav#sidebar .toggler {
 }
 
 .footer__logo {
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .footer__icons {
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 .footer__icons .btn-primary {
@@ -6020,10 +6020,10 @@ img.screenshot {
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
-	color: #253d49;
+	color: #076db2;
 	text-decoration: none;
 	background-color: transparent;
-	border-left: 2px solid #253d49;
+	border-left: 2px solid #076db2;
 }
 /* collapse - hide all (inactive) nested list */
 .bs-docs-sidebar .nav ul.nav {
