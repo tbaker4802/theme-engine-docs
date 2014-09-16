@@ -96,7 +96,7 @@
 				var scroll = $(window).scrollTop();
 
 				var heightToCheck = fixedHeight ? fixedHeight : elementToCheckHeight ? elementToCheckHeight.height() - 40 : 0;
-
+				console.log(heightToCheck);
 				if (scroll <= heightToCheck){
 					if (isFirstLoad){
 						goTransparent();
@@ -113,10 +113,10 @@
 			};
 
 			if (interiorHeadingImage || landingHeadingImage) {
-				doTransitionCheck(true, interiorHeadingImage, landingHeadingImage ? 310 : null);
+				doTransitionCheck(true, interiorHeadingImage, landingHeadingImage.length > 0 ? 310 : null);
 
 				$(window).scroll(function () {
-					doTransitionCheck(false, interiorHeadingImage, landingHeadingImage ? 310 : null);
+					doTransitionCheck(false, interiorHeadingImage, landingHeadingImage.length > 0 ? 310 : null);
 				});
 			}
 		});
@@ -128,7 +128,7 @@
 		<div class="landing-heading__content">
 			<h1>Coming soon, an easy way to build Volusion themes</h1>
 			<h2>Sign up below for early access to the Theme Engine beta</h2>
-			<div class="landing-heading_form hidden-xs">
+			<div class="landing-heading__form hidden-xs">
 				<div class="input-group">
 					<input class="form-control input-lg" placeholder="me@developer.com" />
 					<span class="input-group-btn">
@@ -146,7 +146,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="method-landing"></div>
+	<div class="landing-method-theme"></div>
 	<!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
 	<nav class="header navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
@@ -178,9 +178,6 @@
 			</div>
 			<!--/.nav-collapse -->
 		</div>
-		<!-- <div class="divide-nav" role="navigation">
-		<div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
-	</div> -->
 	</nav>
 	<div class="container">
 		<div class="landing-feature-1">
