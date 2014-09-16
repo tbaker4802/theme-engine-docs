@@ -5623,14 +5623,14 @@ body {
 	font-size: 16px;
 }
 h1 {
-	color: #076db2;
+	color: black;
 	font-size: 48px;
 	font-weight: 300;
-	margin-top: 35px;
+	margin-top: 55px;
 	margin-bottom: 25px;
 }
 h2 {
-	color: #666666;
+	color: black;
 	border-bottom: 1px solid #e6e6e6;
 	font-size: 30px;
 	font-weight: 300;
@@ -5640,30 +5640,43 @@ h2 {
 }
 h3 {
 	color: #333333;
-	font-size: 24px;
-	font-weight: 300;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 40px;
+	margin-bottom: 15px;
 }
 p {
 	line-height: 1.8em;
+	margin-bottom: 15px;
 }
 p.lead {
-	font-size: 18px;
+	font-size: 24px;
 	color: #999;
 	font-weight: 300;
 }
 code {
-	color: #4f5f68;
-	background-color: #e9ebec;
+	color: #c7254e;
+	background-color: #f9f2f4;
 	padding-left: 6px;
 	padding-right: 6px;
 }
 a {
 	color: #0972ba;
-}
-a:hover, a:focus {
-	color: #0a7bc6;
 	text-decoration: none;
 }
+a:hover, a:focus {
+	color: #0972ba;
+	text-decoration: none;
+}
+
+#main .content a {
+	border-bottom: 1px solid #eee;
+}
+
+#main .content a:hover {
+	border-bottom: 1px solid #0972ba;
+}
+
 
 /* Landing page Styles */
 .landing-heading {
@@ -5805,7 +5818,6 @@ a:hover, a:focus {
 /* Table of Contents styles */
 ol.table-of-contents ol.table-of-contents {
 	margin-left: 35px;
-	margin-bottom: 15px;
 }
 ol.table-of-contents {
 	counter-reset: item;
@@ -5836,8 +5848,9 @@ nav#sidebar .sidebar-heading {
 }
 nav#sidebar .toggler {
 	text-transform: uppercase;
-	color: #253d49;
+	color: #0972ba;
 	font-weight: 700;
+	font-size: 14px;
 }
 
 /* footer styles */
