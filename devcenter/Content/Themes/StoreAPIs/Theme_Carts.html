@@ -38,73 +38,153 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../installation/install-overview.html">Overview </a></li><li value="2"><a href="../installation/install-github.html">GitHub</a></li><li value="3"><a href="../installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="../installation/install-ruby.html">Ruby</a></li><li value="5"><a href="../installation/install-compass.html">Compass</a></li><li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../customization/customization-overview.html">Overview </a></li><li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a></li><li value="4"><a href="../customization/folder-structure.html">Folder Structure</a></li><li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="../customization/image-sprites.html">Image Sprites</a></li><li value="9"><a href="../customization/custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1><a name="kanchor24"></a>Carts Endpoint</h1><p>The carts endpoint supports multiple methods for getting, adding items, updating, and deleting shopping carts. Carts encapsulate all items and elements of an order in-progress. The data associated with a cart includes the items added to the cart by the shopper and all checkout details. Checkout details include billing address, shipping address, and payment profile data.</p><p>When calling the <code>GET </code>method on a cart, only the cart items object and cart totals object return. We recommend calling this endpoint only on the initial page load. Any subsequent calls should be to the <code>PUT </code>method for a cart, which returns all cart and checkout objects.</p><p class="note">The <code>{cartId}</code> is not required appended in the call. The cart ID is passed as a cookie.</p><p>You can modify your local cart object as your shopper interacts with your checkout interface. At times, you may want to contact the Carts endpoints to validate data and receive updated totals, costs, shipping options, applicable discounts, and other data as associated to the task. Each section of documentation provides best practices for contacting the endpoints for these procedures and steps. </p><p>The following information provides details on the request and the response status code and JSON with further data information.</p><div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Get a Cart</a><div class="MCDropDownBody dropDownBody"><p><a href="Theme_Carts_GetCart.html">Learn more about  the <code>GET </code>method for retrieving the cart.</a> When you perform this call, only the cart items object and cart totals object are returned. </p><p>The URI call structure is:</p><pre>GET http://{domain}/api/v1/carts</pre></div></div><div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Add to a Cart</a><div class="MCDropDownBody dropDownBody"><p><a href="Theme_Carts_AddToCart.html">Learn more about  the <code>POST </code>method for adding items to a cart.</a> When you perform this call, you receive a 201 success status code. To verify the change completed, you can perform another <code>GET </code>method.</p><p>The URI call structure is:</p><pre>POST http://{domain}/api/v1/carts</pre></div></div><div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Update a Cart</a><div class="MCDropDownBody dropDownBody"><p><a href="Theme_Carts_UpdateCart.html">Learn more about  the <code>PUT </code>method for updating the cart.</a> When you perform this call, only a specific amount of attributes can be modified in the cart. All other attributes are read only data. The response provides all cart and checkout object data.</p><p>The URI call structure is:</p><pre>PUT http://{domain}/api/v1/carts</pre></div></div><div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Delete a Cart</a><div class="MCDropDownBody dropDownBody"><p><a href="Theme_Carts_DeleteCart.html">Learn more about  the <code>DELETE </code>method for permanently deleting the cart.</a> When you perform this call, typically after placing an order, you receive a 204 success status code.</p><p>The URI call structure is:</p><pre class="CodeSample">DELETE http://{domain}/api/v1/carts</pre></div></div></div></div></div></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../customization/customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="../customization/folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="../customization/image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="../customization/custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1><a name="kanchor24"></a>Carts Endpoint</h1>
+                        <p>The carts endpoint supports multiple methods for getting, adding items, updating, and deleting shopping carts. Carts encapsulate all items and elements of an order in-progress. The data associated with a cart includes the items added to the cart by the shopper and all checkout details. Checkout details include billing address, shipping address, and payment profile data.</p>
+                        <p>When calling the <code>GET </code>method on a cart, only the cart items object and cart totals object return. We recommend calling this endpoint only on the initial page load. Any subsequent calls should be to the <code>PUT </code>method for a cart, which returns all cart and checkout objects.</p>
+                        <p class="note">The <code>{cartId}</code> is not required appended in the call. The cart ID is passed as a cookie.</p>
+                        <p>You can modify your local cart object as your shopper interacts with your checkout interface. At times, you may want to contact the Carts endpoints to validate data and receive updated totals, costs, shipping options, applicable discounts, and other data as associated to the task. Each section of documentation provides best practices for contacting the endpoints for these procedures and steps. </p>
+                        <p>The following information provides details on the request and the response status code and JSON with further data information.</p>
+                        <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Get a Cart</a>
+                            <div class="MCDropDownBody dropDownBody">
+                                <p><a href="Theme_Carts_GetCart.html">Learn more about  the <code>GET </code>method for retrieving the cart.</a> When you perform this call, only the cart items object and cart totals object are returned. </p>
+                                <p>The URI call structure is:</p><pre>GET http://{domain}/api/v1/carts</pre>
+                            </div>
+                        </div>
+                        <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Add to a Cart</a>
+                            <div class="MCDropDownBody dropDownBody">
+                                <p><a href="Theme_Carts_AddToCart.html">Learn more about  the <code>POST </code>method for adding items to a cart.</a> When you perform this call, you receive a 201 success status code. To verify the change completed, you can perform another <code>GET </code>method.</p>
+                                <p>The URI call structure is:</p><pre>POST http://{domain}/api/v1/carts</pre>
+                            </div>
+                        </div>
+                        <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Update a Cart</a>
+                            <div class="MCDropDownBody dropDownBody">
+                                <p><a href="Theme_Carts_UpdateCart.html">Learn more about  the <code>PUT </code>method for updating the cart.</a> When you perform this call, only a specific amount of attributes can be modified in the cart. All other attributes are read only data. The response provides all cart and checkout object data.</p>
+                                <p>The URI call structure is:</p><pre>PUT http://{domain}/api/v1/carts</pre>
+                            </div>
+                        </div>
+                        <div class="MCDropDown MCDropDown_Open dropDown"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHead MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Delete a Cart</a>
+                            <div class="MCDropDownBody dropDownBody">
+                                <p><a href="Theme_Carts_DeleteCart.html">Learn more about  the <code>DELETE </code>method for permanently deleting the cart.</a> When you perform this call, typically after placing an order, you receive a 204 success status code.</p>
+                                <p>The URI call structure is:</p><pre class="CodeSample">DELETE http://{domain}/api/v1/carts</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

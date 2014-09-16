@@ -43,72 +43,120 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="#">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="#">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-12"><h1 class="page-header">Quickstart</h1><p>You need to install and configure a few tools to get started. Then download a theme. And carry on! <a href="install-overview.html">Need detailed steps or videos?</a></p><div class="panel panel-default"><div class="panel-body"><h3>Step 1: GitHub</h3><p>All Volusion theme seed projects and files are available on GitHub. You will need an account and the client. Create a <a href="http://www.github.com/">Git Hub account</a> and <a href="install-github.html">install the client</a>.</p></div></div><p></p><div class="panel panel-default"><div class="panel-body"><h3>Step 2: Pick a Theme</h3><p>You can download a Volusion Theme right through <a href="https://github.com/volusion-angular-themes">GitHub</a>! We highly recommend using Method, a great looking eCommerce theme with faceted search and clean lines. Additional options are in the works! Just visit the <a href="https://github.com/volusion-angular-themes/method">Method theme page</a> and either clone to your desktop or fork.</p></div></div><p></p><div class="panel panel-default"><div class="panel-body"><h3>Step 3: Design Tools</h3><p>Depending on your level of comfort and skill, you can install a minimum of tools to get started. Designers familiar with Bootstrap only need that knowledge. Of course, you can also install <a href="install-bootstrap.html">Bootstrap</a> (v3.2), <a href="install-ruby.html">Ruby</a>, and <a href="install-compass.html">Sass and Compass</a>.</p></div></div><p></p><div class="panel panel-default"><div class="panel-body"><h3>Step 4: Development Tools</h3><p>If you are developing API interactions and Apps, we recommend installing and configuring a few more tools including <a href="install-nodejs.html">NodeJS</a> and optional extensions like <a href="install-optional.html">Postman REST Client and Web Developer</a>. </p></div></div><p></p><div class="panel panel-default"><div class="panel-body"><h3>Need Help?</h3><p>Feel free to use this site for highlights and expanding information. We also provide links to our <a href="http://docs.volusion.apiary.io/">Apiary API reference</a>, <a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>, <a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>, and <a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a> at the top. You can also walk through all <a href="install-overview.html">installation instructions and videos</a> for these tools.</p></div></div><p></p><div class="panel panel-default"><div class="panel-body"><h3>Can I use my own tools?</h3><p>Absolutely!</p><p>If you have designer and developer resources that will work within this framework, you can use those tools to create , extend, and test. Make sure you always have the latest code through GitHub and ensure your preferred tools are compatible with the framework and file types supported by the Volusion theme seed projects and development. </p><p>We highly recommend using your tools <i>with</i> the listed tools in this guide. Volusion themes and interactions with the Theme Engine and Storefront API were developed within the Angular.js framework, with Node.js, Ruby, and all content saved to GitHub. </p></div></div></div></div></div> <![CDATA[ ]]></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">Quickstart</h1>
+                        <p>You need to install and configure a few tools to get started. Then download a theme. And carry on! <a href="install-overview.html">Need detailed steps or videos?</a></p>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3>Step 1: GitHub</h3>
+                                <p>All Volusion theme seed projects and files are available on GitHub. You will need an account and the client. Create a <a href="http://www.github.com/">Git Hub account</a> and <a href="install-github.html">install the client</a>.</p>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3>Step 2: Pick a Theme</h3>
+                                <p>You can download a Volusion Theme right through <a href="https://github.com/volusion-angular-themes">GitHub</a>! We highly recommend using Method, a great looking eCommerce theme with faceted search and clean lines. Additional options are in the works! Just visit the <a href="https://github.com/volusion-angular-themes/method">Method theme page</a> and either clone to your desktop or fork.</p>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3>Step 3: Design Tools</h3>
+                                <p>Depending on your level of comfort and skill, you can install a minimum of tools to get started. Designers familiar with Bootstrap only need that knowledge. Of course, you can also install <a href="install-bootstrap.html">Bootstrap</a> (v3.2), <a href="install-ruby.html">Ruby</a>, and <a href="install-compass.html">Sass and Compass</a>.</p>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3>Step 4: Development Tools</h3>
+                                <p>If you are developing API interactions and Apps, we recommend installing and configuring a few more tools including <a href="install-nodejs.html">NodeJS</a> and optional extensions like <a href="install-optional.html">Postman REST Client and Web Developer</a>. </p>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3>Need Help?</h3>
+                                <p>Feel free to use this site for highlights and expanding information. We also provide links to our <a href="http://docs.volusion.apiary.io/">Apiary API reference</a>, <a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>, <a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>, and <a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a> at the top. You can also walk through all <a href="install-overview.html">installation instructions and videos</a> for these tools.</p>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h3>Can I use my own tools?</h3>
+                                <p>Absolutely!</p>
+                                <p>If you have designer and developer resources that will work within this framework, you can use those tools to create , extend, and test. Make sure you always have the latest code through GitHub and ensure your preferred tools are compatible with the framework and file types supported by the Volusion theme seed projects and development. </p>
+                                <p>We highly recommend using your tools <i>with</i> the listed tools in this guide. Volusion themes and interactions with the Theme Engine and Storefront API were developed within the Angular.js framework, with Node.js, Ruby, and all content saved to GitHub. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <![CDATA[ ]]></div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

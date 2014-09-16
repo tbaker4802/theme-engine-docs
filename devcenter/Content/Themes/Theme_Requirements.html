@@ -38,73 +38,149 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../index.html"> <img src="../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../landing.html"><img src="../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="installation/install-overview.html">Overview </a></li><li value="2"><a href="installation/install-github.html">GitHub</a></li><li value="3"><a href="installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="installation/install-ruby.html">Ruby</a></li><li value="5"><a href="installation/install-compass.html">Compass</a></li><li value="6"><a href="installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="customization/customization-overview.html">Overview </a></li><li value="2"><a href="installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="customization/method-tour.html">Method Theme Tour</a></li><li value="4"><a href="customization/folder-structure.html">Folder Structure</a></li><li value="5"><a href="customization/Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="customization/bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="customization/adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="customization/image-sprites.html">Image Sprites</a></li><li value="9"><a href="customization/custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1><a name="kanchor3"></a>Requirements </h1><p>The following information guides you through the information, tools and skills you will need for working with the <span class="GeneralProductName">Volusion</span> <span class="GeneralThemeEngineAPI">Storefront API</span>. </p><h2>Tools and Technology</h2><p>The REST&#160;API accepts requests from apps, mobile devices, desktop implementations and any other creative code you can dream up. The Storefront API was created using the following tools:</p><ul><li value="1"><a href="http://getbootstrap.com/">Twitter Bootstrap (Sass)</a> - Designed to make development easier and efficient. Bootstrap is fully responsive from the mobile device to the desktop.</li><li value="2"><a href="http://sass-lang.com/">Sass</a> and <a href="http://compass-style.org/">Compass</a> - The popular CSS-extension language, Sass, powers Compass to allow for code that’s DRY, readable and easy to maintain. </li><li value="3"><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM CSS Syntax</a> - BEM (<i>block, element, modifier</i>) is a methodology for creating code that’s easy to read, maintain, and reuse across themes.</li><li value="4"><a href="https://angularjs.org/">AngularJS</a> - AngularJS is an open-sourced framework used to create single-page web applications (SPAs). While it is not required to know AngularJS when developing a new Volusion theme, it is recommended if you plan on extending an existing theme's functionality or choose to develop new components.</li><li value="5"><a href="http://docs.volusion.apiary.io/">Volusion Storefront API</a> - The core set of REST APIs for building unique storefront experiences for your themes and additional apps to empower them.</li></ul><p>You should have your tools installed and environment configured to continue. If not, see <a href="installation/Theme_EnvironmentOverview.htm">Prepping Your Environment</a>.</p><h2>Theme Code</h2><p>You can download a copy of the <a href="https://github.com/volusion-angular-themes">Volusion Themes</a> from Git Hub. These Git repositories are all-inclusive seed projects for building upon for your own themes. All Volusion responsive themes are built on the <a href="https://angularjs.org/">AngularJS framework</a>. For the basis of examples in this documentation, you will follow code and samples from the <a href="https://github.com/volusion-angular-themes/method">Method</a> theme.</p><h2>Required Skills and Knowledge</h2><p>Developing themes does require an understanding of the following technologies:</p><ul><li value="1">JSON - A solid understanding of extending and using REST API&#160;endpoints, particularly using JSON implementations is required. You will interact with the endpoints, sending requests and receiving data in JSON.</li><li value="2">HTML - HTML 5 is not required but recommended. Many of the base pages and templates may use HTML, requiring tweaking to edit and add content and formatting.</li><li value="3">CSS - A solid understanding of CSS and how CSS preprocessors work is required. Styles provide a depth of design control over all aspects of your theme from a single source.</li><li value="4">JavaScript - JavaScript knowledge is required for theme features and widgets, but not for layouts. Basic JavaScript knowledge helps with minor modifications, but if you plan to redo basic features built into a current theme you need solid JavaScript skills.</li><li value="5">Graphic Editing - Optionally, you may need an understanding of graphic editing and creation for any images you want to add to your designs or for working with large graphics for bold sliders and backgrounds.</li></ul><h2>Theme Management</h2><p>(This information will be updated based on the final decisions and support for the theme)</p><p>For details, see <a href="management/Theme_FileManagement.html">Theme Management</a>.</p></div></div></div></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="customization/customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="customization/method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="customization/folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="customization/Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="customization/bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="customization/adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="customization/image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="customization/custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1><a name="kanchor3"></a>Requirements </h1>
+                        <p>The following information guides you through the information, tools and skills you will need for working with the <span class="GeneralProductName">Volusion</span> <span class="GeneralThemeEngineAPI">Storefront API</span>. </p>
+                        <h2>Tools and Technology</h2>
+                        <p>The REST&#160;API accepts requests from apps, mobile devices, desktop implementations and any other creative code you can dream up. The Storefront API was created using the following tools:</p>
+                        <ul>
+                            <li value="1"><a href="http://getbootstrap.com/">Twitter Bootstrap (Sass)</a> - Designed to make development easier and efficient. Bootstrap is fully responsive from the mobile device to the desktop.</li>
+                            <li value="2"><a href="http://sass-lang.com/">Sass</a> and <a href="http://compass-style.org/">Compass</a> - The popular CSS-extension language, Sass, powers Compass to allow for code that’s DRY, readable and easy to maintain. </li>
+                            <li value="3"><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM CSS Syntax</a> - BEM (<i>block, element, modifier</i>) is a methodology for creating code that’s easy to read, maintain, and reuse across themes.</li>
+                            <li value="4"><a href="https://angularjs.org/">AngularJS</a> - AngularJS is an open-sourced framework used to create single-page web applications (SPAs). While it is not required to know AngularJS when developing a new Volusion theme, it is recommended if you plan on extending an existing theme's functionality or choose to develop new components.</li>
+                            <li value="5"><a href="http://docs.volusion.apiary.io/">Volusion Storefront API</a> - The core set of REST APIs for building unique storefront experiences for your themes and additional apps to empower them.</li>
+                        </ul>
+                        <p>You should have your tools installed and environment configured to continue. If not, see <a href="installation/Theme_EnvironmentOverview.htm">Prepping Your Environment</a>.</p>
+                        <h2>Theme Code</h2>
+                        <p>You can download a copy of the <a href="https://github.com/volusion-angular-themes">Volusion Themes</a> from Git Hub. These Git repositories are all-inclusive seed projects for building upon for your own themes. All Volusion responsive themes are built on the <a href="https://angularjs.org/">AngularJS framework</a>. For the basis of examples in this documentation, you will follow code and samples from the <a href="https://github.com/volusion-angular-themes/method">Method</a> theme.</p>
+                        <h2>Required Skills and Knowledge</h2>
+                        <p>Developing themes does require an understanding of the following technologies:</p>
+                        <ul>
+                            <li value="1">JSON - A solid understanding of extending and using REST API&#160;endpoints, particularly using JSON implementations is required. You will interact with the endpoints, sending requests and receiving data in JSON.</li>
+                            <li value="2">HTML - HTML 5 is not required but recommended. Many of the base pages and templates may use HTML, requiring tweaking to edit and add content and formatting.</li>
+                            <li value="3">CSS - A solid understanding of CSS and how CSS preprocessors work is required. Styles provide a depth of design control over all aspects of your theme from a single source.</li>
+                            <li value="4">JavaScript - JavaScript knowledge is required for theme features and widgets, but not for layouts. Basic JavaScript knowledge helps with minor modifications, but if you plan to redo basic features built into a current theme you need solid JavaScript skills.</li>
+                            <li value="5">Graphic Editing - Optionally, you may need an understanding of graphic editing and creation for any images you want to add to your designs or for working with large graphics for bold sliders and backgrounds.</li>
+                        </ul>
+                        <h2>Theme Management</h2>
+                        <p>(This information will be updated based on the final decisions and support for the theme)</p>
+                        <p>For details, see <a href="management/Theme_FileManagement.html">Theme Management</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

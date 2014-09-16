@@ -43,73 +43,162 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="#"> <img src="Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="Themes/installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="landing.html"><img src="Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="Themes/installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="Themes/installation/install-overview.html">Overview </a></li><li value="2"><a href="Themes/installation/install-github.html">GitHub</a></li><li value="3"><a href="Themes/installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="Themes/installation/install-ruby.html">Ruby</a></li><li value="5"><a href="Themes/installation/install-compass.html">Compass</a></li><li value="6"><a href="Themes/installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="Themes/installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="Themes/installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="Themes/customization/customization-overview.html">Overview </a></li><li value="2"><a href="Themes/installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="Themes/customization/method-tour.html">Method Theme Tour</a></li><li value="4"><a href="Themes/customization/folder-structure.html">Folder Structure</a></li><li value="5"><a href="Themes/customization/Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="Themes/customization/bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="Themes/customization/adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="Themes/customization/image-sprites.html">Image Sprites</a></li><li value="9"><a href="Themes/customization/custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><div class="container-headline2"><p class="page-header" style="font-size: 28px;">Unleash your creativity, create something amazing!</p><p style="font-size: x-large;">The Theme Engine gives developers of all levels the ability to create stunning websites using the latest tools and technologies.</p></div><div class="container-headline2"><div class="row row-centered"><div class="col-sm-4 text-center"><i class="fa fa-camera-retro fa-5x "></i><h3>Unlimited Creativity</h3><p>There are no limits to what you can create with the Theme Engine.  Let your imagination run wild and create that site you've been dreaming about.</p></div><div class="col-sm-4 text-center"><i class="fa fa-magic fa-5x "></i><h3>Incredible Features</h3><p>The Theme Engine includes a variety of pre-built starter templates to empower you to create beautiful websites with incredible capabilities.  Leverage any number of pre-built components or roll your own.</p></div><div class="col-sm-4 text-center"><i class="fa fa-cloud fa-5x "></i><h3>Powerful API</h3><p>Be free! Choose the way you want to code and harness the power of our RESTful API.</p></div></div></div><div class="container-headline"><h1 class="page-header">We're open source!</h1><p>Check us out on GitHub and join the most talented developers and designers on the web by contributing to our Theme Engine.</p><a href="https://github.com/volusion-angular-themes" class="btn btn-info btn-lg" target="_blank"><i class="fa fa-github" style="color:fff;"></i> View the GitHub Project</a></div><div class="container-headline"><div class="row row-centered" style="padding-top:20px; padding-bottom:20px;"><div class="col-xs-6 col-sm-3"><img src="Resources/Images/method.jpg" alt="Method Theme" class="img-responsive" /></div><div class="col-xs-6 col-sm-3"><img src="Resources/Images/gizmo.jpg" alt="Gizmo Theme" class="img-responsive" /></div><div class="col-xs-6  col-sm-3"><img src="Resources/Images/sven.jpg" alt="Sven Theme" class="img-responsive" /></div><div class="col-xs-6 col-sm-3"><img src="Resources/Images/rogue.jpg" alt="Rogue Theme" class="img-responsive" /></div></div></div></div></div></div> <![CDATA[ ]]></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="Themes/installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="Themes/installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="Themes/installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="Themes/installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="Themes/installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="Themes/installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="Themes/installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="Themes/installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="Themes/customization/customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="Themes/installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="Themes/customization/method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="Themes/customization/folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="Themes/customization/Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="Themes/customization/bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="Themes/customization/adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="Themes/customization/image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="Themes/customization/custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="container-headline2">
+                            <p class="page-header" style="font-size: 28px;">Unleash your creativity, create something amazing!</p>
+                            <p style="font-size: x-large;">The Theme Engine gives developers of all levels the ability to create stunning websites using the latest tools and technologies.</p>
+                        </div>
+                        <div class="container-headline2">
+                            <div class="row row-centered">
+                                <div class="col-sm-4 text-center"><i class="fa fa-camera-retro fa-5x "></i>
+                                    <h3>Unlimited Creativity</h3>
+                                    <p>There are no limits to what you can create with the Theme Engine.  Let your imagination run wild and create that site you've been dreaming about.</p>
+                                </div>
+                                <div class="col-sm-4 text-center"><i class="fa fa-magic fa-5x "></i>
+                                    <h3>Incredible Features</h3>
+                                    <p>The Theme Engine includes a variety of pre-built starter templates to empower you to create beautiful websites with incredible capabilities.  Leverage any number of pre-built components or roll your own.</p>
+                                </div>
+                                <div class="col-sm-4 text-center"><i class="fa fa-cloud fa-5x "></i>
+                                    <h3>Powerful API</h3>
+                                    <p>Be free! Choose the way you want to code and harness the power of our RESTful API.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-headline">
+                            <h1 class="page-header">We're open source!</h1>
+                            <p>Check us out on GitHub and join the most talented developers and designers on the web by contributing to our Theme Engine.</p><a href="https://github.com/volusion-angular-themes" class="btn btn-info btn-lg" target="_blank"><i class="fa fa-github" style="color:fff;"></i> View the GitHub Project</a>
+                        </div>
+                        <div class="container-headline">
+                            <div class="row row-centered" style="padding-top:20px; padding-bottom:20px;">
+                                <div class="col-xs-6 col-sm-3">
+                                    <img src="Resources/Images/method.jpg" alt="Method Theme" class="img-responsive" />
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <img src="Resources/Images/gizmo.jpg" alt="Gizmo Theme" class="img-responsive" />
+                                </div>
+                                <div class="col-xs-6  col-sm-3">
+                                    <img src="Resources/Images/sven.jpg" alt="Sven Theme" class="img-responsive" />
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <img src="Resources/Images/rogue.jpg" alt="Rogue Theme" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <![CDATA[ ]]></div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

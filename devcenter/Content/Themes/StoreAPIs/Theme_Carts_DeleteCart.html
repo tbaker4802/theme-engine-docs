@@ -38,73 +38,133 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../installation/install-overview.html">Overview </a></li><li value="2"><a href="../installation/install-github.html">GitHub</a></li><li value="3"><a href="../installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="../installation/install-ruby.html">Ruby</a></li><li value="5"><a href="../installation/install-compass.html">Compass</a></li><li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../customization/customization-overview.html">Overview </a></li><li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a></li><li value="4"><a href="../customization/folder-structure.html">Folder Structure</a></li><li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="../customization/image-sprites.html">Image Sprites</a></li><li value="9"><a href="../customization/custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1>Delete a Cart</h1><p>The <code>DELETE</code>method is used when deleting the entire cart object, best used when the order has been placed and enters the processing stage (post-checkout). You do not want to delete the cart prior to final payment submission as the shopper may want to change a quantity for a product or add another product to the cart during the checkout process. The response only provides a 204 status code on success. </p><h2>Request</h2><p>The URI call structure is:</p><pre class="CodeSample">DELETE&#160;http://volusion.apiary-mock.com/api/v1/carts</pre><p>The header is: <code>vMethod: DELETE</code>.</p><h3>Parameters</h3><p>The cart ID is not required for the request as a cookie provides any required cart identification. This method does not require parameters.</p><h2>Response</h2><p>The response includes only the status code for success or failure. </p><p><b>Status Code</b> 204</p></div></div></div></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../customization/customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="../customization/folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="../customization/image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="../customization/custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Delete a Cart</h1>
+                        <p>The <code>DELETE</code>method is used when deleting the entire cart object, best used when the order has been placed and enters the processing stage (post-checkout). You do not want to delete the cart prior to final payment submission as the shopper may want to change a quantity for a product or add another product to the cart during the checkout process. The response only provides a 204 status code on success. </p>
+                        <h2>Request</h2>
+                        <p>The URI call structure is:</p><pre class="CodeSample">DELETE&#160;http://volusion.apiary-mock.com/api/v1/carts</pre>
+                        <p>The header is: <code>vMethod: DELETE</code>.</p>
+                        <h3>Parameters</h3>
+                        <p>The cart ID is not required for the request as a cookie provides any required cart identification. This method does not require parameters.</p>
+                        <h2>Response</h2>
+                        <p>The response includes only the status code for success or failure. </p>
+                        <p><b>Status Code</b> 204</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

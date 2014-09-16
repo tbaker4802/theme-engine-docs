@@ -1,32 +1,43 @@
 $(function() {
 			var primaryNavigation = $("nav.header");
 			var interiorHeadingImage = $('.interior-heading');
+			var landingHeadingImage = $('.landing-heading');
+
 			var goTransparent = function(){
-			primaryNavigation.addClass('isTransparent');
-			primaryNavigation.animate({'backgroundColor': 'rgba(31, 52, 61, 0.0)'}, 'slow');
+				primaryNavigation.addClass('isTransparent');
+				primaryNavigation.animate({'backgroundColor': 'rgba(11, 126, 190, 0.0)'}, 'slow');
 			};
+
 			var goColored = function(){
-			primaryNavigation.removeClass('isTransparent');
-			primaryNavigation.animate({'backgroundColor': 'rgba(31, 52, 61, 0.80)'}, 'slow');
+				primaryNavigation.removeClass('isTransparent');
+				primaryNavigation.animate({'backgroundColor': 'rgba(11, 126, 190, 0.9)'}, 'slow');
 			};
-			var doTransitionCheck = function(isFirstLoad) {
-			var scroll = $(window).scrollTop();
-			if (scroll <= interiorHeadingImage.height() - 40){
-				if (isFirstLoad){
-				goTransparent();
-				} else if (!primaryNavigation.hasClass('isTransparent')){
-				goTransparent();
+
+			var doTransitionCheck = function(isFirstLoad, elementToCheckHeight, fixedHeight) {
+				var scroll = $(window).scrollTop();
+
+				var heightToCheck = fixedHeight ? fixedHeight : elementToCheckHeight ? elementToCheckHeight.height() - 40 : 0;
+				console.log(heightToCheck);
+				if (scroll <= heightToCheck){
+					if (isFirstLoad){
+						goTransparent();
+					} else if (!primaryNavigation.hasClass('isTransparent')){
+						goTransparent();
+					}
+				} else if (scroll > heightToCheck){
+					if (isFirstLoad){
+						goColored();
+					} else if (primaryNavigation.hasClass('isTransparent')){
+						goColored();
+					}
 				}
-				} else if (scroll > interiorHeadingImage.height() - 40){
-				if (isFirstLoad){
-				goColored();
-				} else if (primaryNavigation.hasClass('isTransparent')){
-				goColored();
-				}
-				}
-				};
-				doTransitionCheck(true);
-				$(window).scroll(function() {
-				doTransitionCheck(false);
+			};
+
+			if (interiorHeadingImage || landingHeadingImage) {
+				doTransitionCheck(true, interiorHeadingImage, landingHeadingImage.length > 0 ? 310 : null);
+
+				$(window).scroll(function () {
+					doTransitionCheck(false, interiorHeadingImage, landingHeadingImage.length > 0 ? 310 : null);
 				});
-				});
+			}
+		});

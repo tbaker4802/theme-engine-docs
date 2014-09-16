@@ -38,73 +38,231 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="install-overview.html">Overview </a></li><li value="2"><a href="#">GitHub</a></li><li value="3"><a href="install-nodejs.html">NodeJS</a></li><li value="4"><a href="install-ruby.html">Ruby</a></li><li value="5"><a href="install-compass.html">Compass</a></li><li value="6"><a href="install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="install-optional.html">Apps and Plugins</a></li><li value="8"><a href="download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../customization/customization-overview.html">Overview </a></li><li value="2"><a href="download-a-theme.html">Download a Theme</a></li><li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a></li><li value="4"><a href="../customization/folder-structure.html">Folder Structure</a></li><li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="../customization/image-sprites.html">Image Sprites</a></li><li value="9"><a href="../customization/custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1>Step 1: Install GitHub </h1><p class="lead">If you have a GitHub account, continue to <a href="install-nodejs.html">step 2</a>.</p><p><a href="https://github.com/">GitHub</a> is the source control code repository for all Volusion Themes. You can install the GitHub client to download, sync, and update your theme code. All available Volusion Themes are available through GitHub. </p><h2>Table of Contents</h2><ol class="table-of-contents"><li value="1"><a href="#create">Create an Account</a></li><li value="2"><a href="#download">Download the GitHub Client</a></li><li value="3"><a href="#install">Installation Notes</a><ol class="table-of-contents"><li value="1"><a href="#windows">Windows</a></li><li value="2"><a href="#mac">Mac OS</a></li></ol></li><li value="4"><a href="#tips">Pro-Tips</a></li></ol><h2 id="create">Create an Account</h2><p>The GitHub account is completely free. For developing themes, you do not need a purchased account. Of course, if you want to subscribe, check out their <a href="https://github.com/pricing">pricing page</a> for details.</p><ol><li value="1">Click <a href="https://github.com/signup">this link</a>!</li><li value="2">Enter a username.</li><li value="3">Enter your email address.</li><li value="4">Enter a password.</li><li value="5">Select the plan type, or just free!</li><li value="6">Click Finish sign up. Your account will be created with further information provided to authenticate it via email.</li></ol><p>Have multiple designers and developers? Have everyone create a GitHub account. As you work on themes through your repository, you can add collaborators to push (write), pull (read), and fork (copy) your repository. Learn more <a href="https://help.github.com/articles/permission-levels-for-a-user-account-repository">here</a>!</p><h2 id="download">Download the GitHub Client</h2><p>You can use the web portal at GitHub for reviewing your repositories, but the GiftHub client makes code interacting streamlined and detailed. Every checkout and merged update will display entered code comments, merged diffs, new or deprecated files, who did the work, date/time, and more. </p><p>Select the your client based on Operating System: </p><ul><li value="1"><a href="https://windows.github.com/">Windows</a> (Vista, 7, and 8) </li><li value="2"><a href="https://mac.github.com/">Mac</a> (OS X 10.7 or later)</li></ul><h2 id="install">Installation Notes</h2><p>Open the GitHub client installer. A wizard, or installer app, will walk you through the installation. Each application installation includes all required components to interact with code repositories. The Windows version supports a command line utility and a PowerShell console!</p><p>You do not require SSH keys for the client. All repositories are cloned over HTTPS with credentials cached by Windows to automatically authenticate without additional login steps. If you currently use SSH&#160;remote for a repository, GitHub will seamlessly integrate and send you an email with a new key to add to your account.</p><h3 id="windows"><img src="../../Resources/Images/windows.png" /> Windows Installation</h3><p>The Windows installation runs through a downloaded exe/wizard. </p><table class="table table-hover"><thead><tr><th>Step</th><th>What to Do</th></tr></thead><tr><td>1</td><td>Download the latest version of <a href="https://windows.github.com/">the client</a>.</td></tr><tr><td>2</td><td>Run the client install and login. Your credentials are used to set up and access your repositories. (If you still need an account, click sign up.)<br /><img src="../../Resources/Images/github-windows1.png" class="screenshot" /><br /></td></tr><tr><td>3</td><td>The GitHub client opens with your account info and a list of any repositories you have created/cloned/forked.</td></tr></table><h3 id="mac"><img src="../../Resources/Images/mac.png" /> Mac Installation</h3><p>The Mac installation runs a downloaded exe/wizard.</p><table class="table table-hover"><thead><tr><th>Step</th><th>What to Do</th></tr></thead><tr><td>1</td><td>Download the latest version of <a href="https://mac.github.com/">the client</a>.</td></tr><tr><td>2</td><td>Run the client install.</td></tr><tr><td>3</td><td>The first time you GitHub, you are prompted to setup or skip it. Click <b>Continue</b> and <b>Sign in</b> with your GitHub credentials. If you have 2-factor authentication on your account, you will be prompted for an authorization code (in your email).<br /><img src="../../Resources/Images/github-mac1.png" class="screenshot" /><br /></td></tr><tr><td>4</td><td>The client will autofill with your credentials. Make sure it is all correct.</td></tr></table><h2 id="tips">GitHub Protips!</h2><p>For details on GitHub, review their docs:</p><ul><li value="1"><a href="https://windows.github.com/help.html">Windows</a> <![CDATA[ ]]></li><li value="2"><a href="https://mac.github.com/help.html">Mac</a></li></ul><p>You can also contact them!</p><ul><li value="1">Visit their <a href="https://help.github.com/">support site</a>.</li><li value="2">Contact <a href="https://github.com/contact">via site</a>.</li><li value="3">Send <a href="mailto:support@github.com">email</a>.</li></ul><h4>Windows Client Protips</h4><p>The following are pro tips for using the GitHub Windows client!</p><p>In the client, select <b>Tools</b> &gt; <b>Options</b> and change your default shell to <i>Git Bash</i>. Select your project, click <b>Tools and Options</b>, and select "<i>open a shell here</i>". Or just hit the back tick key \` as a shortcut. You now have an excellent Git shell with your Git credentials already stored.</p><p>You can also add "C:\Users\xxx\AppData\Local\GitHub\PortableGit_xxx\bin" to your PATH user environment variable to gain access to common nix commands in your Windows Command Prompt without installing msysgit or cygwin.</p></div></div></div></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="#">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../customization/customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="../customization/folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="../customization/image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="../customization/custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Step 1: Install GitHub </h1>
+                        <p class="lead">If you have a GitHub account, continue to <a href="install-nodejs.html">step 2</a>.</p>
+                        <p><a href="https://github.com/">GitHub</a> is the source control code repository for all Volusion Themes. You can install the GitHub client to download, sync, and update your theme code. All available Volusion Themes are available through GitHub. </p>
+                        <h2>Table of Contents</h2>
+                        <ol class="table-of-contents">
+                            <li value="1"><a href="#create">Create an Account</a>
+                            </li>
+                            <li value="2"><a href="#download">Download the GitHub Client</a>
+                            </li>
+                            <li value="3"><a href="#install">Installation Notes</a>
+                                <ol class="table-of-contents">
+                                    <li value="1"><a href="#windows">Windows</a>
+                                    </li>
+                                    <li value="2"><a href="#mac">Mac OS</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li value="4"><a href="#tips">Pro-Tips</a>
+                            </li>
+                        </ol>
+                        <h2 id="create">Create an Account</h2>
+                        <p>The GitHub account is completely free. For developing themes, you do not need a purchased account. Of course, if you want to subscribe, check out their <a href="https://github.com/pricing">pricing page</a> for details.</p>
+                        <ol>
+                            <li value="1">Click <a href="https://github.com/signup">this link</a>!</li>
+                            <li value="2">Enter a username.</li>
+                            <li value="3">Enter your email address.</li>
+                            <li value="4">Enter a password.</li>
+                            <li value="5">Select the plan type, or just free!</li>
+                            <li value="6">Click Finish sign up. Your account will be created with further information provided to authenticate it via email.</li>
+                        </ol>
+                        <p>Have multiple designers and developers? Have everyone create a GitHub account. As you work on themes through your repository, you can add collaborators to push (write), pull (read), and fork (copy) your repository. Learn more <a href="https://help.github.com/articles/permission-levels-for-a-user-account-repository">here</a>!</p>
+                        <h2 id="download">Download the GitHub Client</h2>
+                        <p>You can use the web portal at GitHub for reviewing your repositories, but the GiftHub client makes code interacting streamlined and detailed. Every checkout and merged update will display entered code comments, merged diffs, new or deprecated files, who did the work, date/time, and more. </p>
+                        <p>Select the your client based on Operating System: </p>
+                        <ul>
+                            <li value="1"><a href="https://windows.github.com/">Windows</a> (Vista, 7, and 8) </li>
+                            <li value="2"><a href="https://mac.github.com/">Mac</a> (OS X 10.7 or later)</li>
+                        </ul>
+                        <h2 id="install">Installation Notes</h2>
+                        <p>Open the GitHub client installer. A wizard, or installer app, will walk you through the installation. Each application installation includes all required components to interact with code repositories. The Windows version supports a command line utility and a PowerShell console!</p>
+                        <p>You do not require SSH keys for the client. All repositories are cloned over HTTPS with credentials cached by Windows to automatically authenticate without additional login steps. If you currently use SSH&#160;remote for a repository, GitHub will seamlessly integrate and send you an email with a new key to add to your account.</p>
+                        <h3 id="windows">
+                            <img src="../../Resources/Images/windows.png" /> Windows Installation</h3>
+                        <p>The Windows installation runs through a downloaded exe/wizard. </p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Step</th>
+                                    <th>What to Do</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>1</td>
+                                <td>Download the latest version of <a href="https://windows.github.com/">the client</a>.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Run the client install and login. Your credentials are used to set up and access your repositories. (If you still need an account, click sign up.)<br /><img src="../../Resources/Images/github-windows1.png" class="screenshot" /><br /></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>The GitHub client opens with your account info and a list of any repositories you have created/cloned/forked.</td>
+                            </tr>
+                        </table>
+                        <h3 id="mac">
+                            <img src="../../Resources/Images/mac.png" /> Mac Installation</h3>
+                        <p>The Mac installation runs a downloaded exe/wizard.</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Step</th>
+                                    <th>What to Do</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>1</td>
+                                <td>Download the latest version of <a href="https://mac.github.com/">the client</a>.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Run the client install.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>The first time you GitHub, you are prompted to setup or skip it. Click <b>Continue</b> and <b>Sign in</b> with your GitHub credentials. If you have 2-factor authentication on your account, you will be prompted for an authorization code (in your email).<br /><img src="../../Resources/Images/github-mac1.png" class="screenshot" /><br /></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>The client will autofill with your credentials. Make sure it is all correct.</td>
+                            </tr>
+                        </table>
+                        <h2 id="tips">GitHub Protips!</h2>
+                        <p>For details on GitHub, review their docs:</p>
+                        <ul>
+                            <li value="1"><a href="https://windows.github.com/help.html">Windows</a> <![CDATA[ ]]></li>
+                            <li value="2"><a href="https://mac.github.com/help.html">Mac</a>
+                            </li>
+                        </ul>
+                        <p>You can also contact them!</p>
+                        <ul>
+                            <li value="1">Visit their <a href="https://help.github.com/">support site</a>.</li>
+                            <li value="2">Contact <a href="https://github.com/contact">via site</a>.</li>
+                            <li value="3">Send <a href="mailto:support@github.com">email</a>.</li>
+                        </ul>
+                        <h4>Windows Client Protips</h4>
+                        <p>The following are pro tips for using the GitHub Windows client!</p>
+                        <p>In the client, select <b>Tools</b> &gt; <b>Options</b> and change your default shell to <i>Git Bash</i>. Select your project, click <b>Tools and Options</b>, and select "<i>open a shell here</i>". Or just hit the back tick key \` as a shortcut. You now have an excellent Git shell with your Git credentials already stored.</p>
+                        <p>You can also add "C:\Users\xxx\AppData\Local\GitHub\PortableGit_xxx\bin" to your PATH user environment variable to gain access to common nix commands in your Windows Command Prompt without installing msysgit or cygwin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

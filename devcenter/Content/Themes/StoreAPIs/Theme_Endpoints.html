@@ -39,73 +39,192 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../installation/install-overview.html">Overview </a></li><li value="2"><a href="../installation/install-github.html">GitHub</a></li><li value="3"><a href="../installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="../installation/install-ruby.html">Ruby</a></li><li value="5"><a href="../installation/install-compass.html">Compass</a></li><li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../customization/customization-overview.html">Overview </a></li><li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a></li><li value="4"><a href="../customization/folder-structure.html">Folder Structure</a></li><li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="../customization/image-sprites.html">Image Sprites</a></li><li value="9"><a href="../customization/custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1>REST API <a name="kanchor6"></a>Endpoints</h1><p>The following is a detailed list of all REST API&#160;endpoints in the <span class="GeneralThemeEngineAPI">Storefront API</span>. When entering a request, you will follow a specific format. For details, learn more about the <a href="Theme_RequestFormat.html">request structure content</a> and <a href="Theme_ResponseFormat.html">response data</a>. Each listed API includes a link to further information, sample JSON requests and responses, and in-depth information for the implementation of your code.</p><p>The following are the currently available API endpoints:</p><table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0"><col class="TableStyle-PatternedRows-Column-Regular" style="width: 173px;" /><col class="TableStyle-PatternedRows-Column-Regular" /><thead><tr class="TableStyle-PatternedRows-Head-Header1"><th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th><th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th></tr></thead><tbody><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Products.html" name="kanchor7">products</a></td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides access to actions for all products in the store including getting specific products, all product, related products, product accessories, and reviews. Products are goods, services and downloadable items sold through the storefront that earn revenue for the merchant. These products include physical items sold and shipped from a warehouse and downloadable song and book files.</td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Categories.html" name="kanchor8">categories</a></td><td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Provides a hierarchy of structure into groups of categories and subcategories for products to display on the storefront. For example, you may have a category of shoes with subcategories based on mens, womens and kids with further categorization on the type of shoes or usage from dressing, casual and sports.</td></tr><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Articles.html" name="kanchor9">articles</a></td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides the content pages for your storefront.</td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Navigation.html" name="kanchor10">navigation</a></td><td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Sets the navigation menus for shoppers to browse products and content on your storefront. <span class="GeneralProductName">Volusion</span> supports up to eight navigation menus on the storefront. The number of menu signifies a section of the storefront menu to access or modify.</td></tr><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Config.html" name="kanchor11">config</a></td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides information on the storefront site itself, all configuration through various options in the Admin Settings section, company information, site specific details, and payment settings.</td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Components.html">components</a><a name="kanchor12"></a></td><td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Provides a collection of components. These options enhance the storefront pages, such as the slider for images and linked content. </td></tr><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Carts.html">carts</a><a name="kanchor13"></a></td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides a shopping cart object for a shopper, including the items in the cart and checkout details (discounts, shipping and billing address, shipping methods, payment profile, miscellaneous and custom attributes, and customer ID). The cart ID may not be required as this information is passed through via a cookie. </td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Countries.html">countries</a><a name="kanchor14"></a></td><td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Provides your enabled countries and states for your storefront. </td></tr><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Users.html">users</a><a name="kanchor15"></a></td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides options for viewing, creating and updating a user account for your storefront, including the account information, stored addresses, payment profiles and user preferences.</td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">login<a name="kanchor16"></a></td><td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows"><span style="color: #fc6003; font-weight: bold;">(states to use legacy endpoint...what is that?)</span></td></tr><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">orders<a name="kanchor17"></a></td><td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Creates an order. If using the endpoint for guest checkout, a specific set of actions occur using the users endpoint prior to creating the order. Returning customers do not include the users endpoint actions.</td></tr></tbody></table></div></div></div></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../customization/customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="../customization/folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="../customization/image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="../customization/custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1>REST API <a name="kanchor6"></a>Endpoints</h1>
+                        <p>The following is a detailed list of all REST API&#160;endpoints in the <span class="GeneralThemeEngineAPI">Storefront API</span>. When entering a request, you will follow a specific format. For details, learn more about the <a href="Theme_RequestFormat.html">request structure content</a> and <a href="Theme_ResponseFormat.html">response data</a>. Each listed API includes a link to further information, sample JSON requests and responses, and in-depth information for the implementation of your code.</p>
+                        <p>The following are the currently available API endpoints:</p>
+                        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 173px;" />
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-PatternedRows-Head-Header1">
+                                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th>
+                                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Products.html" name="kanchor7">products</a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides access to actions for all products in the store including getting specific products, all product, related products, product accessories, and reviews. Products are goods, services and downloadable items sold through the storefront that earn revenue for the merchant. These products include physical items sold and shipped from a warehouse and downloadable song and book files.</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Categories.html" name="kanchor8">categories</a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Provides a hierarchy of structure into groups of categories and subcategories for products to display on the storefront. For example, you may have a category of shoes with subcategories based on mens, womens and kids with further categorization on the type of shoes or usage from dressing, casual and sports.</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Articles.html" name="kanchor9">articles</a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides the content pages for your storefront.</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Navigation.html" name="kanchor10">navigation</a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Sets the navigation menus for shoppers to browse products and content on your storefront. <span class="GeneralProductName">Volusion</span> supports up to eight navigation menus on the storefront. The number of menu signifies a section of the storefront menu to access or modify.</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Config.html" name="kanchor11">config</a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides information on the storefront site itself, all configuration through various options in the Admin Settings section, company information, site specific details, and payment settings.</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Components.html">components</a><a name="kanchor12"></a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Provides a collection of components. These options enhance the storefront pages, such as the slider for images and linked content. </td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Carts.html">carts</a><a name="kanchor13"></a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides a shopping cart object for a shopper, including the items in the cart and checkout details (discounts, shipping and billing address, shipping methods, payment profile, miscellaneous and custom attributes, and customer ID). The cart ID may not be required as this information is passed through via a cookie. </td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><a href="Theme_Countries.html">countries</a><a name="kanchor14"></a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Provides your enabled countries and states for your storefront. </td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="Theme_Users.html">users</a><a name="kanchor15"></a>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Provides options for viewing, creating and updating a user account for your storefront, including the account information, stored addresses, payment profiles and user preferences.</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">login<a name="kanchor16"></a></td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows"><span style="color: #fc6003; font-weight: bold;">(states to use legacy endpoint...what is that?)</span>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">orders<a name="kanchor17"></a></td>
+                                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Creates an order. If using the endpoint for guest checkout, a specific set of actions occur using the users endpoint prior to creating the order. Returning customers do not include the users endpoint actions.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

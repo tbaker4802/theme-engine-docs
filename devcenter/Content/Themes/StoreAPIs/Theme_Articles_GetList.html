@@ -39,48 +39,131 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../installation/install-overview.html">Overview </a></li><li value="2"><a href="../installation/install-github.html">GitHub</a></li><li value="3"><a href="../installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="../installation/install-ruby.html">Ruby</a></li><li value="5"><a href="../installation/install-compass.html">Compass</a></li><li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../customization/customization-overview.html">Overview </a></li><li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a></li><li value="4"><a href="../customization/folder-structure.html">Folder Structure</a></li><li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="../customization/image-sprites.html">Image Sprites</a></li><li value="9"><a href="../customization/custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1>Get a List of Articles</h1><p>This <code>GET&#160;</code>method requests a full list of articles from your store. The response will provide a list of articles including the ID, title, body and SEO&#160;settings. Depending on the amount of articles you create and use in your store, the response may be lengthy with content. </p><h2>Request</h2><p>The URI call structure is:</p><pre class="CodeSample">GET http://{domain}/api/v1/articles/<span style="color: #f36e34;">id</span></pre><h3>Parameters</h3><p>The following parameter can be entered into the request:</p><table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0"><col class="TableStyle-PatternedRows-Column-Regular" /><col class="TableStyle-PatternedRows-Column-Regular" /><col class="TableStyle-PatternedRows-Column-Regular" /><thead><tr class="TableStyle-PatternedRows-Head-Header1"><th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th><th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th><th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th></tr></thead><tbody><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>id</code></td><td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Alphanumeric system ID for the specific article.  </td><td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Number</td></tr></tbody></table><h2>Response</h2><p>The response includes a response code and data for the all categories of articles in the store.</p><p><b>Status Code</b> 200</p><div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />JSON Response</a></span><div class="MCDropDownBody dropDownBody"><pre class="CodeSample">{
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../customization/customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="../customization/method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="../customization/folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="../customization/Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="../customization/bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="../customization/adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="../customization/image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="../customization/custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Get a List of Articles</h1>
+                        <p>This <code>GET&#160;</code>method requests a full list of articles from your store. The response will provide a list of articles including the ID, title, body and SEO&#160;settings. Depending on the amount of articles you create and use in your store, the response may be lengthy with content. </p>
+                        <h2>Request</h2>
+                        <p>The URI call structure is:</p><pre class="CodeSample">GET http://{domain}/api/v1/articles/<span style="color: #f36e34;">id</span></pre>
+                        <h3>Parameters</h3>
+                        <p>The following parameter can be entered into the request:</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-PatternedRows-Head-Header1">
+                                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
+                                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><code>id</code>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Alphanumeric system ID for the specific article.  </td>
+                                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Number</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h2>Response</h2>
+                        <p>The response includes a response code and data for the all categories of articles in the store.</p>
+                        <p><b>Status Code</b> 200</p>
+                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />JSON Response</a></span>
+                            <div class="MCDropDownBody dropDownBody"><pre class="CodeSample">{
 	"cursor": {
 		"total": null,
 		"totalPages": null
@@ -96,32 +179,110 @@
 			"metaTagsOverride": null
 		},
 	}
-}</pre></div></div><h3>Data</h3><p>The response includes a collection of articles available to the storefront. </p><p>The following <code>cursor </code>data is returned to set the pagination of response product data:</p><table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0"><col class="TableStyle-PatternedRows-Column-Regular" /><col class="TableStyle-PatternedRows-Column-Regular" /><col class="TableStyle-PatternedRows-Column-Regular" /><thead><tr class="TableStyle-PatternedRows-Head-Header1"><th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th><th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th><th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th></tr></thead><tbody><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>total</code></td><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Numeric amount of all categories returned matching the request. </td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>totalPages</code></td><td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Numeric amount of total pages for pagination of the returned categories. The total amount is divided across the total amount of pages. </td><td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Number</td></tr></tbody></table><p>The following <code>data </code>is returned for the articles, with nested attributes for the articles returned:</p><table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0"><col class="TableStyle-PatternedRows-Column-Regular" /><col class="TableStyle-PatternedRows-Column-Regular" /><col class="TableStyle-PatternedRows-Column-Regular" /><thead><tr class="TableStyle-PatternedRows-Head-Header1"><th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute </th><th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th><th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th></tr></thead><tbody><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>id</code></td><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The generated ID&#160;for the article when created. This is generated automatically by the <span class="GeneralProductName">Volusion</span> system. Example: 1</td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>title</code></td><td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The title of the article entered at article creation. The name is alphanumeric and supports some special characters. This is a required setting and always returns content. Example: Company History.</td><td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td></tr><tr class="TableStyle-PatternedRows-Body-LightRows"><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>body</code></td><td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This information is the heart of the article, including all content entered. The content can include plain text or HTML formatted information, including links and images. </td><td class="TableStyle-PatternedRows-BodyD-Regular-LightRows"><p>String</p></td></tr><tr class="TableStyle-PatternedRows-Body-DarkerRows"><td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>seo</code></td><td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><p>This data sets the SEO&#160;friendly content for the article, including the following:</p><ul><li value="1"><code>metaTagTitle </code>- Sets an SEO&#160;friendly name for the category. If NULL, the data defaults to the category name.</li><li value="2"><code>metaTagKeywords </code>- Sets all keywords used by search engines to locate and return this category in search results. Keywords are separated by commas. This is an unlimited String.</li><li value="3"><code>metaTagDescriptions </code>- Sets the category description used in search engine results. This is a 255 character String.</li><li value="4"><code>metaTagsOverride </code>- Sets advanced code that overrides all existing HTML meta tag information. This option is for advanced users.</li></ul></td><td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">String</td></tr></tbody></table></div></div></div></div>
+}</pre>
+                            </div>
+                        </div>
+                        <h3>Data</h3>
+                        <p>The response includes a collection of articles available to the storefront. </p>
+                        <p>The following <code>cursor </code>data is returned to set the pagination of response product data:</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-PatternedRows-Head-Header1">
+                                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute</th>
+                                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>total</code>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Numeric amount of all categories returned matching the request. </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>totalPages</code>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Numeric amount of total pages for pagination of the returned categories. The total amount is divided across the total amount of pages. </td>
+                                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Number</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>The following <code>data </code>is returned for the articles, with nested attributes for the articles returned:</p>
+                        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <col class="TableStyle-PatternedRows-Column-Regular" />
+                            <thead>
+                                <tr class="TableStyle-PatternedRows-Head-Header1">
+                                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Attribute </th>
+                                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Description</th>
+                                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>id</code>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The generated ID&#160;for the article when created. This is generated automatically by the <span class="GeneralProductName">Volusion</span> system. Example: 1</td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Number</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows"><code>title</code>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">The title of the article entered at article creation. The name is alphanumeric and supports some special characters. This is a required setting and always returns content. Example: Company History.</td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">String</td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><code>body</code>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">This information is the heart of the article, including all content entered. The content can include plain text or HTML formatted information, including links and images. </td>
+                                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                        <p>String</p>
+                                    </td>
+                                </tr>
+                                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows"><code>seo</code>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                                        <p>This data sets the SEO&#160;friendly content for the article, including the following:</p>
+                                        <ul>
+                                            <li value="1"><code>metaTagTitle </code>- Sets an SEO&#160;friendly name for the category. If NULL, the data defaults to the category name.</li>
+                                            <li value="2"><code>metaTagKeywords </code>- Sets all keywords used by search engines to locate and return this category in search results. Keywords are separated by commas. This is an unlimited String.</li>
+                                            <li value="3"><code>metaTagDescriptions </code>- Sets the category description used in search engine results. This is a 255 character String.</li>
+                                            <li value="4"><code>metaTagsOverride </code>- Sets advanced code that overrides all existing HTML meta tag information. This option is for advanced users.</li>
+                                        </ul>
+                                    </td>
+                                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">String</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

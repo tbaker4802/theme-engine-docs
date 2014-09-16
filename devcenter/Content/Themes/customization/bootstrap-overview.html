@@ -38,73 +38,151 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../installation/install-overview.html">Overview </a></li><li value="2"><a href="../installation/install-github.html">GitHub</a></li><li value="3"><a href="../installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="../installation/install-ruby.html">Ruby</a></li><li value="5"><a href="../installation/install-compass.html">Compass</a></li><li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="customization-overview.html">Overview </a></li><li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="method-tour.html">Method Theme Tour</a></li><li value="4"><a href="folder-structure.html">Folder Structure</a></li><li value="5"><a href="Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="#">Bootstrap Styles</a></li><li value="7"><a href="adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="image-sprites.html">Image Sprites</a></li><li value="9"><a href="custom-text.html">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1>Bootstrap Style</h1><p class="lead">How to modify your theme bootstrap.</p><h2>Table of Contents</h2><ol class="table-of-contents"><li value="1"><a href="#easy">Easy Bootstrap</a></li><li value="2"><a href="#resources">Bootstrap Resources</a></li><li value="3"><a href="#using">Using Bootstrap</a></li></ol><p>While learning the depths of Sass and CSS is vital, Bootstrap leads the way in innovative styles. <a href="http://getbootstrap.com/">Bootstrap</a> provides a feature packed, versatile framework for developing styles and layouts for your web sites and apps. The simplicity of single sets of formats also gives you the power of using <a href="http://bootswatch.com/">Bootswatch</a> theming, changing the entire style of your site through the <code>bootstrap.css</code> / <code>bootstrap.min.css</code> file(s) that you can <code>@import </code>into your theme styles or develop against with a fresh code base.</p><h2 id="easy">Easy Bootstrap</h2><p>Not a hardcore developer? Don't worry. The information provided here and on numerous other design and development sites is usable without installations or fancy tricks. Though we definitely encourage you to get as fancy as you like!</p><h2 id="resources">Bootstrap Resources</h2><ul><li value="1">Bootstrap <a href="http://getbootstrap.com/components/">Components</a> | <a href="http://getbootstrap.com/css/">CSS</a> | <a href="http://getbootstrap.com/examples/grid/">Grid</a></li><li value="2"><a href="http://bootsnipp.com/">Boostrap Snippets</a></li><li value="3"><a href="http://bootswatch.com/">Bootswatch</a></li><li value="4"><a href="http://www.bootply.com/">Bootply</a></li></ul><h2 id="using">Using Bootstrap</h2><p>Web designers can edit the <code>bootstrap.css</code> file directly to change the colors and fonts in their installation of Bootstrap. Or you can <code>@import</code> into your own CSS file and extend from there. To modify bootstrap formats directly to a downloaded theme, locate the <code>_bootstrap-variables.scss</code> and <code>_bootstrap-style.scss</code> files in the <code>{your repo}\app\styles\base</code> folder.</p><p>Need a bit of a design boost? Another usage of Bootstrap without needing to code and compile custom CSS and JavaScript is using a Bootstrap theme! You can add the theme files and links to your CSS/SCSS&#160;file using an <code>@import</code>. The bootstrap-theme.css (and minified) is part of the Bootstrap Download zip. For a preview of the styles in use, see here: <a href="http://getbootstrap.com/examples/theme/">http://getbootstrap.com/examples/theme/</a>!</p><p>Of course, other designers have the same ideas and provide them through <a href="http://bootswatch.com/">Bootswatch</a>. Quickly preview many themes with sample code and theme links through the Download drop-down menu. The <a href="http://www.bootstrapcdn.com/#bootswatch_tab">Bootswatch CDN</a>&#160;also includes links for <code>@import</code> use.</p></div></div></div></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="#">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="custom-text.html">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Bootstrap Style</h1>
+                        <p class="lead">How to modify your theme bootstrap.</p>
+                        <h2>Table of Contents</h2>
+                        <ol class="table-of-contents">
+                            <li value="1"><a href="#easy">Easy Bootstrap</a>
+                            </li>
+                            <li value="2"><a href="#resources">Bootstrap Resources</a>
+                            </li>
+                            <li value="3"><a href="#using">Using Bootstrap</a>
+                            </li>
+                        </ol>
+                        <p>While learning the depths of Sass and CSS is vital, Bootstrap leads the way in innovative styles. <a href="http://getbootstrap.com/">Bootstrap</a> provides a feature packed, versatile framework for developing styles and layouts for your web sites and apps. The simplicity of single sets of formats also gives you the power of using <a href="http://bootswatch.com/">Bootswatch</a> theming, changing the entire style of your site through the <code>bootstrap.css</code> / <code>bootstrap.min.css</code> file(s) that you can <code>@import </code>into your theme styles or develop against with a fresh code base.</p>
+                        <h2 id="easy">Easy Bootstrap</h2>
+                        <p>Not a hardcore developer? Don't worry. The information provided here and on numerous other design and development sites is usable without installations or fancy tricks. Though we definitely encourage you to get as fancy as you like!</p>
+                        <h2 id="resources">Bootstrap Resources</h2>
+                        <ul>
+                            <li value="1">Bootstrap <a href="http://getbootstrap.com/components/">Components</a> | <a href="http://getbootstrap.com/css/">CSS</a> | <a href="http://getbootstrap.com/examples/grid/">Grid</a></li>
+                            <li value="2"><a href="http://bootsnipp.com/">Boostrap Snippets</a>
+                            </li>
+                            <li value="3"><a href="http://bootswatch.com/">Bootswatch</a>
+                            </li>
+                            <li value="4"><a href="http://www.bootply.com/">Bootply</a>
+                            </li>
+                        </ul>
+                        <h2 id="using">Using Bootstrap</h2>
+                        <p>Web designers can edit the <code>bootstrap.css</code> file directly to change the colors and fonts in their installation of Bootstrap. Or you can <code>@import</code> into your own CSS file and extend from there. To modify bootstrap formats directly to a downloaded theme, locate the <code>_bootstrap-variables.scss</code> and <code>_bootstrap-style.scss</code> files in the <code>{your repo}\app\styles\base</code> folder.</p>
+                        <p>Need a bit of a design boost? Another usage of Bootstrap without needing to code and compile custom CSS and JavaScript is using a Bootstrap theme! You can add the theme files and links to your CSS/SCSS&#160;file using an <code>@import</code>. The bootstrap-theme.css (and minified) is part of the Bootstrap Download zip. For a preview of the styles in use, see here: <a href="http://getbootstrap.com/examples/theme/">http://getbootstrap.com/examples/theme/</a>!</p>
+                        <p>Of course, other designers have the same ideas and provide them through <a href="http://bootswatch.com/">Bootswatch</a>. Quickly preview many themes with sample code and theme links through the Download drop-down menu. The <a href="http://www.bootstrapcdn.com/#bootswatch_tab">Bootswatch CDN</a>&#160;also includes links for <code>@import</code> use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>

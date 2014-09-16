@@ -38,73 +38,192 @@
         </script>
     </head>
     <body>
-        <div class="interior-heading">
-        </div>
-        <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
-        <nav class="header navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="navbar-brand" href="../../index.html"> <img src="../../Resources/Images/logo_144x35.png" style="margin-top: -9px;width: 144;height: 35;" /></a>
-                    <!-- Can change the href to a specific location, such as main Volusion Dev Center. -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <!--  The list is a snippet with navigation using Volusion bootstrap. -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
-                        </li>
-                        <li value="2"><a href="../../documentation.html">Docs</a>
-                        </li>
-                        <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
-                        </li>
-                        <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
-                                </li>
-                                <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
-                                </li>
-                                <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
+        <div id="main">
+            <div class="interior-heading">
             </div>
-            <!-- <div class="divide-nav" role="navigation">
+            <!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
+            <nav class="header navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button> <a href="../../landing.html"><img src="../../Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    <div class="navbar-collapse collapse">
+                        <!--  The list is a snippet with navigation using Volusion bootstrap. -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li value="1"><a href="../installation/quick-start.html">Quickstart</a>
+                            </li>
+                            <li value="2"><a href="../../documentation.html">Docs</a>
+                            </li>
+                            <li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+                            </li>
+                            <li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a>
+                                    </li>
+                                    <li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a>
+                                    </li>
+                                    <li value="3"><a href="https://groups.google.com/forum/#!forum/volusion-theme-engine">Google Group</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li value="5">
+                                <button class="btn">Join the Beta</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- <div class="divide-nav" role="navigation">
                 <div class="container-full"> <MadCap:breadcrumbsProxy /> </div>
             </div> -->
-        </nav>
-        <div id="wrap"> <div id="main" class="container"><div class="row"><div class="col-md-3"><nav class="bs-docs-sidebar" id="sidebar"><!--Side Nav Snippet --><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
-				Install and Setup</a></div><div id="setup" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="../installation/install-overview.html">Overview </a></li><li value="2"><a href="../installation/install-github.html">GitHub</a></li><li value="3"><a href="../installation/install-nodejs.html">NodeJS</a></li><li value="4"><a href="../installation/install-ruby.html">Ruby</a></li><li value="5"><a href="../installation/install-compass.html">Compass</a></li><li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a></li><li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a></li><li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a></li></ul></div><div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a></div><div id="custom" class="collapse in"><ul class="nav nav-list"><li value="1"><a href="customization-overview.html">Overview </a></li><li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a></li><li value="3"><a href="method-tour.html">Method Theme Tour</a></li><li value="4"><a href="folder-structure.html">Folder Structure</a></li><li value="5"><a href="Theme_SCSS_Overview.html">Styles and Layouts</a></li><li value="6"><a href="bootstrap-overview.html">Bootstrap Styles</a></li><li value="7"><a href="adding-fonts.html">Adding Fonts</a></li><li value="8"><a href="image-sprites.html">Image Sprites</a></li><li value="9"><a href="#">Custom Content</a></li></ul></div></nav></div><div class="col-md-9"><h1>Custom Content</h1><p class="lead">Enter custom text and translations for the theme.</p><h2>Table of Contents</h2><ol class="table-of-contents"><li value="1"><a href="#folder">Folder Location</a></li><li value="2"><a href="#file">File Information</a></li><li value="3"><a href="#translations">Translations</a></li></ol><p>Every theme provides support for custom text per page and multiple translations of your storefront. You can create as many language files as you need per language through the themes. </p><p>The following information details how to modify custom text per page and add translation content for your theme using the Method theme as an example.</p><p>Volusion uses the Angular.js translation feature for pulling and displaying text based on a selected language.</p><h2 id="folder">Folder Location</h2><p>All custom text and translated content is saved per file, per page, in the <code style="font-style: normal;">{your repo}\method\app\translations</code> folder. Every page and section of the theme is broken down into folders, such as:</p><table class="table table-hover"><thead><tr><th>Folder</th><th>Description</th></tr></thead><tr><td>index</td><td>The main landing page</td></tr><tr><td>category</td><td>All category support</td></tr><tr><td>about </td><td>Displayed translated content for your About Us page</td></tr><tr><td>contact </td><td>Translated contact information. You could also use this as information per international location.</td></tr><tr><td>home </td><td> Specific translations per the home page</td></tr><tr><td>product </td><td>Translations for the product page(s)</td></tr><tr><td>style-guide</td><td>&#160;</td></tr><tr><td>theme-settings</td><td>&#160;</td></tr></table><h2 id="file">File Information</h2><p>Every file should be named with the two-letter country code and an extension of .json. For US&#160;English, default files will include en.json files per folder. You can create a copy of these folders, rename them, and edit the content with your translations. As that language is loaded, the framework and system will load that selected language's file for those pieces of content. For example, you could create a es.json file per every folder for Spanish. </p><p>For a list of all supported locales, check the <a href="https://github.com/angular/angular.js/tree/master/src/ngLocale">Angular list for ngLocale</a>.</p><h2 id="translations">Translations</h2><p>Translation loading of your storefront is controlled by a set of variables for your environment. You can enable translations then set the supported languages to support additional locales in the storefront. </p><p>The environment config files located at <code style="font-style: normal;">{your repo}\method\config\env</code> set if translations are enabled or disabled. By default, translations are disabled for the development (dev.json) and production (prod.json) environments. </p><p><b>To enable translations:</b></p><ol><li value="1">Open the folder location: <code style="font-style: normal;">{your repo}\method\config\env</code>.</li><li value="2">Open each environment JSON file and locate the line: <code>"DISABLE_TRANSLATIONS": true,</code></li><li value="3">Change <code>true </code>to <code>false </code>and save.</li></ol></div></div></div></div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav class="bs-docs-sidebar" id="sidebar">
+                            <!--Side Nav Snippet -->
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#setup"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>
+				Install and Setup</a>
+                            </div>
+                            <div id="setup" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="../installation/install-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/install-github.html">GitHub</a>
+                                    </li>
+                                    <li value="3"><a href="../installation/install-nodejs.html">NodeJS</a>
+                                    </li>
+                                    <li value="4"><a href="../installation/install-ruby.html">Ruby</a>
+                                    </li>
+                                    <li value="5"><a href="../installation/install-compass.html">Compass</a>
+                                    </li>
+                                    <li value="6"><a href="../installation/install-bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li value="7"><a href="../installation/install-optional.html">Apps and Plugins</a>
+                                    </li>
+                                    <li value="8"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-heading"><a href="#" data-toggle="collapse" class="toggler active" data-target="#custom"><i class="icon-folder-open"></i><i class="icon-folder-close"></i>Customize Themes</a>
+                            </div>
+                            <div id="custom" class="collapse in">
+                                <ul class="nav nav-list">
+                                    <li value="1"><a href="customization-overview.html">Overview </a>
+                                    </li>
+                                    <li value="2"><a href="../installation/download-a-theme.html">Download a Theme</a>
+                                    </li>
+                                    <li value="3"><a href="method-tour.html">Method Theme Tour</a>
+                                    </li>
+                                    <li value="4"><a href="folder-structure.html">Folder Structure</a>
+                                    </li>
+                                    <li value="5"><a href="Theme_SCSS_Overview.html">Styles and Layouts</a>
+                                    </li>
+                                    <li value="6"><a href="bootstrap-overview.html">Bootstrap Styles</a>
+                                    </li>
+                                    <li value="7"><a href="adding-fonts.html">Adding Fonts</a>
+                                    </li>
+                                    <li value="8"><a href="image-sprites.html">Image Sprites</a>
+                                    </li>
+                                    <li value="9"><a href="#">Custom Content</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Custom Content</h1>
+                        <p class="lead">Enter custom text and translations for the theme.</p>
+                        <h2>Table of Contents</h2>
+                        <ol class="table-of-contents">
+                            <li value="1"><a href="#folder">Folder Location</a>
+                            </li>
+                            <li value="2"><a href="#file">File Information</a>
+                            </li>
+                            <li value="3"><a href="#translations">Translations</a>
+                            </li>
+                        </ol>
+                        <p>Every theme provides support for custom text per page and multiple translations of your storefront. You can create as many language files as you need per language through the themes. </p>
+                        <p>The following information details how to modify custom text per page and add translation content for your theme using the Method theme as an example.</p>
+                        <p>Volusion uses the Angular.js translation feature for pulling and displaying text based on a selected language.</p>
+                        <h2 id="folder">Folder Location</h2>
+                        <p>All custom text and translated content is saved per file, per page, in the <code style="font-style: normal;">{your repo}\method\app\translations</code> folder. Every page and section of the theme is broken down into folders, such as:</p>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Folder</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>index</td>
+                                <td>The main landing page</td>
+                            </tr>
+                            <tr>
+                                <td>category</td>
+                                <td>All category support</td>
+                            </tr>
+                            <tr>
+                                <td>about </td>
+                                <td>Displayed translated content for your About Us page</td>
+                            </tr>
+                            <tr>
+                                <td>contact </td>
+                                <td>Translated contact information. You could also use this as information per international location.</td>
+                            </tr>
+                            <tr>
+                                <td>home </td>
+                                <td> Specific translations per the home page</td>
+                            </tr>
+                            <tr>
+                                <td>product </td>
+                                <td>Translations for the product page(s)</td>
+                            </tr>
+                            <tr>
+                                <td>style-guide</td>
+                                <td>&#160;</td>
+                            </tr>
+                            <tr>
+                                <td>theme-settings</td>
+                                <td>&#160;</td>
+                            </tr>
+                        </table>
+                        <h2 id="file">File Information</h2>
+                        <p>Every file should be named with the two-letter country code and an extension of .json. For US&#160;English, default files will include en.json files per folder. You can create a copy of these folders, rename them, and edit the content with your translations. As that language is loaded, the framework and system will load that selected language's file for those pieces of content. For example, you could create a es.json file per every folder for Spanish. </p>
+                        <p>For a list of all supported locales, check the <a href="https://github.com/angular/angular.js/tree/master/src/ngLocale">Angular list for ngLocale</a>.</p>
+                        <h2 id="translations">Translations</h2>
+                        <p>Translation loading of your storefront is controlled by a set of variables for your environment. You can enable translations then set the supported languages to support additional locales in the storefront. </p>
+                        <p>The environment config files located at <code style="font-style: normal;">{your repo}\method\config\env</code> set if translations are enabled or disabled. By default, translations are disabled for the development (dev.json) and production (prod.json) environments. </p>
+                        <p><b>To enable translations:</b>
+                        </p>
+                        <ol>
+                            <li value="1">Open the folder location: <code style="font-style: normal;">{your repo}\method\config\env</code>.</li>
+                            <li value="2">Open each environment JSON file and locate the line: <code>"DISABLE_TRANSLATIONS": true,</code></li>
+                            <li value="3">Change <code>true </code>to <code>false </code>and save.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- main ends -->
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
+                    <div class="col-md-3">
+                        <div class="footer__logo">
                             <img src="../../Resources/Images/volusionlogo-white.png" />
-                        </p>
-                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br />
-							 Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
-							 Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-						 </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>&#160; 
-							 <a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a></p>
-                        <div class="clearfix">
                         </div>
-                        <p class="pull-right"><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>&#160;
-							 <a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>&#160; 
-							 <a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>&#160; 
-							 <a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>&#160; 
-							 <a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>&#160; 
-							 <a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a></p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a><br />
+					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br />
+					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
+				</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="pull-right footer__icons"><a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a><a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a><a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a><a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
+                        </p>
                     </div>
                 </div>
             </div>
