@@ -76,9 +76,77 @@
 		Used to animate primary navigation from transparent to colored and back to transparent.
 		Makes use of the jquery-ui.min.js and jquery.visible.min.js plugins
 	-->
+	<script>
+		$(function() {
+			var primaryNavigation = $("nav.header");
+			var interiorHeadingImage = $('.interior-heading');
+			var landingHeadingImage = $('.landing-heading');
+
+			var goTransparent = function(){
+				primaryNavigation.addClass('isTransparent');
+				primaryNavigation.animate({'backgroundColor': 'rgba(11, 126, 190, 0.0)'}, 'slow');
+			};
+
+			var goColored = function(){
+				primaryNavigation.removeClass('isTransparent');
+				primaryNavigation.animate({'backgroundColor': 'rgba(11, 126, 190, 0.9)'}, 'slow');
+			};
+
+			var doTransitionCheck = function(isFirstLoad, elementToCheckHeight, fixedHeight) {
+				var scroll = $(window).scrollTop();
+
+				var heightToCheck = fixedHeight ? fixedHeight : elementToCheckHeight ? elementToCheckHeight.height() - 40 : 0;
+
+				if (scroll <= heightToCheck){
+					if (isFirstLoad){
+						goTransparent();
+					} else if (!primaryNavigation.hasClass('isTransparent')){
+						goTransparent();
+					}
+				} else if (scroll > heightToCheck){
+					if (isFirstLoad){
+						goColored();
+					} else if (primaryNavigation.hasClass('isTransparent')){
+						goColored();
+					}
+				}
+			};
+
+			if (interiorHeadingImage || landingHeadingImage) {
+				doTransitionCheck(true, interiorHeadingImage, landingHeadingImage ? 310 : null);
+
+				$(window).scroll(function () {
+					doTransitionCheck(false, interiorHeadingImage, landingHeadingImage ? 310 : null);
+				});
+			}
+		});
+	</script>
 </head>
 <body>
 <div id="main">
+	<div class="landing-heading">
+		<div class="landing-heading__content">
+			<h1>Coming soon, an easy way to build Volusion themes</h1>
+			<h2>Sign up below for early access to the Theme Engine beta</h2>
+			<div class="landing-heading_form hidden-xs">
+				<div class="input-group">
+					<input class="form-control input-lg" placeholder="me@developer.com" />
+					<span class="input-group-btn">
+						<button class="btn btn-lg btn-default" type="button">Join</button>
+					</span>
+				</div>
+			</div>
+			<div class="visible-xs">
+				<div class="input-group">
+					<input class="form-control" placeholder="email address..." />
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">Sign Up</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="method-landing"></div>
 	<!-- This snippet sets the fixed nav bar that runs across the entire site. The links for the nav are in another snippet. -->
 	<nav class="header navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
@@ -89,14 +157,14 @@
 			<div class="navbar-collapse collapse">
 				<!--  The list is a snippet with navigation using Volusion bootstrap. -->
 				<ul class="nav navbar-nav navbar-right">
-					<li value="1"><a href="Themes/installation/quick-start.htm">Quickstart</a>
+					<li value="1"><a href="Themes/installation/quick-start.htm"><span>Quickstart</span></a>
 					</li>
-					<li value="2"><a href="documentation.htm">Docs</a>
+					<li value="2"><a href="documentation.htm"><span>Docs</span></a>
 					</li>
-					<li value="3"><a href="http://docs.volusion.apiary.io/">Apiary API Reference</a>
+					<li value="3"><a href="http://docs.volusion.apiary.io/"><span>Apiary API Reference</span></a>
 					</li>
-					<li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support
-						<b class="caret"></b></a>
+					<li class="dropdown" value="4"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Support
+						<b class="caret"></b></span></a>
 						<ul class="dropdown-menu">
 							<li value="1"><a href="http://volusion.uservoice.com/forums/185439-storefront-api-theme-engine">Uservoice</a></li>
 							<li value="2"><a href="http://stackoverflow.com/tags/volusion">Stack Overflow</a></li>
@@ -115,7 +183,43 @@
 	</div> -->
 	</nav>
 	<div class="container">
-		<div class="row">
+		<div class="landing-feature-1">
+			<h3>Modern Stack</h3>
+			<p class="lead">Using the latest front end development frameworks</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="feature-image"><img src="resources/images/angular-feature.jpg" atl="AngularJS" /></div>
+					<div class="feature-title">AngularJS</div>
+					<div class="feature-description">Vivamus eget tellus vitae nisl lobortis varius. Aenean quis elit tellus. Duis sed ligula rutrum lectus aliquam blandit. Nunc id odio et nisi cursus dictum. Sed a lobortis elit, id placerat sem. Curabitur ex erat, fermentum eu urna et, lacinia ultricies mi. Fusce sit amet efficitur ipsum, in sollicitudin massa.</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature-image"><img src="resources/images/sass-feature.jpg" atl="AngularJS" /></div>
+					<div class="feature-title">SASS</div>
+					<div class="feature-description">Vivamus eget tellus vitae nisl lobortis varius. Aenean quis elit tellus. Duis sed ligula rutrum lectus aliquam blandit. Nunc id odio et nisi cursus dictum. Sed a lobortis elit, id placerat sem. Curabitur ex erat, fermentum eu urna et, lacinia ultricies mi. Fusce sit amet efficitur ipsum, in sollicitudin massa.</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature-image"><img src="resources/images/api-feature.jpg" atl="AngularJS" /></div>
+					<div class="feature-title">API</div>
+					<div class="feature-description">Vivamus eget tellus vitae nisl lobortis varius. Aenean quis elit tellus. Duis sed ligula rutrum lectus aliquam blandit. Nunc id odio et nisi cursus dictum. Sed a lobortis elit, id placerat sem. Curabitur ex erat, fermentum eu urna et, lacinia ultricies mi. Fusce sit amet efficitur ipsum, in sollicitudin massa.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="landing-feature-2">
+		<h3>Unlimited Design</h3>
+		<p class="lead">100% design freedom to create the perfect storefront.</p>
+		<div class="landing-feature-2__featured-themes">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="../../assets/images/themes/gizmo.jpg" alt="Gizmo Theme" class="img-responsive" />
+				</div>
+				<div class="col-md-4">
+					<img src="../../assets/images/themes/sven.jpg" alt="Sven Theme" class="img-responsive" />
+				</div>
+				<div class="col-md-4">
+					<img src="../../assets/images/themes/rogue.jpg" alt="Rogue Theme" class="img-responsive" />
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -123,26 +227,21 @@
 <footer class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<p><img src="Resources/Images/volusionlogo-white.png"/></p>
-				<p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a><br/>
+			<div class="col-md-3">
+				<div class="footer__logo"><img src="Resources/Images/volusionlogo-white.png"/></div>
+			</div>
+			<div class="col-md-6 text-center">
+				<p class="small"><a href="http://www.volusion.com" target="_blank">Volusion</a> · <a href="https://github.com/volusion-angular-themes" target="_blank">Github Themes</a> · <a href="http://www.volusion.com/legal" target="_blank">Legal</a></a><br/>
 					Maintained by <a href="https://github.com/volusion-angular-themes?tab=members">Core Volusion Team</a> with the help of <a href="https://github.com/volusion-angular-themes/graphs/contributors">Contributors</a><br/>
 					Code licensed under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
 				</p>
 			</div>
-			<div class="col-md-6">
-				<p class="pull-right">
-					<a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-github"></i></button></a>
-					<a href="http://www.volusion.com/legal" target="_blank"><button type="button" class="btn btn-info"><i class="fa fa-bank"></i></button></a>
-				</p>
-				<div class="clearfix"></div>
-				<p class="pull-right">
-					<a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button></a>
-					<a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button></a>
-					<a href="https://www.pinterest.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-pinterest"></i></button></a>
-					<a href="https://www.linkedin.com//company/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-linkedin"></i></button></a>
-					<a href="https://www.youtube.com/volusion"><button type="button" class="btn btn-primary"><i class="fa fa-youtube"></i></button></a>
-					<a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary"><i class="fa fa-google"></i></button></a>
+			<div class="col-md-3">
+				<p class="pull-right footer__icons">
+					<a href="https://github.com/volusion-angular-themes" target="_blank"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-github"></i></button></a>
+					<a href="https://www.facebook.com/Volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i></button></a>
+					<a href="https://www.twitter.com/volusion"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-twitter"></i></button></a>
+					<a href="https://plus.google.com/+volusion/posts"><button type="button" class="btn btn-primary btn-lg"><i class="fa fa-google"></i></button></a>
 				</p>
 			</div>
 		</div>
