@@ -5614,9 +5614,9 @@ nav .navbar-brand {
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-	background-color: 076db2;
+	background-color: #076db2;
 	color: #333;
-} 
+}
 /* typography styles */
 body {
 	color: #666;
