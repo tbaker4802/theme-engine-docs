@@ -17,7 +17,7 @@ $(function() {
 				var scroll = $(window).scrollTop();
 
 				var heightToCheck = fixedHeight ? fixedHeight : elementToCheckHeight ? elementToCheckHeight.height() - 40 : 0;
-				console.log(heightToCheck);
+				
 				if (scroll <= heightToCheck){
 					if (isFirstLoad){
 						goTransparent();
