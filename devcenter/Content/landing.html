@@ -49,7 +49,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button> <a href="#"><img src="Resources/Images/logo_144x35.png" style="margin-top: 6px;width: 144;height: 35;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
+                    </button> <a href="#"><img src="Resources/Images/logo.png" style="margin-top: 6px;width: 144px;height: 35px;max-height: 35px;max-width: 144px;" /></a><!-- Can change the href to a specific location, such as main Volusion Dev Center. --></div>
                 <div class="navbar-collapse collapse">
                     <!--  The list is a snippet with navigation using Volusion bootstrap. -->
                     <ul class="nav navbar-nav navbar-right">
@@ -69,8 +69,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li value="5">
-                            <button class="btn">Join the Beta</button>
+                        <li value="5"><a href="#"><button class="btn">Join the Beta</button></a>
                         </li>
                     </ul>
                 </div>
@@ -86,9 +85,14 @@
                     <h1>Coming soon, an easy way to build Volusion themes</h1>
                     <h2>Sign up below for early access to the Theme Engine beta</h2>
                     <div class="landing-heading__form hidden-xs">
-                        <div class="input-group">
-                            <input class="form-control input-lg" placeholder="me@developer.com" /><span class="input-group-btn"><button class="btn btn-lg btn-default" type="button">Join</button></span>
-                        </div>
+                        <form action="http://volusion.us9.list-manage.com/subscribe/post?u=733cd9762a5e37e6e7d712989&amp;id=43bb7b9e0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+                            <div class="input-group">
+                                <div style="position: absolute; left: -5000px;">
+                                    <input type="text" name="b_733cd9762a5e37e6e7d712989_43bb7b9e0c" tabindex="-1" value="" />
+                                </div>
+                                <input required="required" class="form-control input-lg required email" placeholder="me@developer.com" type="email" name="EMAIL" id="mce-EMAIL" /><span class="input-group-btn"><button class="btn btn-lg btn-default" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Join</button></span>
+                            </div>
+                        </form>
                     </div>
                     <div class="visible-xs">
                         <form action="http://volusion.us9.list-manage.com/subscribe/post?u=733cd9762a5e37e6e7d712989&amp;id=43bb7b9e0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
@@ -111,21 +115,21 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="feature-image">
-                                <img src="Resources/Images/angular-feature.jpg" atl="AngularJS" />
+                                <img src="resources/images/angular-feature.jpg" atl="AngularJS" />
                             </div>
                             <div class="feature-title">AngularJS</div>
                             <div class="feature-description">AngularJS gives you an extensible environment to enhance HTML to fulfill all of your app and theme development dreams. Design dynamic views, extend HTML to fit your needs, integrate favorite libraries all within this robust toolset and framework. Volusion develops Theme Engine themes and projects on AngularJS.</div>
                         </div>
                         <div class="col-md-4">
                             <div class="feature-image">
-                                <img src="Resources/Images/sass-feature.jpg" atl="AngularJS" />
+                                <img src="resources/images/sass-feature.jpg" atl="AngularJS" />
                             </div>
                             <div class="feature-title">SASS</div>
                             <div class="feature-description">CSS superpowered, Sass can integrate with your CSS and provides features and capabilities to design incredible styles and layouts. You can even integrate your Bootstrapped work within Sass and work in numerous frameworks, including Compass. Volusion actively uses Sass and Compass to develop theme styles. </div>
                         </div>
                         <div class="col-md-4">
                             <div class="feature-image">
-                                <img src="Resources/Images/api-feature.jpg" atl="API" />
+                                <img src="resources/images/api-feature.jpg" atl="API" />
                             </div>
                             <div class="feature-title">API</div>
                             <div class="feature-description">HTML and CSS are just the start of your theme development adventures. Volusion Theme Engine is a powerful set of public, RESTful APIs for interacting with your storefront and shoppers, creating themes and custom apps, and designing advanced features such as faceted search and responsive layouts for a complete experience. </div>
@@ -139,13 +143,13 @@
                 <div class="landing-feature-2__featured-themes">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="Resources/Images/gizmo-landing.jpg" alt="Gizmo Theme" class="img-responsive" />
+                            <img src="resources/images/gizmo-landing.jpg" alt="Gizmo Theme" class="img-responsive" />
                         </div>
                         <div class="col-md-4">
                             <img src="Resources/Images/sven-landing.jpg" alt="Sven Theme" class="img-responsive" />
                         </div>
                         <div class="col-md-4">
-                            <img src="Resources/Images/rogue-landing.jpg" alt="Rogue Theme" class="img-responsive" />
+                            <img src="resources/images/rogue-landing.jpg" alt="Rogue Theme" class="img-responsive" />
                         </div>
                     </div>
                 </div>
