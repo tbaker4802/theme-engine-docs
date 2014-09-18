@@ -5759,13 +5759,13 @@ a:hover, a:focus {
 	padding-bottom: 40px;
 }
 
-.landing-feature-1 h3 {
+.landing-feature-1 h3, .landing-feature-2 h3, .landing-feature-3 h3 {
 	text-align: center;
 	font-size: 48px;
 	color: black;
 }
 
-.landing-feature-1 p.lead {
+.landing-feature-1 p.lead, .landing-feature-2 p.lead, .landing-feature-3 p.lead {
 	text-align: center;
 	font-size: 18px;
 	color: #666;
@@ -5793,19 +5793,6 @@ a:hover, a:focus {
 	padding-top: 40px;
 	background-color: #eee;
 	color: #666;
-}
-
-.landing-feature-2 h3 {
-	text-align: center;
-	font-size: 48px;
-	color: black;
-}
-
-.landing-feature-2 p.lead {
-	text-align: center;
-	font-size: 18px;
-	color: #666;
-	margin-bottom: 60px;
 }
 
 .landing-feature-2__featured-themes {
