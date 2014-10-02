@@ -5969,6 +5969,16 @@ img.screenshot {
 	text-align: center;
 }
 
+.p table-title {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
 /* ================= Footer Push to Bottom Formatting =========== */
 #main {
 	overflow: auto;
@@ -6115,4 +6125,18 @@ fieldset[disabled] .btn-info.active {
 .btn-info .badge {
 	color: #5bc0de;
 	background-color: #fff;
+}
+
+.success {
+	color: #1D5C27;
+	background-color: #dff0d8;
+	border-color: #1D5C27;
+	width: 50%;
+}
+
+.danger {
+	color: #7F332B;
+	background-color: #f2dede;
+	border-color: #7F332B;
+	width: 50%;
 }
